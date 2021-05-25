@@ -25,24 +25,19 @@
 
         <div id="app">
 
-            <header-component></header-component>
+            <header-bar></header-bar>
+            
 
             <div class="container" >
 
-                <div class="porject-view-container">
-                    <a v-bind:href="proj.link" v-for="proj in homeData" class="project-view">
-                        <img v-bind:src="proj.cover" class="cover"/>
-                        <img v-bind:src="proj.hover" class="hover"/>
-                        <h3 class="title">{{proj.title}}</h3>
-                    </div>
-                </div>
+                <project-view-container></project-view-container>
 
 
             </div>
             
         </div>
 
-        <script src="js/main.js"></script>
+        <script type="module" src="/js/main.js"></script>
 
     </body>
 </html>
