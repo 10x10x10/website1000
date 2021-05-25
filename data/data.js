@@ -8,11 +8,11 @@ export const headerData = {
         }, 
         { 
             title: "LAB",
-            link: "/lab.html"
+            link: "lab.html"
         }, 
         { 
             title: "ABOUT",
-            link: "/about.html"
+            link: "about.html"
         },
     ]
 };
