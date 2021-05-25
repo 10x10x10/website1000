@@ -1,8 +1,13 @@
 
-import {regHeader, regProjectView} from "./components.js";
+import {
+    regHeader, 
+    regProjectView,
+    regAbout,
+} from "./components.js";
 
 regHeader();
 regProjectView();
+regAbout();
 
 const app = new Vue({
     el: '#app',
