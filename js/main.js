@@ -3,7 +3,7 @@ import {
     regHeader, 
     regProjectView,
     regAbout,
-} from "./components.js";
+} from "js/components.js";
 
 regHeader();
 regProjectView();

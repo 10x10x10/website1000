@@ -2,7 +2,7 @@ import {
     headerData, 
     projectViewData,
     aboutData,
-} from "./data/data.js";
+} from "data/data.js";
 
 
 export const regProjectView = () => {
