@@ -18,10 +18,19 @@ body, html{
     height: 100vh;
     width: 100%;
 
-    //display: flex;
-    //justify-content: center;
-
     color: #ffffff;
+
+
+    &::before{
+        content: "";
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        left: 0;
+        background-color:  $background-color;
+        z-index: -9999;
+    }
 }
 
 .flex-space{
@@ -119,6 +128,7 @@ a{
 
         .cover{
             width: 100%;
+            background-color: $background-color;
         }
 
         .hover{
@@ -178,6 +188,11 @@ a{
 .project-container{
     flex-grow: 1;
     max-width: 1200px;
+
+    .project-text-container{
+
+    }
+
 }
 
 
@@ -220,7 +235,10 @@ a{
 
     .project-container{
         width: 100%;
-        padding: 0 20px
+
+        .project-text-container{
+            padding: 0 20px;
+        }
     }
 
     
@@ -263,9 +281,8 @@ a{
 
 
     .video-container{
-        $video-width: 100%;
-        width: $video-width;
-        height: auto; //calc($video-width / 16 * 9) ;
+        width: 100%;
+        height: auto;
     }
     
 
