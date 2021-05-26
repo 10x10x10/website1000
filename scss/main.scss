@@ -34,6 +34,13 @@ a{
     outline-style: none;
 }
 
+.container{
+    padding: $header-height 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .header{
 
     position: fixed;
@@ -87,13 +94,6 @@ a{
             opacity: 0.4;
         }
     }
-}
-
-.container{
-    padding: $header-height 50px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .porject-view-container{
@@ -156,10 +156,30 @@ a{
     }
 }
 
+.about-container{
+
+    flex-grow: 1;
+    max-width: 1200px;
+
+    h2{
+        font-size: 30px;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    p, li{
+        font-size: 20px;
+        opacity: 0.8;
+        padding: 0;
+        margin: 0;
+        word-wrap: break-word;
+    }    
+}
+
 .project-container{
     flex-grow: 1;
     max-width: 1200px;
 }
+
 
 .video-container{
     $video-width: 1200px;
@@ -167,31 +187,91 @@ a{
     height: $video-width / 16 * 9;
 }
 
-.about{
-    &-container{
-        h2{
-            font-size: 30px;
-            padding: 0;
-            margin-bottom: 10px;
-        }
-        p, li{
-            font-size: 20px;
-            opacity: 0.8;
-            padding: 0;
-            margin: 0;
-        }
-    }
-}
+
+
 
 .row{
     display: flex;
     flex-direction: row;
 
+    //border-bottom:  solid 1px rgba(#ffffff, 0.3);
+}
+
+.split-line{
+    width: 100%;
     border-bottom:  solid 1px rgba(#ffffff, 0.3);
     padding-bottom: 30px;
 }
 
-
 .hide{
     display: none;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+   
+    $m-header-height: 100px;
+
+    .container{
+        width: 100%;
+        padding: $m-header-height 0 0;
+    }
+
+    .project-container{
+        width: 100%;
+        padding: 0 20px
+    }
+
+    
+    .header{
+        
+        padding: 0 10px;
+        height: $m-header-height;
+        flex-direction: column;
+
+        .title-conatainer{
+            flex-grow: 1;
+        }
+        .flex-space{
+            display: none;
+        }
+    }
+        
+    .porject-view-container{
+
+        padding: 0;
+        display: grid;
+
+        grid-row: 1;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(auto-fit, auto);
+        .project-view{
+            
+            .hover{
+                opacity: 1;
+            }
+            .title{
+                opacity: 1;
+            }
+        }
+    }
+
+    .about-container{
+        padding: 0 20px;
+    }
+
+
+    .video-container{
+        $video-width: 100%;
+        width: $video-width;
+        height: auto; //calc($video-width / 16 * 9) ;
+    }
+    
+
+    .m-hide{
+        display: none;
+    }
+
+}
+    
