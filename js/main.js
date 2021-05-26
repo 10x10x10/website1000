@@ -25,7 +25,6 @@ Vue.component('project-view-container', {
     computed: {
         getProjects: function(){
             let type = this.projectType;
-            console.log(type);
             if(type===undefined || type===""){
                 return this.projects;
             }
@@ -39,40 +38,36 @@ Vue.component('about-container', {
     props: { },
     template: `
     <div class="about-container">
-        <div class="row">        
-            <div class="m-hide" style="margin-right: 40px;">
-                <iframe src="https://editor.p5js.org/1000cheng/embed/AIYo4-nCa" 
-                        height="400px" width="400px" style="border-style: none;"></iframe>
+        <div class="row m-col">        
+            <div class="middle">
+                <iframe class="draw-view" src="https://editor.p5js.org/1000cheng/embed/AIYo4-nCa" 
+                        height="300px" width="300px" style="border-style: none;"></iframe>
             </div> 
             <div>
-                <div class="row">
-                    <div>
-                        <h2>{{intro.title}}</h2>
-                        <p v-for="description in intro.descriptions">{{description}}</p>
-                    </div>
+                <div>
+                    <h1>{{intro.title}}</h1>
+                    <p class="description" v-for="description in intro.descriptions">{{description}}</p>
                 </div>
                 <div class="split-line"/>
-                <div class="row">
-                    <div>
-                        <h2>Contact me</h2>
+                <div>
+                    <h1>Contact me</h1>
+                    <ul>
+                        <li v-for="contact in contacts">
+                            <a v-bind:href="contact.link" target="_blank">{{contact.text}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="split-line"/>
+                <div>
+                    <h1>Experience</h1>
+                    <div v-for="experience in experiences" class="experience-year-container">
+                        <p>{{experience.year}}</p>
                         <ul>
-                            <li v-for="contact in contacts">
-                                <a v-bind:href="contact.link" target="_blank">{{contact.text}}</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="split-line"/>
-                <div class="row">
-                    <div>
-                        <h2>Experience</h2>
-                        <div v-for="experience in experiences">
-                            <p>{{experience.year}}</p>
-                            <ul v-for="item in experience.items" v-bind:href="item.link">
-                                <li v-if="item.link!==''"><a>{{item.text}}</a></li>
+                            <div v-for="item in experience.items">
+                                <li v-if="item.link!==''"><a v-bind:href="item.link">{{item.text}}</a></li>
                                 <li v-else>{{item.text}}</li>
-                            </ul>
-                        </div>
+                            </div>
+                        </ul
                     </div>
                 </div>
             </div>

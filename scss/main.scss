@@ -171,7 +171,7 @@ a{
     flex-grow: 1;
     max-width: 1200px;
 
-    h2{
+    h1{
         font-size: 30px;
         padding: 0;
         margin-bottom: 10px;
@@ -181,8 +181,20 @@ a{
         opacity: 0.8;
         padding: 0;
         margin: 0;
-        word-wrap: break-word;
     }    
+    .draw-view{
+        margin: 30px;
+    }
+    .description{
+        text-align: justify
+    }
+    .experience-year-container{
+        margin-bottom: 20px;
+
+        ul{
+            margin: 0px 0;
+        }
+    }
 }
 
 .project-container{
@@ -190,7 +202,17 @@ a{
     max-width: 1200px;
 
     .project-text-container{
-
+        h1{
+            font-size: 30px;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 20px;
+            opacity: 0.8;
+            padding: 0;
+            margin: 0;
+        }
     }
 
 }
@@ -204,6 +226,10 @@ a{
 
 
 
+.middle{
+    display: flex;
+    justify-content: center;
+}
 
 .row{
     display: flex;
@@ -277,6 +303,10 @@ a{
 
     .about-container{
         padding: 0 20px;
+
+        .draw-view{
+            margin: 0;
+        }
     }
 
 
@@ -285,6 +315,10 @@ a{
         height: auto;
     }
     
+    .row.m-col{
+        display: flex;
+        flex-direction: column;
+    }
 
     .m-hide{
         display: none;

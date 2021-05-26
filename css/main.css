@@ -188,7 +188,7 @@ a {
   max-width: 1200px;
 }
 
-.about-container h2 {
+.about-container h1 {
   font-size: 30px;
   padding: 0;
   margin-bottom: 10px;
@@ -199,7 +199,22 @@ a {
   opacity: 0.8;
   padding: 0;
   margin: 0;
-  word-wrap: break-word;
+}
+
+.about-container .draw-view {
+  margin: 30px;
+}
+
+.about-container .description {
+  text-align: justify;
+}
+
+.about-container .experience-year-container {
+  margin-bottom: 20px;
+}
+
+.about-container .experience-year-container ul {
+  margin: 0px 0;
 }
 
 .project-container {
@@ -209,9 +224,31 @@ a {
   max-width: 1200px;
 }
 
+.project-container .project-text-container h1 {
+  font-size: 30px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.project-container .project-text-container p {
+  font-size: 20px;
+  opacity: 0.8;
+  padding: 0;
+  margin: 0;
+}
+
 .video-container {
   width: 1200px;
   height: 675px;
+}
+
+.middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .row {
@@ -281,9 +318,21 @@ a {
   .about-container {
     padding: 0 20px;
   }
+  .about-container .draw-view {
+    margin: 0;
+  }
   .video-container {
     width: 100%;
     height: auto;
+  }
+  .row.m-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .m-hide {
     display: none;
