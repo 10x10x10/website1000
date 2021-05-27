@@ -23,7 +23,7 @@ Vue.component('project-view-container', {
             <img v-bind:src="project.hover" class="hover"/>
             <h3 class="title">{{project.title}}</h3>
         </a>
-        <div v-if="getProjects.length===0">沒有內容</div>
+        <div v-if="getProjects.length===0" class="empty-list-message">沒有內容</div>
     </div>
     `,
     data: function () { return projectViewData; },
@@ -94,7 +94,9 @@ Vue.component('header-bar', {
     template: `
     <div class="header">
         <div class="title-conatainer">
-            <h1 class="title">{{getTitle}}</h1>
+            <a v-bind:href="getHome">
+                <h1 class="title">{{title}}</h1>
+            </a>
         </div>
         <div class="flex-space"></div>
         <div class="header-link-container">
@@ -116,10 +118,25 @@ Vue.component('header-bar', {
                 return n;
             });
         },
-        getTitle: function(){
-            return this.title;
+        getHome: function(){
+            return this.root + "index.html";
         },
     }
+});
+
+
+Vue.component('project', {
+    props: {},
+    template: `
+    <div>
+        <header-bar root="../"></header-bar>
+        <div class="container" >
+            <div class="project-container">
+                <slot></slot>
+            </div>
+        </div>
+    </div>
+    `,
 });
 
 

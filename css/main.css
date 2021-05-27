@@ -39,6 +39,8 @@ a {
 }
 
 .container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 80px 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,6 +86,7 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 0 50px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.05);
   height: 80px;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -208,6 +211,12 @@ a {
   opacity: 1;
 }
 
+.porject-view-container .empty-list-message {
+  text-align: center;
+  padding: 100px 0;
+  opacity: 0.5;
+}
+
 .about-container {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -255,6 +264,11 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 80px 0;
+  padding: 0;
+}
+
+.project-container .project-text-container.project-view-title {
+  margin: 80px 0 0 0;
 }
 
 .project-container .project-text-container h1 {
@@ -310,6 +324,23 @@ a {
           flex-direction: row;
 }
 
+.grid-c2 {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (auto)[auto-fit];
+      grid-template-rows: repeat(auto-fit, auto);
+}
+
+.grid-c2 .background-video {
+  margin: 0;
+}
+
 .split-line {
   width: 100%;
   border-bottom: solid 1px rgba(255, 255, 255, 0.3);
@@ -320,7 +351,7 @@ a {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .container {
     width: 100%;
     padding: 100px 0 0;
@@ -377,6 +408,20 @@ a {
   .video-container {
     width: 100%;
     height: calc(100vw/16*9);
+  }
+  .grid-c2 {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-columns: (100%)[1];
+        grid-template-columns: repeat(1, 100%);
+    -ms-grid-rows: (auto)[auto-fit];
+        grid-template-rows: repeat(auto-fit, auto);
+  }
+  .grid-c2 .background-video {
+    margin: 0;
   }
   .row.m-col {
     display: -webkit-box;

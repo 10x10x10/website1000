@@ -1,8 +1,12 @@
 
 export const linkQuery = {
+
     project012_video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1621690189/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_02.mp4",
     project012_video_s_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1621690726/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_S_01.mp4",
     project012_video_main: "https://player.vimeo.com/video/527284650?app_id=122963&amp;referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
+
+    project013_video_main: "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F554866857%3Fapp_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F554866857&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1146738428_1280&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=vimeo",
+
 }
 
 
@@ -12,6 +16,13 @@ export const projectViewData = {
         {
             title: "Gogoro VIVA MIX 新車發表會",
             link: "projects/project012.html",
+            cover: "src/003_png_cover.png",
+            hover: "src/003_gif_cover.gif",
+            type: "default",
+        },
+        {
+            title: "ROG Phone 5 Launch Event Countdown Video",
+            link: "projects/project013.html",
             cover: "src/003_png_cover.png",
             hover: "src/003_gif_cover.gif",
             type: "default",
