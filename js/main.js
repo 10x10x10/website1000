@@ -1,4 +1,5 @@
 import {
+    linkQuery,
     projectViewData,
     aboutData,
     headerData,
@@ -10,7 +11,10 @@ import {
 
 Vue.component('project-view-container', {
     props: {
-        projectType: String,
+        projectType: {
+            type: String,
+            default: "default",
+        },
     },
     template: `
     <div class="porject-view-container">
@@ -18,16 +22,14 @@ Vue.component('project-view-container', {
             <img v-bind:src="project.cover" class="cover"/>
             <img v-bind:src="project.hover" class="hover"/>
             <h3 class="title">{{project.title}}</h3>
-        </div>
+        </a>
+        <div v-if="getProjects.length===0">沒有內容</div>
     </div>
     `,
     data: function () { return projectViewData; },
     computed: {
         getProjects: function(){
             let type = this.projectType;
-            if(type===undefined || type===""){
-                return this.projects;
-            }
             return this.projects.filter((n)=> n.type===type);
         }
     }
@@ -80,32 +82,93 @@ Vue.component('about-container', {
 
 Vue.component('header-bar', {
     props: { 
-        root: String,
-        subTitle: String,
+        root: {
+            type: String,
+            default: "",
+        },
+        location: {
+            type: String,
+            default: "",
+        },
     },
     template: `
     <div class="header">
         <div class="title-conatainer">
-            <h1 class="title">{{title}} - {{subTitle}}</h1>
+            <h1 class="title">{{getTitle}}</h1>
         </div>
         <div class="flex-space"></div>
         <div class="header-link-container">
-            <a class="header-link" v-for="link in getLinks" v-bind:href="link.link">{{link.title}}</a>
+            <a  class="header-link" 
+                v-for="link in getLinks" 
+                v-bind:class="{ 'header-link-acitve': link.link===location }"
+                v-bind:href="link.link!==location?link.link:''">
+                {{link.title}}
+            </a>
         </div>
     </div>
     `,
     data: function () { return headerData; },
     computed: {
         getLinks: function(){
-            let root = (this.root===undefined) ? "" : this.root;
+            let root = this.root;
             return this.links.map(n=>{
                 n.link = root + n.link;
                 return n;
             });
+        },
+        getTitle: function(){
+            return this.title;
+        },
+    }
+});
+
+
+Vue.component('background-video', {
+    props: { 
+        link: {
+            type: String,
+            default: "",
+        },
+    },
+    template: `
+    <video class="background-video" autoplay="true" loop="true" muted="true" playsinline="" width="100%">
+        <source v-bind:src="getLink" type="video/mp4">
+    </video>
+    `,
+    computed: {
+        getLink: function(){
+            let linkName = this.link;
+            return linkQuery[linkName];
         }
     }
 });
 
+
+Vue.component('embed-video', {
+    props: { 
+        link: {
+            type: String,
+            default: "",
+        },
+    },
+    template: `
+    <div class="video-container">
+        <iframe
+            scrolling="no" 
+            frameborder="0" 
+            v-bind:src="getLink" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen="true">
+        </iframe>
+    </div>
+    `,
+    computed: {
+        getLink: function(){
+            let linkName = this.link;
+            return linkQuery[linkName];
+        }
+    }
+});
 
 
 const app = new Vue({

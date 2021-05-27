@@ -1,61 +1,20 @@
 
+export const linkQuery = {
+    project012_video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1621690189/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_02.mp4",
+    project012_video_s_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1621690726/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_S_01.mp4",
+    project012_video_main: "https://player.vimeo.com/video/527284650?app_id=122963&amp;referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
+}
+
+
+
 export const projectViewData = {
     projects:[
         {
-            title: "2020 台北電影節 Taipei Film Festival | 片頭動畫1",
-            link: "./projects/project01.html",
+            title: "Gogoro VIVA MIX 新車發表會",
+            link: "projects/project012.html",
             cover: "src/003_png_cover.png",
             hover: "src/003_gif_cover.gif",
             type: "default",
-        },
-        {
-            title: "個人作品 | SIMPLEX",
-            link: "./projects/project01.html",
-            cover: "src/simplex_png_cover.png",
-            hover: "src/simplex_gif_cover.gif",
-            type: "default",
-        },
-        {
-            title: "2020 台北電影節 Taipei Film Festival | 片頭動畫",
-            link: "./projects/project01.html",
-            cover: "src/003_png_cover.png",
-            hover: "src/003_gif_cover.gif",
-            type: "default",
-        },
-        {
-            title: "個人作品 | SIMPLEX",
-            link: "./projects/project01.html",
-            cover: "src/simplex_png_cover.png",
-            hover: "src/simplex_gif_cover.gif",
-            type: "default",
-        },
-        {
-            title: "2020 台北電影節 Taipei Film Festival | 片頭動畫",
-            link: "./projects/project01.html",
-            cover: "src/003_png_cover.png",
-            hover: "src/003_gif_cover.gif",
-            type: "default",
-        },
-        {
-            title: "個人作品 | SIMPLEX",
-            link: "./projects/project01.html",
-            cover: "src/simplex_png_cover.png",
-            hover: "src/simplex_gif_cover.gif",
-            type: "default",
-        },
-        {
-            title: "LAB - 2020 台北電影節 Taipei Film Festival | 片頭動畫",
-            link: "./projects/project01.html",
-            cover: "src/003_png_cover.png",
-            hover: "src/003_gif_cover.gif",
-            type: "lab",
-        },
-        {
-            title: "LAB - 個人作品 | SIMPLEX",
-            link: "./projects/project01.html",
-            cover: "src/simplex_png_cover.png",
-            hover: "src/simplex_gif_cover.gif",
-            type: "lab",
         },
     ]
 };

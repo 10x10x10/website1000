@@ -49,6 +49,28 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .header {
@@ -122,7 +144,12 @@ a {
   opacity: 0.4;
 }
 
+.header .header-link-acitve {
+  opacity: 0.5;
+}
+
 .porject-view-container {
+  width: 100%;
   padding: 50px 0;
   display: -ms-grid;
   display: grid;
@@ -224,9 +251,16 @@ a {
   max-width: 1200px;
 }
 
+.project-container .project-text-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 80px 0;
+}
+
 .project-container .project-text-container h1 {
   font-size: 30px;
   padding: 0;
+  margin: 0;
   margin-bottom: 10px;
 }
 
@@ -235,11 +269,26 @@ a {
   opacity: 0.8;
   padding: 0;
   margin: 0;
+  word-wrap: break-word;
+}
+
+.project-container .project-text-container .credit-list p {
+  font-size: 16px;
+}
+
+.project-container .background-video {
+  margin: 20px 0;
 }
 
 .video-container {
+  position: relative;
   width: 1200px;
   height: 675px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .middle {
@@ -280,7 +329,11 @@ a {
     width: 100%;
   }
   .project-container .project-text-container {
+    margin: 40px 0;
     padding: 0 20px;
+  }
+  .project-container .background-video {
+    margin: 10px 0;
   }
   .header {
     padding: 0 10px;
@@ -323,7 +376,7 @@ a {
   }
   .video-container {
     width: 100%;
-    height: auto;
+    height: calc(100vw/16*9);
   }
   .row.m-col {
     display: -webkit-box;
