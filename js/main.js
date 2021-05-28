@@ -20,7 +20,9 @@ Vue.component('project-view-list', {
         <a v-bind:href="project.link" v-for="project in getProjects" class="project-view">
             <img v-bind:src="project.cover" class="cover"/>
             <img v-bind:src="project.hover" class="hover"/>
-            <h3 class="title">{{project.title}}</h3>
+            <div class="title-container">
+                <h3 class="title">{{project.title}}</h3>
+            </div>
         </a>
         <div v-if="getProjects.length===0" class="empty-list-message">沒有內容</div>
     </div>

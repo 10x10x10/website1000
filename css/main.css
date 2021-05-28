@@ -243,14 +243,19 @@ a {
   opacity: 1;
 }
 
-.porject-view-container .project-view .title {
-  color: #ffffff;
+.porject-view-container .project-view .title-container {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
   opacity: 0;
   -webkit-transition-property: opacity;
   transition-property: opacity;
@@ -258,7 +263,14 @@ a {
           transition-duration: 0.5s;
 }
 
-.porject-view-container .project-view:hover .title {
+.porject-view-container .project-view .title-container .title {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.porject-view-container .project-view:hover .title-container {
   opacity: 1;
 }
 
@@ -282,7 +294,7 @@ a {
 }
 
 .about-container p, .about-container li {
-  font-size: 20px;
+  font-size: 18px;
   opacity: 0.8;
   padding: 0;
   margin: 0;
@@ -372,7 +384,7 @@ a {
 }
 
 .project-container .project-text-container p {
-  font-size: 20px;
+  font-size: 18px;
   opacity: 0.8;
   padding: 0;
   margin: 0;
