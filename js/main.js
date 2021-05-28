@@ -44,24 +44,25 @@ Vue.component('about-container', {
                         height="300px" width="300px" style="border-style: none;"></iframe>
             </div> 
             <div>
-                <div>
+                <div class="intro">
                     <h1>{{intro.title}}</h1>
                     <p class="description" v-for="description in intro.descriptions">{{description}}</p>
                 </div>
                 <div class="split-line"/>
-                <div>
+                <div class="contact">
                     <h1>Contact me</h1>
                     <ul>
                         <li v-for="contact in contacts">
+                            <img class="contact-icon" v-bind:src="contact.icon" />
                             <a v-bind:href="contact.link" target="_blank">{{contact.text}}</a>
                         </li>
                     </ul>
                 </div>
                 <div class="split-line"/>
-                <div>
+                <div class="experience">
                     <h1>Experience</h1>
                     <div v-for="experience in experiences" class="experience-year-container">
-                        <p>{{experience.year}}</p>
+                        <h2>{{experience.year}}</h2>
                         <ul>
                             <div v-for="item in experience.items">
                                 <li v-if="item.link!==''"><a v-bind:href="item.link">{{item.text}}</a></li>
@@ -98,17 +99,17 @@ Vue.component('header-bar', {
         <div class="flex-space"></div>
         <div class="header-link-container">
             <a  class="header-link" 
-                v-for="link in getLinks" 
-                v-bind:class="{ 'header-link-acitve': link.link===location }"
-                v-bind:href="link.link!==location?link.link:''">
-                {{link.title}}
+                v-for="item in getItems" 
+                v-bind:class="{ 'header-link-acitve': item.link===location }"
+                v-bind:href="item.link!==location?item.link:''">
+                {{item.title}}
             </a>
         </div>
     </div>
     `,
     data: function () { return headerData; },
     computed: {
-        getLinks: function(){
+        getItems: function(){
             let root = this.root;
             return this.links.map(n=>{
                 n.link = root + n.link;
@@ -122,13 +123,33 @@ Vue.component('header-bar', {
 });
 
 Vue.component('footer-bar', {
-    props: { },
+    props: { 
+        root: {
+            type: String,
+            default: "",
+        },
+    },
     template: `
     <div class="footer">
+        <div class="link-icon-container">
+            <a v-for="item in getItems" v-bind:href="item.link">
+                <img v-bind:src="item.icon" class="icon" />
+            </a>
+        </div>
+        <p>{{description}}</p>
         <p>{{copyright}}</p>
     </div>
     `,
     data: function () { return footerData; },
+    computed: {
+        getItems: function(){
+            let root = this.root;
+            return this.links.map(n=>{
+                n.icon = root + n.icon;
+                return n;
+            });
+        },
+    },
 });
 
 Vue.component('project', {
@@ -141,7 +162,7 @@ Vue.component('project', {
                 <slot></slot>
             </div>
         </div>
-        <footer-bar></footer-bar>
+        <footer-bar root="../"></footer-bar>
     </div>
     `,
 });
@@ -180,8 +201,9 @@ Vue.component('background-video-list', {
             let result = linkName
                 .split(",")
                 .map((n) => n.trim())
-                .filter((n) => n!=="")
-                .map((n) => linkQuery[n]);
+                .filter((n) => n!=="" && n.startsWith("//")===false)
+                .map((n) => linkQuery[n])
+                .filter((n) => n!==undefined);
             
             return result;
         },

@@ -125,14 +125,42 @@ a{
 
 .footer{
     
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 180px;
     padding: 0 50px;
     border-top: solid 1px rgba(#ffffff, 0.05);
 
     p{
+        flex-grow: 0;
+        margin: 0;
+        padding: 5px;
         text-align: center;
         font-size: 12px;
         opacity: 0.5;
+    }
+
+    .link-icon-container{
+        flex-grow: 0;
+
+        display: grid;
+        grid-row: 4;
+        grid-template-columns: repeat(4, auto);
+        gap: 10px;
+
+        .icon{
+            $size: 20px;
+            width: $size;
+            height: $size;
+
+            transition: opacity 0.15s;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
     }
 }
 
@@ -214,25 +242,71 @@ a{
         padding: 0;
         margin-bottom: 10px;
     }
+
     p, li{
         font-size: 20px;
         opacity: 0.8;
         padding: 0;
         margin: 0;
-    }    
+    }
+
     .draw-view{
         margin: 30px;
     }
+
     .description{
         text-align: justify
     }
-    .experience-year-container{
-        margin-bottom: 20px;
 
-        ul{
-            margin: 0px 0;
+    ul{
+        display: grid;
+        gap: 6px;
+
+        padding-left: 20px;
+
+        li{
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
     }
+ 
+    .intro{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact{
+        .contact-icon{
+            $size: 20px;
+            width: $size;
+            height: $size;
+        }
+    }
+
+    .experience{
+        .experience-year-container{
+            margin-bottom: 20px;
+
+            h2{
+                font-size: 22px;
+            }
+
+            ul li::before{
+                content: "";
+                background-color: rgba(#fff, 0.75);
+
+                border-radius: 100%;
+
+                $size: 5px;
+                width: $size;
+                height: $size;
+                margin: (25px - $size)/2;
+            }        
+        }
+    }
+
 }
 
 .project-container{

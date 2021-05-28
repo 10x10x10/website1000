@@ -1,11 +1,35 @@
 
 export const linkQuery = {
-
+    
+    //P012
+    project012_video_main: "https://player.vimeo.com/video/527284650?app_id=122963&amp;referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
     project012_video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1621690189/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_02.mp4",
     project012_video_s_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1621690726/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_S_01.mp4",
-    project012_video_main: "https://player.vimeo.com/video/527284650?app_id=122963&amp;referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
-
+    
+    //P013
     project013_video_main: "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F554866857%3Fapp_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F554866857&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1146738428_1280&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=vimeo",
+    project013_video_01_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_01_S.mp4",
+    project013_video_02_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_02_S.mp4",
+    project013_video_03_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_03_S.mp4",
+    project013_video_04_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_04_S.mp4",
+    project013_video_05_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_05_S.mp4",
+    project013_video_06_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_06_S.mp4",
+    project013_video_07_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_07_S.mp4",
+    project013_video_08_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_08_S.mp4",
+    project013_video_09_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_09_S.mp4",
+    project013_video_10_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_10_S.mp4",
+    project013_video_11_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_11_S.mp4",
+    project013_video_12_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_12_S.mp4",
+    project013_video_13_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_13_S.mp4",
+    project013_video_14_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_14_S.mp4",
+    project013_video_15_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_15_S.mp4",
+    project013_video_16_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_16_S.mp4",
+    project013_video_17_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_17_S.mp4",
+    project013_video_18_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_18_S.mp4",
+    project013_video_19_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_19_S.mp4",
+    project013_video_20_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_20_S.mp4",
+    project013_video_21_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_21_S.mp4",
+    project013_video_22_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_22_S.mp4",
 }
 
 
@@ -15,19 +39,20 @@ export const projectData = {
         {
             title: "Gogoro VIVA MIX 新車發表會",
             link: "projects/project012.html",
-            cover: "src/003_png_cover.png",
-            hover: "src/003_gif_cover.gif",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1621879203/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_Cover_P.png",
+            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1621931245/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_Cover_S.gif",
             type: "default",
         },
         {
             title: "ROG Phone 5 Launch Event Countdown Video",
             link: "projects/project013.html",
-            cover: "src/003_png_cover.png",
-            hover: "src/003_gif_cover.gif",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622219323/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/013_ROG_Cover.jpg",
+            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622054609/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/ROG_Video_Cover.gif",
             type: "default",
         },
     ]
 };
+
 
 
 export const aboutData = {
@@ -41,18 +66,22 @@ export const aboutData = {
     contacts: [
         {
             text: "10x10x10w1000@gmail.com",
+            icon: "src/icons/social-30-white.svg",
             link: "mailto:10x10x10w1000@gmail.com",
         },
         {
             text: "Instagram",
+            icon: "src/icons/social-07-white.svg",
             link: "https://www.instagram.com/10x10x10_1000/",
         },
         {
             text: "Facebook",
+            icon: "src/icons/social-03-white.svg",
             link: "https://www.facebook.com/1000cheng",
         },
         {
             text: "Behance",
+            icon: "src/icons/social-14-white.svg",
             link: "https://www.behance.net/10x10x10_1000",
         },
     ],
@@ -62,11 +91,11 @@ export const aboutData = {
             items: [
                 {
                     text: "Gogoro VIVA MIX 發表會 動態視覺設計",
-                    link: "",
+                    link: "projects/project012.html",
                 },
                 {
                     text: "ROG Phone 5 發表會 動態設計",
-                    link: "",
+                    link: "projects/project013.html",
                 },
             ]
         },
@@ -83,7 +112,7 @@ export const aboutData = {
                 },
                 {
                     text: "台北電影節 Taipei Film Festival 片頭",
-                    link: "/taipei-film-festival",
+                    link: "",
                 },
                 {
                     text: "PONY5IBE -【They Said】ft 陳嫻靜",
@@ -108,7 +137,7 @@ export const aboutData = {
             items: [
                 {
                     text: "《 TGIF台北設計電波 》國際設計交流年會 宣傳片",
-                    link: "/tgif",
+                    link: "",
                 },
                 {
                     text: "2019 實踐大學設計學院國際設計學術與創作研討會 宣傳片",
@@ -118,6 +147,7 @@ export const aboutData = {
         },
     ],
 }
+
 
 
 export const headerData = {
@@ -139,7 +169,27 @@ export const headerData = {
 };
 
 
+
 export const footerData = {
+    links:[
+        {
+            icon: "src/icons/social-14-white.svg",
+            link: "https://www.behance.net/10x10x10_1000",
+        },
+        {
+            icon: "src/icons/social-07-white.svg",
+            link: "https://www.instagram.com/10x10x10_1000",
+        },
+        {
+            icon: "src/icons/social-17-white.svg",
+            link: "https://vimeo.com/user74287354",
+        },
+        {
+            icon: "src/icons/social-30-white.svg",
+            link: "mailto:10x10x10w1000@gmail.com",
+        },
+    ],
+    description: "Plz feel free to contact me",
     copyright: "Copyright © 2019-2021 1000 Cheng",
 };
 
