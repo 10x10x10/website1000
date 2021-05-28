@@ -24,15 +24,17 @@
 
     <body>
 
-        <div id="app">
+        <div id="app" v-cloak>
 
             <header-bar location="index.html"></header-bar>
             
             <div class="container" >
 
-                <project-view-container project-type="default"></project-view-container>
+                <project-view-list project-type="default"></project-view-list>
 
             </div>
+
+            <footer-bar></footer-bar>
             
         </div>
 

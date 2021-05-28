@@ -1,15 +1,14 @@
 import {
     linkQuery,
-    projectViewData,
+    projectData,
     aboutData,
     headerData,
+    footerData,
 } from "../data/data.js";
 
 
 
-
-
-Vue.component('project-view-container', {
+Vue.component('project-view-list', {
     props: {
         projectType: {
             type: String,
@@ -26,7 +25,7 @@ Vue.component('project-view-container', {
         <div v-if="getProjects.length===0" class="empty-list-message">沒有內容</div>
     </div>
     `,
-    data: function () { return projectViewData; },
+    data: function () { return projectData; },
     computed: {
         getProjects: function(){
             let type = this.projectType;
@@ -34,7 +33,6 @@ Vue.component('project-view-container', {
         }
     }
 });
-
 
 Vue.component('about-container', {
     props: { },
@@ -78,7 +76,6 @@ Vue.component('about-container', {
     `,
     data: function () { return aboutData; },
 });
-
 
 Vue.component('header-bar', {
     props: { 
@@ -124,42 +121,79 @@ Vue.component('header-bar', {
     }
 });
 
+Vue.component('footer-bar', {
+    props: { },
+    template: `
+    <div class="footer">
+        <p>{{copyright}}</p>
+    </div>
+    `,
+    data: function () { return footerData; },
+});
 
 Vue.component('project', {
     props: {},
     template: `
-    <div>
+    <div v-cloak>
         <header-bar root="../"></header-bar>
         <div class="container" >
             <div class="project-container">
                 <slot></slot>
             </div>
         </div>
+        <footer-bar></footer-bar>
     </div>
     `,
 });
 
-
-Vue.component('background-video', {
+Vue.component('background-video-list', {
     props: { 
-        link: {
+        links: {
+            type: String,
+            default: "",
+        },
+        col:{
+            type: Number,
+            default: 1,
+        },
+        title:{
             type: String,
             default: "",
         },
     },
     template: `
-    <video class="background-video" autoplay="true" loop="true" muted="true" playsinline="" width="100%">
-        <source v-bind:src="getLink" type="video/mp4">
-    </video>
+    <div>
+        <div v-if="title!==''" class="project-text-container project-view-title">
+            <h1>{{title}}</h1>
+        </div>
+        <div v-bind:class="getClass" class="grid-c">
+            <video v-for="link in getLinks" class="background-video" autoplay="true" loop="true" muted="true" playsinline="" width="100%">
+                <source v-bind:src="link" type="video/mp4">
+            </video>
+        </div>
+    </div>
     `,
     computed: {
-        getLink: function(){
-            let linkName = this.link;
-            return linkQuery[linkName];
+        getLinks: function(){
+            let linkName = this.links;
+
+            let result = linkName
+                .split(",")
+                .map((n) => n.trim())
+                .filter((n) => n!=="")
+                .map((n) => linkQuery[n]);
+            
+            return result;
+        },
+        getClass: function(){
+            let colClassName = "grid-c" + this.col;
+            let result = {
+                [colClassName]: true,
+            };
+            return result;
         }
     }
 });
-
 
 Vue.component('embed-video', {
     props: { 
@@ -183,6 +217,43 @@ Vue.component('embed-video', {
         getLink: function(){
             let linkName = this.link;
             return linkQuery[linkName];
+        }
+    }
+});
+
+Vue.component('credits', {
+    props: { 
+        foldable: {
+            type: Boolean,
+        },
+    },
+    template: `
+    <div class="project-text-container" v-on:click="onToggle()">
+        <h1>Credits</h1>
+        <div class="credit-list" v-bind:class="getFoldClass()">                        
+            <slot></slot>
+        </div>
+        <p v-if="foldable" v-show="isFold" class="credit-more">...More</p>
+    </div>
+    `,
+    data: function(){
+        return {
+            isFold: true,
+        };
+    },
+    methods:{
+        onToggle: function(){
+            this.isFold = !this.isFold;
+        },
+        getFoldClass: function(){
+            if(this.foldable===false){
+                return {};
+            }
+
+            return {
+                fold: this.isFold,
+                unfold: !this.isFold,
+            };
         }
     }
 });

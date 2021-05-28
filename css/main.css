@@ -45,9 +45,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -148,6 +145,18 @@ a {
 }
 
 .header .header-link-acitve {
+  opacity: 0.5;
+}
+
+.footer {
+  height: 100px;
+  padding: 0 50px;
+  border-top: solid 1px rgba(255, 255, 255, 0.05);
+}
+
+.footer p {
+  text-align: center;
+  font-size: 12px;
   opacity: 0.5;
 }
 
@@ -286,8 +295,30 @@ a {
   word-wrap: break-word;
 }
 
+.project-container .project-text-container .credit-list {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-container .project-text-container .credit-list.fold {
+  max-height: 200px;
+  cursor: pointer;
+}
+
+.project-container .project-text-container .credit-list.unfold {
+  max-height: 1000px;
+  cursor: pointer;
+}
+
 .project-container .project-text-container .credit-list p {
   font-size: 16px;
+}
+
+.project-container .project-text-container .credit-more {
+  padding-top: 10px;
+  font-size: 16px;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .project-container .background-video {
@@ -324,20 +355,50 @@ a {
           flex-direction: row;
 }
 
-.grid-c2 {
+.grid-c {
   width: 100%;
   display: -ms-grid;
   display: grid;
   gap: 20px;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
+}
+
+.grid-c.grid-c1 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-columns: (auto)[1];
+      grid-template-columns: repeat(1, auto);
   -ms-grid-rows: (auto)[auto-fit];
       grid-template-rows: repeat(auto-fit, auto);
 }
 
-.grid-c2 .background-video {
+.grid-c.grid-c2 {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (auto)[auto-fit];
+      grid-template-rows: repeat(auto-fit, auto);
+}
+
+.grid-c.grid-c3 {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -ms-grid-rows: (auto)[auto-fit];
+      grid-template-rows: repeat(auto-fit, auto);
+}
+
+.grid-c.grid-c4 {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -ms-grid-rows: (auto)[auto-fit];
+      grid-template-rows: repeat(auto-fit, auto);
+}
+
+.grid-c .background-video {
   margin: 0;
 }
 
@@ -348,6 +409,10 @@ a {
 }
 
 .hide {
+  display: none;
+}
+
+[v-cloak] {
   display: none;
 }
 
@@ -409,18 +474,21 @@ a {
     width: 100%;
     height: calc(100vw/16*9);
   }
-  .grid-c2 {
+  .grid-c {
     width: 100%;
     display: -ms-grid;
     display: grid;
+    gap: 10px;
+  }
+  .grid-c.grid-c1, .grid-c.grid-c2, .grid-c.grid-c3, .grid-c.grid-c4 {
     -ms-grid-row: 1;
     grid-row: 1;
-    -ms-grid-columns: (100%)[1];
-        grid-template-columns: repeat(1, 100%);
+    -ms-grid-columns: (auto)[1];
+        grid-template-columns: repeat(1, auto);
     -ms-grid-rows: (auto)[auto-fit];
         grid-template-rows: repeat(auto-fit, auto);
   }
-  .grid-c2 .background-video {
+  .grid-c .background-video {
     margin: 0;
   }
   .row.m-col {

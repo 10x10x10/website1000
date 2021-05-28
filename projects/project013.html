@@ -22,7 +22,7 @@
 
     <body>
 
-        <div id="app">
+        <div id="app" v-cloak>
 
             <project>
 
@@ -35,32 +35,21 @@
                         VIVA MIX 是近期 Gogoro 平衡市場需求、使用者體驗與品牌價值的巔峰之作。而 Gogoro 邀請團隊一起共同策劃此車款登場秀。</p>
                 </div>
             
-                <div class="project-text-container project-view-title">
-                    <h1>Motion</h1>
-                </div>
+                <background-video-list col="3" 
+                    title="Motion" 
+                    links="
+                        project012_video_02,
+                        project012_video_02,
+                        project012_video_02,
+                        project012_video_02,
+                    ">
+                </background-video-list>
 
-                <div class="grid-c2">
-                    <background-video link="project012_video_02"></background-video>
-                    <background-video link="project012_video_02"></background-video>
-                    <background-video link="project012_video_02"></background-video>
-                    <background-video link="project012_video_02"></background-video>
-                    <background-video link="project012_video_02"></background-video>
-                    <background-video link="project012_video_02"></background-video>
-                    <background-video link="project012_video_02"></background-video>
-                    <background-video link="project012_video_02"></background-video>
-                    <background-video link="project012_video_02"></background-video>
-                    <background-video link="project012_video_02"></background-video>
-                    <background-video link="project012_video_02"></background-video>
-                </div>
-
-                <div class="project-text-container">
-                    <h1>Credits</h1>
-                    <div class="credit-list">                        
-                        <p>Client : ASUS Republic of Gamers</p>
-                        <p>Production : MoonShine Animation</p>
-                        <p>Motion Design : 1000 Cheng, Li Feng Cheng</p>
-                    </div>    
-                </div>
+                <credits>                        
+                    <p>Client : ASUS Republic of Gamers</p>
+                    <p>Production : MoonShine Animation</p>
+                    <p>Motion Design : 1000 Cheng, Li Feng Cheng</p>
+                </credits> 
                 
             </project>
 
