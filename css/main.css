@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Noto+Sans+TC&display=swap");
 body, html {
   background-color: #020202;
   padding: 0;
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Inter', 'Noto Sans TC', sans-serif;
 }
 
 #app {
@@ -144,6 +144,10 @@ a {
   opacity: 0.4;
 }
 
+.header .header-link {
+  font-weight: 400;
+}
+
 .header .header-link-acitve {
   opacity: 0.5;
 }
@@ -168,6 +172,7 @@ a {
 }
 
 .footer p {
+  font-weight: 200;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -202,7 +207,7 @@ a {
   opacity: 0.5;
 }
 
-.porject-view-container {
+.project-view-container {
   width: 100%;
   padding: 50px 0;
   display: -ms-grid;
@@ -215,7 +220,7 @@ a {
       grid-template-rows: repeat(auto-fit, auto);
 }
 
-.porject-view-container .project-view {
+.project-view-container .project-view {
   position: relative;
   width: 100%;
   height: auto;
@@ -224,12 +229,12 @@ a {
   cursor: pointer;
 }
 
-.porject-view-container .project-view .cover {
+.project-view-container .project-view .cover {
   width: 100%;
   background-color: #020202;
 }
 
-.porject-view-container .project-view .hover {
+.project-view-container .project-view .hover {
   position: absolute;
   left: 0;
   top: 0;
@@ -239,11 +244,11 @@ a {
   transition: opacity 0.5s;
 }
 
-.porject-view-container .project-view .hover:hover {
+.project-view-container .project-view .hover:hover {
   opacity: 1;
 }
 
-.porject-view-container .project-view .title-container {
+.project-view-container .project-view .title-container {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,7 +260,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   -webkit-transition-property: opacity;
   transition-property: opacity;
@@ -263,18 +268,18 @@ a {
           transition-duration: 0.5s;
 }
 
-.porject-view-container .project-view .title-container .title {
+.project-view-container .project-view .title-container .title {
   color: #ffffff;
   font-size: 20px;
   margin: 0;
   padding: 10px 20px;
 }
 
-.porject-view-container .project-view:hover .title-container {
+.project-view-container .project-view:hover .title-container {
   opacity: 1;
 }
 
-.porject-view-container .empty-list-message {
+.project-view-container .empty-list-message {
   text-align: center;
   padding: 100px 0;
   opacity: 0.5;
@@ -298,6 +303,7 @@ a {
   opacity: 0.8;
   padding: 0;
   margin: 0;
+  line-height: 26px;
 }
 
 .about-container .draw-view {
@@ -312,7 +318,7 @@ a {
   display: -ms-grid;
   display: grid;
   gap: 6px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .about-container ul li {
@@ -322,7 +328,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
 }
 
 .about-container .intro {
@@ -339,6 +344,7 @@ a {
 .about-container .contact .contact-icon {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
 
 .about-container .experience .experience-year-container {
@@ -389,6 +395,7 @@ a {
   padding: 0;
   margin: 0;
   word-wrap: break-word;
+  line-height: 26px;
 }
 
 .project-container .project-text-container .credit-list {
@@ -401,6 +408,18 @@ a {
   cursor: pointer;
 }
 
+.project-container .project-text-container .credit-list.fold::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
+}
+
 .project-container .project-text-container .credit-list.unfold {
   max-height: 1000px;
   cursor: pointer;
@@ -408,10 +427,11 @@ a {
 
 .project-container .project-text-container .credit-list p {
   font-size: 16px;
+  line-height: 24px;
 }
 
 .project-container .project-text-container .credit-more {
-  padding-top: 10px;
+  padding: 0;
   font-size: 16px;
   opacity: 0.5;
   cursor: pointer;
@@ -512,6 +532,10 @@ a {
   display: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 1200px) {
   .container {
     width: 100%;
@@ -543,7 +567,7 @@ a {
   .header .flex-space {
     display: none;
   }
-  .porject-view-container {
+  .project-view-container {
     padding: 0;
     display: -ms-grid;
     display: grid;
@@ -554,10 +578,10 @@ a {
     -ms-grid-rows: (auto)[auto-fit];
         grid-template-rows: repeat(auto-fit, auto);
   }
-  .porject-view-container .project-view .hover {
+  .project-view-container .project-view .hover {
     opacity: 1;
   }
-  .porject-view-container .project-view .title {
+  .project-view-container .project-view .title-container {
     opacity: 1;
   }
   .about-container {

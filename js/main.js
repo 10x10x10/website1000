@@ -16,7 +16,7 @@ Vue.component('project-view-list', {
         },
     },
     template: `
-    <div class="porject-view-container">
+    <div class="project-view-container">
         <a v-bind:href="project.link" v-for="project in getProjects" class="project-view">
             <img v-bind:src="project.cover" class="cover"/>
             <img v-bind:src="project.hover" class="hover"/>
@@ -24,7 +24,9 @@ Vue.component('project-view-list', {
                 <h3 class="title">{{project.title}}</h3>
             </div>
         </a>
-        <div v-if="getProjects.length===0" class="empty-list-message">沒有內容</div>
+        <div v-if="getProjects.length===0" class="empty-list-message">
+            List is empty
+        </div>
     </div>
     `,
     data: function () { return projectData; },
