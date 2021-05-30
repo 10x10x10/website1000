@@ -187,7 +187,7 @@ Vue.component('media-list', {
         },
     },
     template: `
-    <div>
+    <div class="media-list-container">
         <div v-if="title!==''" class="project-text-container project-view-title">
             <h1>{{title}}</h1>
         </div>

@@ -379,7 +379,7 @@ a {
 }
 
 .project-container .project-text-container.project-view-title {
-  margin: 80px 0 0 0;
+  margin: 80px 0 20px 0;
 }
 
 .project-container .project-text-container h1 {
@@ -439,6 +439,10 @@ a {
 
 .project-container .background-video {
   margin: 20px 0;
+}
+
+.project-container .media-list-container {
+  margin-bottom: 20px;
 }
 
 .video-container {

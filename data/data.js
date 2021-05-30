@@ -1,6 +1,33 @@
 
 export const linkQuery = {
     
+    //P004
+    project004_video_main: "https://www.youtube.com/embed/ZcgNckX1k5U?wmode=opaque&widget_referrer=https%3A%2F%2Fwww.1000cheng.cc%2F&enablejsapi=1&origin=https%3A%2F%2Fcdn.embedly.com&widgetid=1",
+    project004_video_01_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a81dabd9832a5c019cb95_005_pip_01.gif",
+    project004_video_02_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a825e913ca4f22288d57d_005_pip_02.gif",
+    project004_video_03_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a7f5eb95d6e1e9679b739_004_partA.gif",
+    project004_video_04_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a7f397fcd50408f1897d6_004_partB.gif",
+    project004_video_05_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a7f5c1317ec1d13314f4f_004_trans_c01.gif",
+    project004_video_06_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a7f5c6d2d718a7076ca7f_004_trans_c02.gif",
+    project004_video_07_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a7f5e408a26b780c3283d_004_trans_c03.gif",
+    project004_video_08_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a7f5db1764f6d73a46993_004_trans_c04.gif",
+    project004_video_09_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a7f5ed28669010b0f17e6_004_trans_c05.gif",
+    project004_video_10_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a7f5c2032823e34f0d1fd_004_trans_c07.gif",
+
+    //P006
+    project006_video_main: "https://player.vimeo.com/video/488057651?app_id=122963&referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
+    project006_video_01_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600957d5d807c06be6c97662_006_DigiWave__02.jpg",
+    project006_video_02_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600957d6221d23a06740388c_006_DigiWave__03.jpg",
+    project006_video_03_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600957d6d9c73036e34d7245_006_DigiWave__04.jpg",
+    project006_video_04_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600957d6ac4362cdf4ea5162_006_DigiWave__01.jpg",
+    project006_video_05_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a8d11415ab72f18fe8650_006_Digiwave_gif_07.gif",
+    project006_video_06_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a8d122a26b378a5e0e874_006_Digiwave_gif_01.gif",
+    project006_video_07_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a8d117fcd50462b18bb0c_006_Digiwave_gif_02.gif",
+    project006_video_08_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a8d1165fc09250968b1f5_006_Digiwave_gif_03.gif",
+    project006_video_09_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a8d11562ce5880aab19a4_006_Digiwave_gif_04.gif",
+    project006_video_10_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a8d11408a26278ac351b8_006_Digiwave_gif_05.gif",
+    project006_video_11_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a8d106d2d71758b76fa20_006_Digiwave_gif_06.gif",
+
     //P012
     project012_video_main: "https://player.vimeo.com/video/527284650?app_id=122963&amp;referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
     project012_video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1621690189/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_02.mp4",
@@ -46,6 +73,20 @@ export const projectData = {
         {
             title: "ROG Phone 5 Launch Event Countdown Video",
             link: "projects/project013.html",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622219323/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/013_ROG_Cover.jpg",
+            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622054609/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/ROG_Video_Cover.gif",
+            type: "default",
+        },
+        {
+            title: "Pony5ibe - They said ft.陳嫺靜 【Animated Music Video】",
+            link: "projects/project004.html",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622219323/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/013_ROG_Cover.jpg",
+            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622054609/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/ROG_Video_Cover.gif",
+            type: "default",
+        },
+        {
+            title: "DigiWave 2020《遙視 Clairvoyance》 ",
+            link: "projects/project006.html",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622219323/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/013_ROG_Cover.jpg",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622054609/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/ROG_Video_Cover.gif",
             type: "default",

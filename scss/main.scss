@@ -337,7 +337,7 @@ a{
         padding: 0;
 
         &.project-view-title{
-            margin: 80px 0 0 0;
+            margin: 80px 0 20px 0;
         }
 
         h1{
@@ -395,6 +395,10 @@ a{
 
     .background-video{
         margin: 20px 0;
+    }
+
+    .media-list-container{
+        margin-bottom: 20px;;
     }
 }
 
