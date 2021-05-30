@@ -171,7 +171,7 @@ Vue.component('project', {
     `,
 });
 
-Vue.component('background-video-list', {
+Vue.component('media-list', {
     props: { 
         links: {
             type: String,
@@ -192,9 +192,12 @@ Vue.component('background-video-list', {
             <h1>{{title}}</h1>
         </div>
         <div v-bind:class="getClass" class="grid-c">
-            <video v-for="link in getLinks" class="background-video" autoplay="true" loop="true" muted="true" playsinline="" width="100%">
-                <source v-bind:src="link" type="video/mp4">
-            </video>
+            <div v-for="link in getLinks" class="background-video">
+                <video v-if="isVideo(link)" loading="lazy" autoplay="true" loop="true" muted="true" playsinline="" width="100%">
+                    <source v-bind:src="link" type="video/mp4">
+                </video>
+                <img v-if="isImg(link)" v-bind:src="link" loading="lazy" width="100%" />
+            </div>
         </div>
     </div>
     `,
@@ -218,6 +221,18 @@ Vue.component('background-video-list', {
             };
             return result;
         }
+    },
+    methods: {
+        isImg: function(link){
+            const compareName = [".gif", ".png", ".jpg", ".jpeg", ];
+            let lowerLink = link.toLowerCase();
+            return compareName.some((n) => lowerLink.endsWith(n));
+        },
+        isVideo: function(link){
+            const compareName = [".mp4", ];
+            let lowerLink = link.toLowerCase();
+            return compareName.some((n) => lowerLink.endsWith(n));
+        },
     }
 });
 
@@ -234,6 +249,7 @@ Vue.component('embed-video', {
             scrolling="no" 
             frameborder="0" 
             v-bind:src="getLink" 
+            loading="lazy" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen="true">
         </iframe>
