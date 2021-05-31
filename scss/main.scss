@@ -214,7 +214,7 @@ a{
             align-items: center;
 
             height: 80px;
-            bottom: 0;
+            bottom: 1px;
             left: 0;
             right: 0;
 
@@ -247,6 +247,8 @@ a{
     .related-project-container &{
         padding-top: 0;
         gap: 20px;
+        //padding: 20px;
+        //background-color: rgba(#fff, 0.02);
     }
 }
 

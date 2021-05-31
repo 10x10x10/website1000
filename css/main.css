@@ -254,7 +254,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
-  bottom: 0;
+  bottom: 1px;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
