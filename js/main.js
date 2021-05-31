@@ -31,7 +31,7 @@ Vue.component('project-view-list', {
         },
     },
     template: `
-    <div class="project-view-container">
+    <div class="project-view-container grid-c grid-c3 m-grid-c m-grid-c1">
         <a v-bind:href="root + project.link" v-for="project in getProjects" class="project-view">
             <img v-bind:src="project.cover" class="cover"/>
             <img v-bind:src="project.hover" class="hover"/>

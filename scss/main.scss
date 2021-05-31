@@ -173,11 +173,6 @@ a{
 
     width: 100%;
     padding: 50px 0;
-    display: grid;
-
-    grid-row: 3;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(auto-fit, auto);
 
     .project-view{
 
@@ -446,25 +441,12 @@ a{
     display: grid;
     gap: $media-list-gap;
 
-    &.grid-c1{    
-        grid-row: 1;
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(auto-fit, auto);
-    }
-    &.grid-c2{    
-        grid-row: 2;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(auto-fit, auto);
-    }
-    &.grid-c3{    
-        grid-row: 3;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(auto-fit, auto);
-    }
-    &.grid-c4{    
-        grid-row: 3;
-        grid-template-columns: repeat(4, auto);
-        grid-template-rows: repeat(auto-fit, auto);
+    @for $i from 1 to 9 {
+        &.grid-c#{$i}{    
+            grid-row: $i;
+            grid-template-columns: repeat($i, auto);
+            grid-template-rows: repeat(auto-fit, auto);
+        }
     }
 
     .background-video{
@@ -577,35 +559,13 @@ h1, h2, h3, h4, h5, h6{
         .background-video{
             margin: 0;
         }
-
-        &.grid-c1, 
-        &.grid-c2, 
-        &.grid-c3, 
-        &.grid-c4 {        
-            grid-row: 1;
-            grid-template-columns: repeat(1, auto);
-            grid-template-rows: repeat(auto-fit, auto);
-        }
-            
-        &.m-grid-c1{    
-            grid-row: 1;
-            grid-template-columns: repeat(1, auto);
-            grid-template-rows: repeat(auto-fit, auto);
-        }
-        &.m-grid-c2{    
-            grid-row: 2;
-            grid-template-columns: repeat(2, auto);
-            grid-template-rows: repeat(auto-fit, auto);
-        }
-        &.m-grid-c3{    
-            grid-row: 3;
-            grid-template-columns: repeat(3, auto);
-            grid-template-rows: repeat(auto-fit, auto);
-        }
-        &.m-grid-c4{    
-            grid-row: 3;
-            grid-template-columns: repeat(4, auto);
-            grid-template-rows: repeat(auto-fit, auto);
+        
+        @for $i from 1 to 9 {
+            &.m-grid-c#{$i}{    
+                grid-row: $i;
+                grid-template-columns: repeat($i, auto);
+                grid-template-rows: repeat(auto-fit, auto);
+            }
         }
 
     }
