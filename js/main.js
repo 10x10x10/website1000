@@ -193,14 +193,19 @@ Vue.component('footer-bar', {
 });
 
 Vue.component('project', {
-    props: {},
+    props: {
+        showRelatedProject: {
+            type: Boolean,
+            default: true,
+        },
+    },
     template: `
     <div v-cloak>
         <header-bar root="../"></header-bar>
         <div class="container" >
             <div class="project-container">
                 <slot></slot>
-                <div class="related-project-container">
+                <div v-if="showRelatedProject===true" class="related-project-container">
                     <div class="project-text-container project-view-title">
                         <h2>Related Projects</h2>
                     </div>
