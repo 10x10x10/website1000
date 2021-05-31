@@ -1,6 +1,21 @@
 
 export const linkQuery = {
     
+    lab:{
+        lab01: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb40c828038fd1f50f1682e_20_lab_004_v2.gif",
+        lab02: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb40f9ef3635264e2b1ff9b_20_lab_002_v2.gif",
+        lab03: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb39d678cf2c6983311918b_20_lab_005.gif",
+        lab04: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb409f5003377e22fc5b1f0_20_lab_001_v2.gif",
+        lab05: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb410ba00337706a1c5dc6e_18_lab_006_v2.gif",
+        lab06: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb40f28f59523dda4e483f6_20_lab_006_v2.gif",
+        lab07: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb40deff59523688ee4781d_19_lab_002_v2.gif",
+        lab08: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb411ff70be2a6314ac6f61_19_lab_006_v2.gif",
+        lab09: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb4124404ebab6a7e0eafb3_19_lab_008_v2.gif",
+        lab10: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb40e5670be2a2cbaac5519_19_lab_013_v2.gif",
+        lab11: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb40d0088ad6f22d3a9d48b_19_lab_011_v2.gif",
+        lab12: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb412a3e6e68d62d111c85c_20_lab_008_v2.gif",
+    },
+
     project004: {
         video_main: "https://www.youtube.com/embed/ZcgNckX1k5U?wmode=opaque&widget_referrer=https%3A%2F%2Fwww.1000cheng.cc%2F&enablejsapi=1&origin=https%3A%2F%2Fcdn.embedly.com&widgetid=1",
         video_01_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a81dabd9832a5c019cb95_005_pip_01.gif",
