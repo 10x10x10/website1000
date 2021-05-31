@@ -6,7 +6,14 @@ import {
     footerData,
 } from "../data/data.js";
 
-
+const queryLink = function(link){
+    let linkBlocks = link.split(".");
+    let pointer = linkQuery;
+    for(let i=0;i<linkBlocks.length;i++){
+        pointer = pointer[linkBlocks[i]];
+    }
+    return pointer;
+};
 
 Vue.component('project-view-list', {
     props: {
@@ -181,6 +188,10 @@ Vue.component('media-list', {
             type: Number,
             default: 1,
         },
+        mCol:{
+            type: Number,
+            default: 1,
+        },
         title:{
             type: String,
             default: "",
@@ -189,7 +200,7 @@ Vue.component('media-list', {
     template: `
     <div class="media-list-container">
         <div v-if="title!==''" class="project-text-container project-view-title">
-            <h1>{{title}}</h1>
+            <h2>{{title}}</h2>
         </div>
         <div v-bind:class="getClass" class="grid-c">
             <div v-for="link in getLinks" class="background-video">
@@ -209,15 +220,17 @@ Vue.component('media-list', {
                 .split(",")
                 .map((n) => n.trim())
                 .filter((n) => n!=="" && n.startsWith("//")===false)
-                .map((n) => linkQuery[n])
+                .map((n) => queryLink(n))
                 .filter((n) => n!==undefined);
             
             return result;
         },
         getClass: function(){
             let colClassName = "grid-c" + this.col;
+            let mColClassName = "m-grid-c" + this.mCol;
             let result = {
                 [colClassName]: true,
+                [mColClassName]: true,
             };
             return result;
         }
@@ -258,7 +271,7 @@ Vue.component('embed-video', {
     computed: {
         getLink: function(){
             let linkName = this.link;
-            return linkQuery[linkName];
+            return queryLink(linkName);
         }
     }
 });
@@ -271,7 +284,7 @@ Vue.component('credits', {
     },
     template: `
     <div class="project-text-container" v-on:click="onToggle()">
-        <h1>Credits</h1>
+        <h2>Credits</h2>
         <div class="credit-list" v-bind:class="getFoldClass()">                        
             <slot></slot>
         </div>

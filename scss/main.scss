@@ -2,6 +2,7 @@
 
 $background-color: #020202;
 $header-height: 80px;
+$media-list-gap: 20px;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Noto+Sans+TC&display=swap');
 
@@ -398,7 +399,7 @@ a{
     }
 
     .media-list-container{
-        margin-bottom: 20px;;
+        margin-bottom: $media-list-gap;
     }
 }
 
@@ -433,7 +434,7 @@ a{
         
     width: 100%;
     display: grid;
-    gap: 20px;
+    gap: $media-list-gap;
 
     &.grid-c1{    
         grid-row: 1;
@@ -452,7 +453,7 @@ a{
     }
     &.grid-c4{    
         grid-row: 3;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(4, auto);
         grid-template-rows: repeat(auto-fit, auto);
     }
 
@@ -483,6 +484,7 @@ h1, h2, h3, h4, h5, h6{
 @media only screen and (max-width: 1200px) {
    
     $m-header-height: 100px;
+    $m-media-list-gap: 10px;
 
     .container{
         width: 100%;
@@ -499,6 +501,10 @@ h1, h2, h3, h4, h5, h6{
         
         .background-video{
             margin: 10px 0;
+        }
+
+        .media-list-container{
+            margin-bottom: $m-media-list-gap;
         }
     }
 
@@ -546,8 +552,7 @@ h1, h2, h3, h4, h5, h6{
             margin: 0;
         }
     }
-
-
+    
     .video-container {
         width: 100%;
         height: calc(100vw/16*9);
@@ -557,7 +562,11 @@ h1, h2, h3, h4, h5, h6{
 
         width: 100%;
         display: grid;
-        gap: 10px;
+        gap: $m-media-list-gap;
+
+        .background-video{
+            margin: 0;
+        }
 
         &.grid-c1, 
         &.grid-c2, 
@@ -567,10 +576,28 @@ h1, h2, h3, h4, h5, h6{
             grid-template-columns: repeat(1, auto);
             grid-template-rows: repeat(auto-fit, auto);
         }
-
-        .background-video{
-            margin: 0;
+            
+        &.m-grid-c1{    
+            grid-row: 1;
+            grid-template-columns: repeat(1, auto);
+            grid-template-rows: repeat(auto-fit, auto);
         }
+        &.m-grid-c2{    
+            grid-row: 2;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(auto-fit, auto);
+        }
+        &.m-grid-c3{    
+            grid-row: 3;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(auto-fit, auto);
+        }
+        &.m-grid-c4{    
+            grid-row: 3;
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: repeat(auto-fit, auto);
+        }
+
     }
 
     .row.m-col {
