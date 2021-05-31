@@ -69,28 +69,28 @@ export const projectData = {
     projects:[
         {
             title: "Gogoro VIVA MIX 新車發表會",
-            link: "projects/project012.html",
+            link: "project012.html",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1621879203/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_Cover_P.png",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1621931245/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_Cover_S.gif",
             type: "default",
         },
         {
             title: "ROG Phone 5 Launch Event Countdown Video",
-            link: "projects/project013.html",
+            link: "project013.html",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622219323/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/013_ROG_Cover.jpg",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622054609/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/ROG_Video_Cover.gif",
             type: "default",
         },
         {
             title: "Pony5ibe - They said ft.陳嫺靜 【Animated Music Video】",
-            link: "projects/project004.html",
+            link: "project004.html",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622219323/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/013_ROG_Cover.jpg",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622054609/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/ROG_Video_Cover.gif",
             type: "default",
         },
         {
             title: "DigiWave 2020《遙視 Clairvoyance》 ",
-            link: "projects/project006.html",
+            link: "project006.html",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622219323/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/013_ROG_Cover.jpg",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622054609/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/ROG_Video_Cover.gif",
             type: "default",

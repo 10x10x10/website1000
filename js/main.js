@@ -21,10 +21,18 @@ Vue.component('project-view-list', {
             type: String,
             default: "default",
         },
+        randomPick:{
+            type: Number,
+            default: -1,
+        },
+        root:{
+            type: String,
+            default: "",
+        },
     },
     template: `
     <div class="project-view-container">
-        <a v-bind:href="project.link" v-for="project in getProjects" class="project-view">
+        <a v-bind:href="root + project.link" v-for="project in getProjects" class="project-view">
             <img v-bind:src="project.cover" class="cover"/>
             <img v-bind:src="project.hover" class="hover"/>
             <div class="title-container">
@@ -40,8 +48,29 @@ Vue.component('project-view-list', {
     computed: {
         getProjects: function(){
             let type = this.projectType;
-            return this.projects.filter((n)=> n.type===type);
+
+            let typeProjects = this.projects.filter((n)=> n.type===type);
+
+            
+            if(this.randomPick > 0){
+                var temp_array = [];
+                for (var index in typeProjects) {
+                    temp_array.push(typeProjects[index]);
+                }
+                this.shuffle(typeProjects);
+                return typeProjects.slice(0, this.randomPick);
+            }
+
+            return typeProjects;
         }
+    },
+    methods: {
+        shuffle: function(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+              let j = Math.floor(Math.random() * (i + 1));
+              [array[i], array[j]] = [array[j], array[i]];
+            }
+          }
     }
 });
 
@@ -171,7 +200,14 @@ Vue.component('project', {
         <div class="container" >
             <div class="project-container">
                 <slot></slot>
+                <div class="related-project-container">
+                    <div class="project-text-container project-view-title">
+                        <h2>Related Projects</h2>
+                    </div>
+                    <project-view-list root="" project-type="default" random-pick="3"></project-view-list>
+                </div>
             </div>
+            
         </div>
         <footer-bar root="../"></footer-bar>
     </div>
