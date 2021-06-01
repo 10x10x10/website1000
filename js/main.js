@@ -133,11 +133,14 @@ Vue.component('header-bar', {
     <div class="header">
         <div class="title-conatainer">
             <a v-bind:href="getHome">
-                <h1 class="title">{{title}}</h1>
+                <h1 class="title">{{data.title}}</h1>
             </a>
         </div>
         <div class="flex-space"></div>
-        <div class="header-link-container">
+        <div class="header-link-btn" v-on:click="toggleLinks">
+            <img src="src/icons/menu.svg" />
+        </div>
+        <div class="header-link-container" v-bind:class="{ 'm-header-link-container-show' : showHeaderLink }"  v-on:click="toggleLinks">
             <a  class="header-link" 
                 v-for="item in getItems" 
                 v-bind:class="{ 'header-link-acitve': item.link===location }"
@@ -147,11 +150,16 @@ Vue.component('header-bar', {
         </div>
     </div>
     `,
-    data: function () { return headerData; },
+    data: function () { 
+        return { 
+            data: headerData, 
+            showHeaderLink: false
+        }; 
+    },
     computed: {
         getItems: function(){
             let root = this.root;
-            return this.links.map(n=>{
+            return this.data.links.map(n=>{
                 n.link = root + n.link;
                 return n;
             });
@@ -159,7 +167,13 @@ Vue.component('header-bar', {
         getHome: function(){
             return this.root + "index.html";
         },
+    },
+    methods:{
+        toggleLinks: function(){
+            this.showHeaderLink = !this.showHeaderLink;
+        }
     }
+
 });
 
 Vue.component('footer-bar', {

@@ -106,7 +106,7 @@ a{
         
         color: #ffffff;
         font-size: 20px;
-        padding: 10px;
+        padding: 0 10px;
         margin: 0;
         min-width: 80px;
         text-align: center;
@@ -114,16 +114,37 @@ a{
 
         cursor: pointer;
 
+        font-weight: 400;
+        height: $header-height;
+        line-height: $header-height;
+        box-sizing: border-box;
+        text-align: center;
+
+        &-acitve{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                height: 2px;
+                left: 8px;
+                right: 8px;
+                bottom: 16px;
+                background-color: #fff;
+            }
+        }
+
         &:hover{
             opacity: 0.4;
         }
     }
 
-    .header-link{
-        font-weight: 400;
-        &-acitve{
-            opacity: 0.5;
-        }
+    .header-link-btn{
+        display: none;
+    }
+ 
+    .header-link-container{
+        display: flex;
+        gap: 10px;
     }
 }
 
@@ -479,7 +500,7 @@ h1, h2, h3, h4, h5, h6{
 
 @media only screen and (max-width: 1200px) {
    
-    $m-header-height: 100px;
+    $m-header-height: 64px;
     $m-media-list-gap: 10px;
 
     .container{
@@ -507,16 +528,103 @@ h1, h2, h3, h4, h5, h6{
     
     .header {
         
-        padding: 0 10px;
         height: $m-header-height;
-        flex-direction: column;
+
+        $top-right-btn-size: 30px;
+        $top-right-btn-padding: 16px;
+
+        padding: 0;
+        flex-direction: row;
 
         .title-conatainer{
+            padding: 0 0 0 20px;
             flex-grow: 1;
         }
+
         .flex-space{
             display: none;
         }
+
+        .header-link-btn{
+            display: inline-block;
+            flex-grow: 0;
+            width: $m-header-height;
+            cursor: pointer;
+            box-sizing: border-box;
+            //padding: $top-right-btn-padding;
+
+            img{
+                width: $top-right-btn-size;
+                height: $top-right-btn-size;
+                box-sizing: border-box;
+                margin: $top-right-btn-padding;
+            }
+        }
+
+        .header-link-container{
+
+            display: none;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 9999;
+
+            background-color: rgba(#000, 0.85);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            .header-link{
+                
+                $m-header-link-btn-height: 60px;
+                height: $m-header-link-btn-height;
+                line-height: $m-header-link-btn-height;
+
+                font-size: 24px;
+                border: 1px solid rgba(#fff, 0.75);
+                background-color: rgba(#000, 0.8);
+                min-width: 160px;
+                margin: 10px 0;
+                padding: 0 16px;
+                
+                &-acitve{
+                    color: #000;
+                    background-color: rgba(#fff, 0.75);
+                    border-style: none;
+
+                    &::after{
+                        display: none;
+                    }
+        
+                }
+            }
+
+            &.m-header-link-container-show{
+                display: flex;
+                
+                animation-name: fadeIn;
+                animation-duration: 0.15s;
+
+                &::after{
+
+                    position: absolute;
+                    right: $top-right-btn-padding;
+                    top: $top-right-btn-padding;
+
+                    content: "";
+                    background-image: url("/src/icons/clear.svg");
+                    background-color: $background-color;
+                    background-size: contain;
+                    
+                    width: $top-right-btn-size;
+                    height: $top-right-btn-size;
+                }
+            }
+        }
+        
     }
         
     .project-view-container {
