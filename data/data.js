@@ -202,6 +202,13 @@ export const projectData = {
             hover: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffb97b41a9434e1c3b1ec_Entanglement_gif_04.gif",
             type: "default",
         },
+        {
+            title: "Webflow",
+            link: "projectP5P001.html",
+            cover: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffba1a0d3e4c0037037dd_Entanglement_04.png",
+            hover: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffb97b41a9434e1c3b1ec_Entanglement_gif_04.gif",
+            type: "default",
+        },
     ]
 };
 

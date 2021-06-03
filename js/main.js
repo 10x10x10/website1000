@@ -369,6 +369,29 @@ Vue.component('credits', {
     }
 });
 
+Vue.component('p5js', {
+    props: { 
+        name: {
+            type: String,
+            required: true,
+        },
+    },
+    template: `
+    <div v-bind:id="name" class="p5-container">
+    </div>
+    `,
+    data: function(){
+    },
+    mounted() {
+        let recaptchaScript = document.createElement('script')
+        recaptchaScript.setAttribute('src', 'p5js/' + this.name + '.js')
+        document.head.appendChild(recaptchaScript)
+    },
+    methods:{
+    }
+});
+
+
 
 const app = new Vue({
     el: '#app',

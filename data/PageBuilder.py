@@ -19,7 +19,6 @@ templates = [
 paths = listdir(root_path + project_path)
 
 for path in paths:
-    print(path)
     
     for template in templates:
         
@@ -32,30 +31,33 @@ for path in paths:
 
         need_write = False
         new_lines = []
-        with open(root_path + project_path + "/" + path, "r", encoding="utf-8") as f:
 
-            lines = f.readlines()
+        if path.endswith(".html"):
+            print(path)
+            with open(root_path + project_path + "/" + path, "r", encoding="utf-8") as f:
 
-            index = 0
-            for line in lines:
-                
-                line_strip = line.strip()
-                if(line_strip == template["begin_tag"]):
-                    template["begin_tag_index"] = index
-                elif(line_strip == template["end_tag"]):
-                    template["end_tag_index"] = index
-                    break
+                lines = f.readlines()
 
-                index = index + 1
+                index = 0
+                for line in lines:
+                    
+                    line_strip = line.strip()
+                    if(line_strip == template["begin_tag"]):
+                        template["begin_tag_index"] = index
+                    elif(line_strip == template["end_tag"]):
+                        template["end_tag_index"] = index
+                        break
 
-            if(template["begin_tag_index"] > 0 and template["end_tag_index"] >0):
-                new_lines.extend(lines[0:template["begin_tag_index"]+1])
-                new_lines.extend(template["template"])
-                new_lines.extend(lines[template["end_tag_index"]:])
-                need_write = True
-        
-        if(need_write):
-            with open(root_path + project_path + "/" + path, "w", encoding="utf-8") as f:
-                f.writelines(new_lines)
-                
+                    index = index + 1
+
+                if(template["begin_tag_index"] > 0 and template["end_tag_index"] >0):
+                    new_lines.extend(lines[0:template["begin_tag_index"]+1])
+                    new_lines.extend(template["template"])
+                    new_lines.extend(lines[template["end_tag_index"]:])
+                    need_write = True
+            
+            if(need_write):
+                with open(root_path + project_path + "/" + path, "w", encoding="utf-8") as f:
+                    f.writelines(new_lines)
+                    
  
