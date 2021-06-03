@@ -140,6 +140,11 @@ a{
 
     .header-link-btn{
         display: none;
+
+        &-clear{
+            position: absolute;
+            z-index: 99999;
+        }
     }
  
     .header-link-container{
@@ -193,7 +198,7 @@ a{
 .project-view-container{
 
     width: 100%;
-    padding: 50px 0;
+    padding: 30px 0;
 
     .project-view{
 
@@ -609,6 +614,7 @@ h1, h2, h3, h4, h5, h6{
                 animation-name: fadeIn;
                 animation-duration: 0.15s;
 
+                /*
                 &::after{
 
                     position: absolute;
@@ -623,6 +629,7 @@ h1, h2, h3, h4, h5, h6{
                     width: $top-right-btn-size;
                     height: $top-right-btn-size;
                 }
+                */
             }
         }
         

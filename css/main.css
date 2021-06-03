@@ -173,6 +173,11 @@ a {
   display: none;
 }
 
+.header .header-link-btn-clear {
+  position: absolute;
+  z-index: 99999;
+}
+
 .header .header-link-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,7 +242,7 @@ a {
 
 .project-view-container {
   width: 100%;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .project-view-container .project-view {
@@ -707,17 +712,22 @@ h1, h2, h3, h4, h5, h6 {
             animation-name: fadeIn;
     -webkit-animation-duration: 0.15s;
             animation-duration: 0.15s;
-  }
-  .header .header-link-container.m-header-link-container-show::after {
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    content: "";
-    background-image: url("/src/icons/clear.svg");
-    background-color: #020202;
-    background-size: contain;
-    width: 30px;
-    height: 30px;
+    /*
+                &::after{
+
+                    position: absolute;
+                    right: $top-right-btn-padding;
+                    top: $top-right-btn-padding;
+
+                    content: "";
+                    background-image: url("/src/icons/clear.svg");
+                    background-color: $background-color;
+                    background-size: contain;
+                    
+                    width: $top-right-btn-size;
+                    height: $top-right-btn-size;
+                }
+                */
   }
   .project-view-container {
     padding: 0;

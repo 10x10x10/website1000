@@ -138,7 +138,8 @@ Vue.component('header-bar', {
         </div>
         <div class="flex-space"></div>
         <div class="header-link-btn" v-on:click="toggleLinks">
-            <img src="src/icons/menu.svg" />
+            <img v-show="!showHeaderLink" v-bind:src="root+'src/icons/menu.svg'" />
+            <img v-show="showHeaderLink" v-bind:src="root+'src/icons/clear.svg'" class="header-link-btn-clear" />
         </div>
         <div class="header-link-container" v-bind:class="{ 'm-header-link-container-show' : showHeaderLink }"  v-on:click="toggleLinks">
             <a  class="header-link" 

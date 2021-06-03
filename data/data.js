@@ -114,6 +114,32 @@ export const linkQuery = {
         video_21_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_21_S.mp4",
         video_22_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_22_S.mp4",
     },
+
+    projectM001: {
+        video_main: "https://player.vimeo.com/video/343632581?app_id=122963&referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
+        video_01_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaf44f9a0d3e447a96bbaa9_simplex_01.gif",
+        video_02_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaf44faf728bb19933a57b0_simplex_02.gif", 
+        video_03_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaf44facd114664a37dc4b3_simplex_03.gif", 
+        video_04_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaf46566c54ed4fa29f48c8_simplex_04.gif", 
+        video_05_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaf5d0485c94f683bb4b10c_simplex_concept.jpg", 
+        video_06_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaf5d39153c281a3d68c209_simplex_storyboard_1.jpg",
+        video_07_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaf5d3a5c6b73010223dc25_simplex_storyboard_2.jpg", 
+    },
+
+    projectM002: {
+        video_main: "https://www.youtube.com/embed/TjNABiQaQUE?wmode=opaque&widget_referrer=https%3A%2F%2Fwww.1000cheng.cc%2F&enablejsapi=1&origin=https%3A%2F%2Fcdn.embedly.com&widgetid=1",
+        video_01_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffb986af9c8f5c8e9321f_Entanglement_gif_01.gif",
+        video_02_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffb956c54edb801a453eb_Entanglement_gif_03.gif", 
+        video_03_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffb97b41a9434e1c3b1ec_Entanglement_gif_04.gif", 
+        video_04_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffb98153c2876306caa1f_Entanglement_gif_05.gif", 
+        video_05_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffb97cd11463b09829aec_Entanglement_gif_06.gif", 
+        video_06_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffb96abe8f564258cc5b8_Entanglement_gif_07.gif",
+        video_07_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffb97b8d39cb9cf7da957_Entanglement_gif_08.gif", 
+        video_08_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffb976c54edf969a453f6_Entanglement_gif_09.gif", 
+        video_09_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eb00eea85c94f0398b930d1_Entanglement_ppt04_v2.png",
+        video_10_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eb00eeab8d39c1b727e42bc_Entanglement_ppt03_v2.png", 
+        video_11_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eb00eea85c94f0398b930d1_Entanglement_ppt04_v2.png",
+    },
 }
 
 
@@ -160,6 +186,20 @@ export const projectData = {
             link: "project001.html",
             cover: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaf3a2acd11466a6b7d625b_001_tgif_cover.jpg",
             hover: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaf3a2e6c54ed61709eed49_001_tgif_loop.gif",
+            type: "default",
+        },
+        {
+            title: "SIMPLEX",
+            link: "projectM001.html",
+            cover: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaf46ad30994e447d122d2e_simplex_cover.png",
+            hover: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaf44f9a0d3e447a96bbaa9_simplex_01.gif",
+            type: "default",
+        },
+        {
+            title: "Entanglement",
+            link: "projectM002.html",
+            cover: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffba1a0d3e4c0037037dd_Entanglement_04.png",
+            hover: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffb97b41a9434e1c3b1ec_Entanglement_gif_04.gif",
             type: "default",
         },
     ]
