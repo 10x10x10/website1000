@@ -247,6 +247,7 @@ a {
 
 .project-view-container .project-view {
   position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
   width: 100%;
   height: auto;
   padding: 0;
@@ -254,7 +255,17 @@ a {
   cursor: pointer;
 }
 
+.project-view-container .project-view .pseudo-cover {
+  width: 100%;
+  padding-top: 56.26327%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .project-view-container .project-view .cover {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   background-color: #020202;
   -webkit-filter: grayscale(0.85);
