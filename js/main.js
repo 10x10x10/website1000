@@ -106,7 +106,10 @@ Vue.component('about-container', {
                         <h2>{{experience.year}}</h2>
                         <ul>
                             <div v-for="item in experience.items">
-                                <li v-if="item.link!==''"><a v-bind:href="item.link">{{item.text}}</a></li>
+                                <li v-if="false && item.link!==''">
+                                    <a v-bind:href="item.link">{{item.text}}</a>
+                                    <img src='../src/icons/external-link.svg'/>
+                                </li>
                                 <li v-else>{{item.text}}</li>
                             </div>
                         </ul
