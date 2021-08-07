@@ -4,6 +4,7 @@
     "@next/next/no-img-element": "off",
     "jsx-a11y/alt-text": "off",
     "react/jsx-no-target-blank": "off",
+    "react/no-unescaped-entities": "off",
 
   }
 }

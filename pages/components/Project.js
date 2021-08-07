@@ -15,7 +15,7 @@ export default function Project(props) {
 
   const { id, } = props;
 
-  const project = projectData.projects.find((proj) => proj.id == id);
+  const project = projectData.projects.find((proj) => proj.id == id) || { title: "N/A" };
 
   return (
     <div>
