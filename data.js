@@ -1,7 +1,7 @@
 
 export const linkQuery = {
-    
-    lab:{
+
+    lab: {
         lab01: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb40c828038fd1f50f1682e_20_lab_004_v2.gif",
         lab02: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb40f9ef3635264e2b1ff9b_20_lab_002_v2.gif",
         lab03: "https://uploads-ssl.webflow.com/5dec1a83675ba880b87a882b/5eb39d678cf2c6983311918b_20_lab_005.gif",
@@ -38,12 +38,12 @@ export const linkQuery = {
 
     project003: {
         video_main: "https://player.vimeo.com/video/434576970?app_id=122963&referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
-        video_01_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177115/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_01.png",
-        video_02_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_02.png",
-        video_03_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_03.png",
-        video_04_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_04.png",
-        video_05_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_05.png",
-        video_06_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_06.png",
+        video_01_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177115/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_01.png?[1920x1080]",
+        video_02_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_02.png?[1920x1080]",
+        video_03_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_03.png?[1920x1080]",
+        video_04_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_04.png?[1920x1080]",
+        video_05_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_05.png?[1920x1080]",
+        video_06_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_06.png?[1920x1080]",
         video_07_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177109/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Video/003_GIF_01.gif",
         video_08_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177109/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Video/003_GIF_02.gif",
         video_09_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177109/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Video/003_GIF_03.gif",
@@ -70,10 +70,10 @@ export const linkQuery = {
 
     project006: {
         video_main: "https://player.vimeo.com/video/488057651?app_id=122963&referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
-        video_01_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199808/006_Digiwave/Image/006_Image_01.jpg",
-        video_02_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199808/006_Digiwave/Image/006_Image_02.jpg",
-        video_03_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199808/006_Digiwave/Image/006_Image_03.jpg",
-        video_04_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199808/006_Digiwave/Image/006_Image_04.jpg",
+        video_01_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199808/006_Digiwave/Image/006_Image_01.jpg?[750x500]",
+        video_02_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199808/006_Digiwave/Image/006_Image_02.jpg?[750x500]",
+        video_03_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199808/006_Digiwave/Image/006_Image_03.jpg?[750x500]",
+        video_04_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199808/006_Digiwave/Image/006_Image_04.jpg?[750x500]",
         video_05_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199814/006_Digiwave/Video/006_GIF_01.gif",
         video_06_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199814/006_Digiwave/Video/006_GIF_02.gif",
         video_07_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199814/006_Digiwave/Video/006_GIF_03.gif",
@@ -83,12 +83,12 @@ export const linkQuery = {
         video_11_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199814/006_Digiwave/Video/006_GIF_07.gif",
     },
 
-    project012:{
+    project012: {
         video_main: "https://player.vimeo.com/video/527284650?app_id=122963&amp;referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
         video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1621690189/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_02.mp4",
         video_01_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1621690726/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_S_01.mp4",
     },
-    
+
     project013: {
         video_main: "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F554866857%3Fapp_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F554866857&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1146738428_1280&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=vimeo",
         video_01_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1622053004/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/Video%20Clip%20S/ROG_video_01_S.mp4",
@@ -118,34 +118,34 @@ export const linkQuery = {
     projectM001: {
         video_main: "https://player.vimeo.com/video/343632581?app_id=122963&referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
         video_01_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170377/M001_Simplex/Video/M001_GIF_01.gif",
-        video_02_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170377/M001_Simplex/Video/M001_GIF_02.gif", 
-        video_03_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170377/M001_Simplex/Video/M001_GIF_03.gif", 
-        video_04_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170377/M001_Simplex/Video/M001_GIF_04.gif", 
-        video_05_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170369/M001_Simplex/Image/M001_Image_01.jpg", 
-        video_06_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170369/M001_Simplex/Image/M001_Image_02.jpg",
-        video_07_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170369/M001_Simplex/Image/M001_Image_03.jpg", 
+        video_02_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170377/M001_Simplex/Video/M001_GIF_02.gif",
+        video_03_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170377/M001_Simplex/Video/M001_GIF_03.gif",
+        video_04_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170377/M001_Simplex/Video/M001_GIF_04.gif",
+        video_05_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170369/M001_Simplex/Image/M001_Image_01.jpg?[1920x1080]",
+        video_06_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170369/M001_Simplex/Image/M001_Image_02.jpg?[1920x1080]",
+        video_07_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170369/M001_Simplex/Image/M001_Image_03.jpg?[1920x1080]",
     },
 
     projectM002: {
         video_main: "https://www.youtube.com/embed/TjNABiQaQUE?wmode=opaque&widget_referrer=https%3A%2F%2Fwww.1000cheng.cc%2F&enablejsapi=1&origin=https%3A%2F%2Fcdn.embedly.com&widgetid=1",
         video_01_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_01.gif",
-        video_02_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_02.gif", 
-        video_03_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_03.gif", 
-        video_04_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_04.gif", 
-        video_05_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_05.gif", 
+        video_02_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_02.gif",
+        video_03_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_03.gif",
+        video_04_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_04.gif",
+        video_05_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_05.gif",
         video_06_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_06.gif",
-        video_07_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_07.gif", 
-        video_08_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_08.gif", 
-        video_09_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174400/M002_Entanglement/Image/M002_Image_01.png",
-        video_10_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174400/M002_Entanglement/Image/M002_Image_02.png", 
-        video_11_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174400/M002_Entanglement/Image/M002_Image_03.png",
+        video_07_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_07.gif",
+        video_08_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_08.gif",
+        video_09_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174400/M002_Entanglement/Image/M002_Image_01.png?[1824x1196]",
+        video_10_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174400/M002_Entanglement/Image/M002_Image_02.png?[1808x1058]",
+        video_11_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174400/M002_Entanglement/Image/M002_Image_03.png?[1814x1058]",
     },
 }
 
 
 
 export const projectData = {
-    projects:[
+    projects: [
         {
             id: "project012",
             title: "Gogoro VIVA MIX 新車發表會",
@@ -210,16 +210,8 @@ export const projectData = {
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174530/M002_Entanglement/Cover/M002_Cover_02.gif",
             type: "default",
         },
-        // {
-        //     title: "Webflow",
-        //     link: "projectP5P001.html",
-        //     cover: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffba1a0d3e4c0037037dd_Entanglement_04.png",
-        //     hover: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/5eaffb97b41a9434e1c3b1ec_Entanglement_gif_04.gif",
-        //     type: "default",
-        // },
     ]
 };
-
 
 
 export const aboutData = {
@@ -312,21 +304,48 @@ export const aboutData = {
 }
 
 
+export const metaData = {
+    defaultProjectMetaData: {
+        title: "1000 Cheng",
+        description: "I'm 1000 cheng, Yi-Chien Cheng, basd in Taipei,Taiwan and I'm passionate about make some trippy 3d motion graphics by Cinema 4d and  After Effects.",
+        author: "1000 Cheng",
+        icon: "/icons/logo_32.png",
+        ogType: "website",
+        ogImage: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174406/M002_Entanglement/Cover/M002_Cover_01.png",
+        ogSiteName: "1000 Cheng",
+        ogUrl: "1000cheng.cc",
+    },
+    aboutMetaData: {
+        title: "About",
+    },
+    labMetaData: {
+        title: "Lab",
+    },
+    indexMetaData: {
+        title: "",
+    }
+
+
+}
+
 
 export const headerData = {
     title: "1000 Cheng",
     links: [
-        { 
+        {
             title: "PROJECTS",
-            link: "/"
-        }, 
-        { 
+            link: "/",
+            type: "index",
+        },
+        {
             title: "LAB",
-            link: "/lab"
-        }, 
-        { 
+            link: "/lab",
+            type: "lab",
+        },
+        {
             title: "ABOUT",
-            link: "/about"
+            link: "/about",
+            type: "about",
         },
     ]
 };
@@ -334,7 +353,7 @@ export const headerData = {
 
 
 export const footerData = {
-    links:[
+    links: [
         {
             icon: "/icons/social-14-white.svg",
             link: "https://www.behance.net/10x10x10_1000",
@@ -355,5 +374,3 @@ export const footerData = {
     description: "Plz feel free to contact me",
     copyright: "Copyright © 2019-2021 1000 Cheng",
 };
-
-

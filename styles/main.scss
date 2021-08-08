@@ -203,7 +203,7 @@ a{
     .project-view{
 
         position: relative;
-        background-color: rgba(#fff, 0.1);
+        background-color: rgba(#fff, 0.05);
 
         width: 100%;
         height: auto;
@@ -454,8 +454,12 @@ a{
         }
     }
 
-    .background-video{
+    .media-container{
         margin: 20px 0;
+        
+        .media-img, .media-vedio{
+            background-color: rgba(#fff, 0.05);
+        }
     }
 
     .media-list-container{
@@ -510,7 +514,7 @@ a{
         }
     }
 
-    .background-video{
+    .media-container{
         margin: 0;
     }
 }
@@ -552,7 +556,7 @@ h1, h2, h3, h4, h5, h6{
             padding: 0 20px;
         }
         
-        .background-video{
+        .media-container{
             margin: 10px 0;
         }
 
@@ -706,7 +710,7 @@ h1, h2, h3, h4, h5, h6{
         display: grid;
         gap: $m-media-list-gap;
 
-        .background-video{
+        .media-container{
             margin: 0;
         }
         

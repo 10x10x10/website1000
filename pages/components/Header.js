@@ -20,7 +20,7 @@ export default class Header extends React.Component {
 
   render() {
 
-    const { location, title } = this.props;
+    const { type } = this.props;
     const { showHeaderLink } = this.state;
 
     return (
@@ -52,7 +52,7 @@ export default class Header extends React.Component {
         >
           {
             headerData.links.map((item) => {
-              const isLocation = item.link === location;
+              const isLocation = item.type === type;
               return (
                 <Link href={isLocation ? '' : item.link} key={item.link}>
                   <a className={classNames("header-link", { 'header-link-acitve': isLocation })}>
