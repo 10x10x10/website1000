@@ -50,8 +50,8 @@ export default class ProjectViewList extends React.Component {
                 <Link href={proj.link} key={proj.link}>
                   <a className="project-view">
                     <div className="pseudo-cover"></div>
-                    <img src={proj.cover} className="cover" />
-                    <img src={proj.hover} className="hover" />
+                    <img src={proj.cover} className="cover" alt="" title="" />
+                    <img src={proj.hover} className="hover" alt="" title=""  />
                     <div className="title-container">
                       <h3 className="title">{proj.title}</h3>
                     </div>

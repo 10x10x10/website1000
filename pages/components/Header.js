@@ -48,17 +48,20 @@ export default class Header extends React.Component {
 
         <div
           className={classNames("header-link-container", { 'm-header-link-container-show': showHeaderLink })}
-        // onClick={()=>{}}
+          onClick={this.toggleHeaderLinkHandler}
         >
           {
-            headerData.links.map((item) => {
+            headerData.links.map((item, index) => {
               const isLocation = item.type === type;
               return (
-                <Link href={isLocation ? '' : item.link} key={item.link}>
-                  <a className={classNames("header-link", { 'header-link-acitve': isLocation })}>
-                    {item.title}
-                  </a>
-                </Link>);
+                <>
+                  <Link href={isLocation ? '' : item.link} key={item.link}>
+                    <a className={classNames("header-link", { 'header-link-acitve': isLocation })}>
+                      {item.title}
+                    </a>
+                  </Link>
+                  {index + 1 < headerData.links.length ? <span className="header-link-spliter">|</span> : null}
+                </>);
             })
           }
         </div>

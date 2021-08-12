@@ -149,7 +149,7 @@ export const projectData = {
         {
             id: "project012",
             title: "Gogoro VIVA MIX 新車發表會",
-            link: "/projects/project012",
+            link: "/projects/gogoro-viva-mix",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1621879203/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_Cover_P.png",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1621931245/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_Cover_S.gif",
             type: "default",
@@ -157,7 +157,7 @@ export const projectData = {
         {
             id: "project013",
             title: "ROG Phone 5 Launch Event Countdown Video",
-            link: "/projects/project013",
+            link: "/projects/rog-phone5-countdown",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622219323/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/013_ROG_Cover.jpg",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622054609/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/ROG_Video_Cover.gif",
             type: "default",
@@ -165,7 +165,7 @@ export const projectData = {
         {
             id: "project004",
             title: "Pony5ibe - They said ft.陳嫺靜 【Animated Music Video】",
-            link: "/projects/project004",
+            link: "/projects/pip-mv-pony5ibe",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626197112/004_PiP_MV_Pony5ibe/Cover/005_Cover_01.png",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626197112/004_PiP_MV_Pony5ibe/Cover/005_Cover_01.png",
             type: "default",
@@ -173,7 +173,7 @@ export const projectData = {
         {
             id: "project006",
             title: "DigiWave 2020《遙視 Clairvoyance》 ",
-            link: "/projects/project006",
+            link: "/projects/digiwave2020",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199806/006_Digiwave/Cover/006_Cover_01.jpg",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626199806/006_Digiwave/Cover/006_Cover_01.jpg",
             type: "default",
@@ -181,7 +181,7 @@ export const projectData = {
         {
             id: "project003",
             title: "2020 台北電影節 Taipei Film Festival | 片頭動畫",
-            link: "/projects/project003",
+            link: "/projects/taipei-film-festival2020",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177130/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Cover/003_Cover_01.png",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177132/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Cover/003_Cover_02.gif",
             type: "default",
@@ -189,7 +189,7 @@ export const projectData = {
         {
             id: "project001",
             title: "TGIF 台北設計電波｜國際設計交流年會主視覺影片",
-            link: "/projects/project001",
+            link: "/projects/tgif2019",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626175880/001_TGIF/Cover/001_cover_01.jpg",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626175882/001_TGIF/Cover/001_Cover_02.gif",
             type: "default",
@@ -197,7 +197,7 @@ export const projectData = {
         {
             id: "projectM001",
             title: "SIMPLEX",
-            link: "/projects/projectM001",
+            link: "/projects/simplex",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170361/M001_Simplex/Cover/M001_Cover_01.png",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170362/M001_Simplex/Cover/M001_Cover_02.gif",
             type: "default",
@@ -205,7 +205,7 @@ export const projectData = {
         {
             id: "projectM002",
             title: "Entanglement",
-            link: "/projects/projectM002",
+            link: "/projects/entanglement",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174406/M002_Entanglement/Cover/M002_Cover_01.png",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174530/M002_Entanglement/Cover/M002_Cover_02.gif",
             type: "default",

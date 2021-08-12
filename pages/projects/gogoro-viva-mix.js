@@ -4,6 +4,8 @@ import MediaList from "../components/MediaList.js";
 import Credits from "../components/Credits.js";
 import EmbedVideo from "../components/EmbedVideo.js";
 import TextContainer from "../components/TextContainer.js";
+import TextTitle from "../components/TextTitle.js";
+import TextContent from "../components/TextContent.js";
 
 export default function ProjectPage(props) {
 
@@ -13,10 +15,10 @@ export default function ProjectPage(props) {
       <EmbedVideo link="project012.video_main" />
 
       <TextContainer>
-        <h1>Gogoro VIVA MIX 新車發表會</h1>
-        <p>2021 第一季，Gogoro 發表了全新車款 — VIVA MIX。</p>
-        <p>一如其名強調混搭精神，兼具以往車型的特點，也一貫在騎乘體驗科技上持續突破，更加入 POP 個性化配件系統，與結合音樂主題元素的多款車色，自我風格更加鮮明。
-          VIVA MIX 是近期 Gogoro 平衡市場需求、使用者體驗與品牌價值的巔峰之作。而 Gogoro 邀請團隊一起共同策劃此車款登場秀。</p>
+        <TextTitle>Gogoro VIVA MIX 新車發表會</TextTitle>
+        <TextContent>2021 第一季，Gogoro 發表了全新車款 — VIVA MIX。</TextContent>
+        <TextContent>一如其名強調混搭精神，兼具以往車型的特點，也一貫在騎乘體驗科技上持續突破，更加入 POP 個性化配件系統，與結合音樂主題元素的多款車色，自我風格更加鮮明。
+          VIVA MIX 是近期 Gogoro 平衡市場需求、使用者體驗與品牌價值的巔峰之作。而 Gogoro 邀請團隊一起共同策劃此車款登場秀。</TextContent>
       </TextContainer>
 
       <MediaList col={1}
