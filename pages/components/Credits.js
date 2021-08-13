@@ -30,7 +30,8 @@ export default class Credits extends React.Component {
     const { isFold, } = this.state;
     const { foldable, children, } = this.props;
 
-    const foldStateClass = classNames("credit-list",
+    const foldStateClass = classNames(
+      "credit-list",
       foldable ?
         {
           fold: isFold,

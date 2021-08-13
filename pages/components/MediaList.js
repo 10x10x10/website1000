@@ -21,6 +21,8 @@ export default function MediaList(props) {
     mCol = col,
   } = props;
 
+  const sizeRegex = /(.+)\?\[(\d+)[x*](\d+)\]/;  // aaaaaa:[100x200] or zzzzzz:[30*60]
+
   function getLinks(links) {
 
     let linkList;
@@ -52,22 +54,39 @@ export default function MediaList(props) {
 
   function getContent(link) {
 
-    const isImg = function (link) {
-      const compareName = [".gif", ".png", ".jpg", ".jpeg",];
-      let lowerLink = link.toLowerCase();
-      return compareName.some((n) => lowerLink.endsWith(n));
-    };
+    const getMediaInfo = (link) => {
+      const regResult = link.match(sizeRegex);
 
-    const isVideo = function (link) {
-      const compareName = [".mp4",];
-      let lowerLink = link.toLowerCase();
-      return compareName.some((n) => lowerLink.endsWith(n));
-    };
+      if (!regResult) {
+        return {
+          urlLink: link,
+          width: 10,
+          height: 10,
+        }
+      }
 
-    if (isVideo(link)) {
+      return {
+        urlLink: regResult[1],
+        width: parseInt(regResult[2]),
+        height: parseInt(regResult[3]),
+      }
+
+    }
+
+    const subExMatch = (link, matchNames) => {
+      let lowerLink = link.toLowerCase();
+      return matchNames.some((n) => lowerLink.endsWith(n));
+    }
+
+    const { urlLink, width, height } = getMediaInfo(link);
+
+
+
+    if (subExMatch(urlLink, [".mp4",])) {
       return (
         <video
-          src={link}
+          className="media-video"
+          src={urlLink}
           loading="lazy"
           autoPlay="true"
           loop="true"
@@ -78,12 +97,29 @@ export default function MediaList(props) {
         />);
     }
 
-    if (isImg(link)) {
+    if (subExMatch(urlLink, [".png", ".jpg", ".jpeg",])) {
       return (
         <img
-          src={link}
+          className="media-img"
+          src={urlLink}
           loading="lazy"
           width="100%"
+          alt=""
+        //layout="responsive"
+        //width={width}
+        //height={height}
+
+        />);
+    }
+
+    if (subExMatch(urlLink, [".gif",])) {
+      return (
+        <img
+          className="media-gif"
+          src={urlLink}
+          loading="lazy"
+          width="100%"
+          alt=""
         />);
     }
 
@@ -105,7 +141,7 @@ export default function MediaList(props) {
         {
           getLinks(links).map((link) => {
             return (
-              <div className="background-video" key={link}>
+              <div className="media-container" key={link}>
                 {getContent(link)}
               </div>
             );
