@@ -26,7 +26,7 @@ export default function Project({ id, children }) {
 
           <div className="related-project-container">
             <div className="project-text-container project-view-title">
-              <h2>Related Projects</h2>
+              <h2>Other Projects</h2>
             </div>
             <ProjectViewList
               projectType="default"
