@@ -8,6 +8,6 @@ export default function TextTitle(props) {
   const { children, } = props;
 
   return (
-    <h2 className="text-title">{children}</h2>
+    <h2 className="text-title convert-selection">{children}</h2>
   );
 }

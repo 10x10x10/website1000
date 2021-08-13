@@ -8,6 +8,6 @@ export default function TextContent(props) {
   const { children, } = props;
 
   return (
-    <p className="text-content">{children}</p>
+    <p className="text-content convert-selection">{children}</p>
   );
 }

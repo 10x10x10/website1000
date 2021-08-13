@@ -13,7 +13,7 @@ import ProjectViewList from ".//ProjectViewList.js";
 export default function Project({ id, children }) {
 
   return (
-    <div>
+    <div className="convert-selection">
 
       <HeadMeta type="project" id={id} />
 
