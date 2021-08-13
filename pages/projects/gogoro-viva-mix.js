@@ -50,7 +50,7 @@ export default function ProjectPage(props) {
         <p>AGV Trackway Design : Glenn Huang</p>
         <p>AGV Programming : Reng Tsai, Wei-An Chen, Chia-Yun Song, Nate Wu</p>
         <p>AGV Technology Director : ECON Robot</p>
-        <p>Spatial Design & Construction : Event Design</p>
+        <p>Spatial Design {"&"} Construction : Event Design</p>
         <p>Lighting Designer : Rokerfly Design</p>
         <p>Music Designer : DJ QuestionMark（Chi-Shuan Ying）</p>
         <p>Network Engineer : KlickKlack Communications</p>

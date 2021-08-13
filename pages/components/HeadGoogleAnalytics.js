@@ -13,9 +13,9 @@ export default function HeadGoogleAnalytics(props) {
         // Google Analytics - in HeadGoogleAnalytics.js
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        gtag("js", new Date());
 
-        gtag('config', '${id}');
+        gtag("config", "${id}");
         `}
       </script>
     </Head>

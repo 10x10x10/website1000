@@ -51,7 +51,7 @@ export default function ProjectPage(props) {
         <p>Designer : 何庭安 Ting-An Ho</p>
         <p>Animator : 陳柏尹 Bruce Chen</p>
         <p>3D Animator : 鄭詒謙 1000 Cheng</p>
-        <p>Music & Sound Production : 空氣載體 The AirCarrier</p>
+        <p>Music {"&"} Sound Production : 空氣載體 The AirCarrier</p>
         <p>Original Music : 黃鎮洋 Triodust</p>
         <p>Sound Design : 黃鎮洋 Triodust</p>
       </Credits>

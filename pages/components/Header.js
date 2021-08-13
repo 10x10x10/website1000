@@ -10,6 +10,31 @@ export default class Header extends React.Component {
 
     this.state = {
       showHeaderLink: false,
+      hideHeader: 0,
+    }
+
+    this.lastScrollTop = 0;
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = (event) => {
+
+    let scrollTop = document.documentElement.scrollTop;
+    const delta = this.lastScrollTop - scrollTop;
+    this.lastScrollTop = scrollTop;
+
+    if (Math.abs(delta) > 10) {
+      const v = delta <= 0;
+      this.setState({
+        hideHeader: v,
+      });
     }
   }
 
@@ -21,10 +46,10 @@ export default class Header extends React.Component {
   render() {
 
     const { type } = this.props;
-    const { showHeaderLink } = this.state;
+    const { showHeaderLink, hideHeader } = this.state;
 
     return (
-      <div className="header">
+      <div className={classNames("header", { "falling-down-header": this.state.hideHeader })} >
 
         <div className="title-conatainer">
           <Link href={headerData.links[0].link}>
@@ -54,14 +79,14 @@ export default class Header extends React.Component {
             headerData.links.map((item, index) => {
               const isLocation = item.type === type;
               return (
-                <>
-                  <Link href={isLocation ? '' : item.link} key={item.link}>
-                    <a className={classNames("header-link", { 'header-link-acitve': isLocation })}>
+                <div className="header-link-item" key={item.link}>
+                  <Link href={isLocation ? '' : item.link} >
+                    <a className={classNames("header-link", { 'header-link-active': isLocation })}>
                       {item.title}
                     </a>
                   </Link>
                   {index + 1 < headerData.links.length ? <span className="header-link-spliter">|</span> : null}
-                </>);
+                </div>);
             })
           }
         </div>

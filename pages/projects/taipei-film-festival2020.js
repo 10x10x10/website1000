@@ -50,7 +50,7 @@ export default function ProjectPage(props) {
         <p>製作 Production  : 罡風創意映像有限公司 DCraft Studio、宇宙潔癖有限公司 JP SPACE Studio</p>
         <p>監製 Producer : 嚴振欽 ArChin Yen</p>
         <p>導演 Director : 蔣承翰 Double Jiang</p>
-        <p>創意 Concept & Storyboard : 鄭詒謙 1000 Cheng</p>
+        <p>創意 Concept {"&"} Storyboard : 鄭詒謙 1000 Cheng</p>
         <p>動態設計 Motion Design : 鄭詒謙 1000 Cheng</p>
         <p>聲音設計 Sound Designer  : 吳梵霖 Hans Wu</p>
       </Credits>

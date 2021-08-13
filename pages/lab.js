@@ -12,7 +12,7 @@ export default function LabPage() {
       <Header type="lab" />
 
       <div className="container" >
-        <div className="project-container">
+        <div className="project-container" >
           <MediaList col={4} mCol={2}
             links={[
               "lab.lab01",
@@ -30,7 +30,7 @@ export default function LabPage() {
             ]} />
         </div>
       </div>
-      
+
       <Footer />
 
     </div>

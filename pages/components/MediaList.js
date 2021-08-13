@@ -105,9 +105,9 @@ export default function MediaList(props) {
           loading="lazy"
           width="100%"
           alt=""
-          //layout="responsive"
-          //width={width}
-          //height={height}
+        //layout="responsive"
+        //width={width}
+        //height={height}
 
         />);
     }

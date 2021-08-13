@@ -41,15 +41,15 @@ export default class ProjectViewList extends React.Component {
   render() {
 
     const { showProjects, } = this.state;
-
+    
     return (
       <div className="project-view-container grid-c grid-c3 m-grid-c m-grid-c1">
         {
           showProjects.map((proj) => {
               return (
-                <Link href={proj.link} key={proj.link}>
+                <Link href={proj.link} key={proj.id}>
                   <a className="project-view">
-                    <div className="pseudo-cover"></div>
+                    <div className="pseudo-cover" />
                     <img src={proj.cover} className="cover" alt="" title="" />
                     <img src={proj.hover} className="hover" alt="" title=""  />
                     <div className="title-container">

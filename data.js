@@ -210,8 +210,40 @@ export const projectData = {
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174530/M002_Entanglement/Cover/M002_Cover_02.gif",
             type: "default",
         },
+
     ]
 };
+
+
+
+export const metaData = {
+    defaultProjectMetaData: {
+        title: "1000 Cheng",
+        description: "I'm 1000 cheng, Yi-Chien Cheng, basd in Taipei,Taiwan and I'm passionate about make some trippy 3d motion graphics by Cinema 4d and  After Effects.",
+        author: "1000 Cheng",
+        icon: "/icons/logo_32.png",
+        ogType: "website",
+        ogImage: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174406/M002_Entanglement/Cover/M002_Cover_01.png",
+        ogSiteName: "1000 Cheng",
+        ogUrl: "1000cheng.cc",
+    },
+    aboutMetaData: {
+        title: "About",
+    },
+    labMetaData: {
+        title: "Lab",
+    },
+    indexMetaData: {
+        title: "",
+    },
+    // //可以用 project id 來覆寫 meta data，預設會用 project title,cover ，其餘使用 defaultProjectMetaData 的值
+    // project012: {   
+    //     title: "覆寫的標題",
+    //     ogImage: "覆寫的圖片",
+    // }
+
+}
+
 
 
 export const aboutData = {
@@ -225,17 +257,17 @@ export const aboutData = {
     contacts: [
         {
             text: "10x10x10w1000@gmail.com",
-            icon: "/icons/social-30-white.svg",
+            icon: "/icons/social-mail.svg",
             link: "mailto:10x10x10w1000@gmail.com",
         },
         {
             text: "Instagram",
-            icon: "/icons/social-07-white.svg",
+            icon: "/icons/social-instagram.svg",
             link: "https://www.instagram.com/10x10x10_1000/",
         },
         {
             text: "Facebook",
-            icon: "/icons/social-03-white.svg",
+            icon: "/icons/social-facebook.svg",
             link: "https://www.facebook.com/1000cheng",
         },
         {
@@ -250,11 +282,11 @@ export const aboutData = {
             items: [
                 {
                     text: "Gogoro VIVA MIX 發表會 動態視覺設計",
-                    link: "projects/project012.html",
+                    link: "projects/gogoro-viva-mix",
                 },
                 {
                     text: "ROG Phone 5 發表會 動態設計",
-                    link: "projects/project013.html",
+                    link: "projects/rog-phone5-countdown",
                 },
             ]
         },
@@ -304,30 +336,6 @@ export const aboutData = {
 }
 
 
-export const metaData = {
-    defaultProjectMetaData: {
-        title: "1000 Cheng",
-        description: "I'm 1000 cheng, Yi-Chien Cheng, basd in Taipei,Taiwan and I'm passionate about make some trippy 3d motion graphics by Cinema 4d and  After Effects.",
-        author: "1000 Cheng",
-        icon: "/icons/logo_32.png",
-        ogType: "website",
-        ogImage: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174406/M002_Entanglement/Cover/M002_Cover_01.png",
-        ogSiteName: "1000 Cheng",
-        ogUrl: "1000cheng.cc",
-    },
-    aboutMetaData: {
-        title: "About",
-    },
-    labMetaData: {
-        title: "Lab",
-    },
-    indexMetaData: {
-        title: "",
-    }
-
-
-}
-
 
 export const headerData = {
     title: "1000 Cheng",
@@ -359,15 +367,15 @@ export const footerData = {
             link: "https://www.behance.net/10x10x10_1000",
         },
         {
-            icon: "/icons/social-07-white.svg",
-            link: "https://www.instagram.com/10x10x10_1000",
-        },
-        {
             icon: "/icons/social-17-white.svg",
             link: "https://vimeo.com/user74287354",
         },
         {
-            icon: "/icons/social-30-white.svg",
+            icon: "/icons/social-instagram.svg",
+            link: "https://www.instagram.com/10x10x10_1000",
+        },
+        {
+            icon: "/icons/social-mail.svg",
             link: "mailto:10x10x10w1000@gmail.com",
         },
     ],
