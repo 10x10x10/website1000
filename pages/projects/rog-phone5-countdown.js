@@ -21,7 +21,7 @@ export default function ProjectPage(props) {
           都有夢想的全面參與，加上專案總監製 Freaks 4U Gaming 與各國 KOL 的聯合競賽，將線上線下的體驗連成一氣。</TextContent>
       </TextContainer>
 
-      <MediaList col={3}
+      <MediaList col={3} mCol={1}
         title="Motion"
         links={[
           "project013.video_01_s",
