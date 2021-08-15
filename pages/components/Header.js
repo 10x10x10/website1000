@@ -54,7 +54,8 @@ export default class Header extends React.Component {
         <div className="title-conatainer">
           <Link href={headerData.links[0].link}>
             <a>
-              <h1 className="title">1000 Cheng</h1>
+              {/* <h1 className="title">1000 Cheng</h1> */}
+              <img src="logo/logo.svg" />
             </a>
           </Link>
         </div>
