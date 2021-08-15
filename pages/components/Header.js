@@ -49,13 +49,13 @@ export default class Header extends React.Component {
     const { showHeaderLink, hideHeader } = this.state;
 
     return (
-      <div className={classNames("header", { "falling-down-header": this.state.hideHeader })} >
+      <div className={classNames("header", { "falling-down-header": hideHeader })} >
 
         <div className="title-conatainer">
           <Link href={headerData.links[0].link}>
             <a>
               {/* <h1 className="title">1000 Cheng</h1> */}
-              <img src="logo/logo.svg" />
+              <img src="/logo/logo.svg" />
             </a>
           </Link>
         </div>
