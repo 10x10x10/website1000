@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { projectData, } from "../../data.js";
-import { getMediaContent, } from "../../lib/module.js"
+import Media from "./Media.js";
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -51,9 +51,8 @@ export default class ProjectViewList extends React.Component {
               <Link href={proj.link} key={proj.id}>
                 <a className="project-view">
                   <div className="pseudo-cover" />
-                  <img src={proj.cover} className="cover" alt="" title="" />
-                  {/* <img src={proj.hover} className="hover" alt="" title=""  /> */}
-                  {getMediaContent(proj.hover, ["hover"])}
+                  <Media link={proj.cover} classes={["cover"]} />
+                  <Media link={proj.hover} classes={["hover"]} />
                   <div className="title-container">
                     <h3 className="title">{proj.title}</h3>
                   </div>

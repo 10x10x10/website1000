@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { queryLink } from "../../lib/module.js";
-import { getMediaContent, } from "../../lib/module.js"
+import Media from "./Media.js";
 
 /**
  * 
@@ -67,7 +67,7 @@ export default function MediaList(props) {
           getLinks(links).map((link) => {
             return (
               <div className="media-container" key={link}>
-                {getMediaContent(link)}
+                <Media link={link} />
               </div>
             );
           })
