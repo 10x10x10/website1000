@@ -1,11 +1,11 @@
 import React from "react";
 import classNames from "classnames";
 
-export default function MediaList(props) {
+function Media(props) {
 
-    const { 
-        link, 
-        classes =[], 
+    const {
+        link,
+        classes = [],
     } = props;
 
     const sizeRegex = /(.+)\?\[(\d+)[x*](\d+)\]/;  // aaaaaa:[100x200] or zzzzzz:[30*60]
@@ -85,3 +85,12 @@ export default function MediaList(props) {
         {getMediaContent(link, classes)}
     </>);
 }
+
+Media.getInitialProps = async () => {
+    return {
+        link: "",
+        classes: [],
+    };
+}
+
+export default Media;
