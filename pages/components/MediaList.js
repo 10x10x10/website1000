@@ -3,6 +3,11 @@ import classNames from "classnames";
 import { queryLink } from "../../lib/module.js";
 import Media from "./Media.js";
 
+import handleViewport from 'react-in-viewport';
+
+const ViewportMedia = handleViewport(Media);
+
+
 /**
  * 
  * 用欄位格狀清單顯示圖片、影片。
@@ -67,7 +72,7 @@ export default function MediaList(props) {
           getLinks(links).map((link) => {
             return (
               <div className="media-container" key={link}>
-                <Media link={link} />
+                <ViewportMedia link={link} />
               </div>
             );
           })

@@ -80,10 +80,11 @@ function Media(props) {
     }
 
 
+    
 
-    return (<>
+    return (<div ref={props.forwardedRef} className={classNames("media-item", { "media-show": !props.forwardedRef || props.enterCount > 0 })}>
         {getMediaContent(link, classes)}
-    </>);
+    </div>);
 }
 
 Media.getInitialProps = async () => {

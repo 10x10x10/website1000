@@ -549,6 +549,18 @@ a{
     justify-content: center;
 }
 
+.media-item{
+
+    margin-top: 50px;
+    opacity: 0;
+
+    transition: margin-top 1.5s, opacity 1.0s;
+    
+    &.media-show{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
 
 
 .middle{
