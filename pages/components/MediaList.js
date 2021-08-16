@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { queryLink } from "../../lib/module.js";
+import { getMediaContent, } from "../../lib/module.js"
 
 /**
  * 
@@ -20,8 +21,6 @@ export default function MediaList(props) {
     col = 0,
     mCol = col,
   } = props;
-
-  const sizeRegex = /(.+)\?\[(\d+)[x*](\d+)\]/;  // aaaaaa:[100x200] or zzzzzz:[30*60]
 
   function getLinks(links) {
 
@@ -52,80 +51,6 @@ export default function MediaList(props) {
     return result;
   };
 
-  function getContent(link) {
-
-    const getMediaInfo = (link) => {
-      const regResult = link.match(sizeRegex);
-
-      if (!regResult) {
-        return {
-          urlLink: link,
-          width: 10,
-          height: 10,
-        }
-      }
-
-      return {
-        urlLink: regResult[1],
-        width: parseInt(regResult[2]),
-        height: parseInt(regResult[3]),
-      }
-
-    }
-
-    const subExMatch = (link, matchNames) => {
-      let lowerLink = link.toLowerCase();
-      return matchNames.some((n) => lowerLink.endsWith(n));
-    }
-
-    const { urlLink, width, height } = getMediaInfo(link);
-
-
-
-    if (subExMatch(urlLink, [".mp4",])) {
-      return (
-        <video
-          className="media-video"
-          src={urlLink}
-          loading="lazy"
-          autoPlay="true"
-          loop="true"
-          muted="true"
-          playsinline=""
-          width="100%"
-          type="video/mp4"
-        />);
-    }
-
-    if (subExMatch(urlLink, [".png", ".jpg", ".jpeg",])) {
-      return (
-        <img
-          className="media-img"
-          src={urlLink}
-          loading="lazy"
-          width="100%"
-          alt=""
-        //layout="responsive"
-        //width={width}
-        //height={height}
-
-        />);
-    }
-
-    if (subExMatch(urlLink, [".gif",])) {
-      return (
-        <img
-          className="media-gif"
-          src={urlLink}
-          loading="lazy"
-          width="100%"
-          alt=""
-        />);
-    }
-
-    return null;
-  }
-
   return (
     <div className="media-list-container">
       {
@@ -142,7 +67,7 @@ export default function MediaList(props) {
           getLinks(links).map((link) => {
             return (
               <div className="media-container" key={link}>
-                {getContent(link)}
+                {getMediaContent(link)}
               </div>
             );
           })

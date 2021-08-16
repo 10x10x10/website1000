@@ -99,8 +99,7 @@ a{
     z-index: 9999;
 
     transform: translateY(0);
-    transition-property: transform;
-    transition-duration: 0.3s;
+    transition: transform 0.3s;
     
 
     .title-conatainer{
@@ -306,9 +305,9 @@ a{
 
             transform: scale(1);
 
-            transition-property: transform, opacity;
-            transition-duration: 1.2s, 0.3s;
-            transition-timing-function: ease-out, ease-out;
+            transition: 
+                transform 1.2s ease-out, 
+                opacity 0.3s ease-out;
 
             &:hover{
                 opacity: 1;
@@ -335,8 +334,7 @@ a{
 
             opacity: 0;
 
-            transition-property: opacity;
-            transition-duration: 0.5s;
+            transition: opacity 0.5s;
             
             .title{
                 color: #ffffff;

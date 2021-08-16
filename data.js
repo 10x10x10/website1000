@@ -159,7 +159,7 @@ export const projectData = {
             title: "ROG Phone 5 Launch Event Countdown Video",
             link: "/projects/rog-phone5-countdown",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622219323/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/013_ROG_Cover.jpg",
-            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1622054609/013_ROG%20Phone%20%E7%99%BC%E8%A1%A8%E6%9C%83/ROG_Video_Cover.gif",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1629051378/013-ROG-phone5-countdown/Cover/013-Cover-02.mp4",
             type: "default",
         },
         {

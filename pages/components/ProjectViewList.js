@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { projectData } from "../../data.js";
+import { projectData, } from "../../data.js";
+import { getMediaContent, } from "../../lib/module.js"
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -41,24 +42,25 @@ export default class ProjectViewList extends React.Component {
   render() {
 
     const { showProjects, } = this.state;
-    
+
     return (
       <div className="project-view-container grid-c grid-c3 m-grid-c m-grid-c1">
         {
           showProjects.map((proj) => {
-              return (
-                <Link href={proj.link} key={proj.id}>
-                  <a className="project-view">
-                    <div className="pseudo-cover" />
-                    <img src={proj.cover} className="cover" alt="" title="" />
-                    <img src={proj.hover} className="hover" alt="" title=""  />
-                    <div className="title-container">
-                      <h3 className="title">{proj.title}</h3>
-                    </div>
-                  </a>
-                </Link>
-              );
-            })
+            return (
+              <Link href={proj.link} key={proj.id}>
+                <a className="project-view">
+                  <div className="pseudo-cover" />
+                  <img src={proj.cover} className="cover" alt="" title="" />
+                  {/* <img src={proj.hover} className="hover" alt="" title=""  /> */}
+                  {getMediaContent(proj.hover, ["hover"])}
+                  <div className="title-container">
+                    <h3 className="title">{proj.title}</h3>
+                  </div>
+                </a>
+              </Link>
+            );
+          })
         }
       </div>);
   }
