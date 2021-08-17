@@ -1,4 +1,4 @@
-
+@use "sass:math";
 
 $background-color: #020202;
 $header-height: 80px;
@@ -281,7 +281,7 @@ a{
 
         .pseudo-cover {
             width: 100%;
-            padding-top: 530 / 942 * 100%;
+            padding-top: math.div(530 ,942) * 100%;
             box-sizing: border-box;
         }
 
@@ -439,8 +439,7 @@ a{
                 $size: 5px;
                 width: $size;
                 height: $size;
-                margin: (25px - $size)/2;
-                //margin-left: -$size/2;
+                margin: math.div(25px - $size, 2);
             }        
         }
     }
@@ -534,7 +533,7 @@ a{
     position: relative;
     $video-width: 1200px;
     width: $video-width;
-    height: $video-width / 16 * 9;
+    height: math.div($video-width ,16) * 9;
 
     iframe{
         width: 100%;
@@ -776,7 +775,7 @@ h1, h2, h3, h4, h5, h6{
     
     .video-container {
         width: 100%;
-        height: calc(100vw/16*9);
+        height: calc(math.div(100vw, 16)* 9);
     }
     
     .grid-c {
