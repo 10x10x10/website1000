@@ -1,3 +1,2 @@
-start "" "http://localhost:3000/"
-npm run dev
+node lib/runDev.js
 pause
