@@ -85,8 +85,8 @@ export const linkQuery = {
 
     project012: {
         video_main: "https://player.vimeo.com/video/527284650?app_id=122963&amp;referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
-        video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1621690189/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_02.mp4",
-        video_01_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1621690726/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_S_01.mp4",
+        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1629296361/012-GogoroVivaMix/Video/012-Video-01.mp4",
+        video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1629296364/012-GogoroVivaMix/Video/012-Video-02.mp4",
     },
 
     project013: {
@@ -150,8 +150,8 @@ export const projectData = {
             id: "project012",
             title: "Gogoro VIVA MIX 新車發表會",
             link: "/projects/gogoro-viva-mix",
-            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1621879203/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_Cover_P.png",
-            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1621931245/012_Gogoro%20%E5%87%BA%E8%BB%8A%E7%A7%80/012_Vidoe_Cover_S.gif",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629296335/012-GogoroVivaMix/Cover/012-Cover.png",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1629296337/012-GogoroVivaMix/Cover/012-Hover.mp4",
             type: "default",
         },
         {

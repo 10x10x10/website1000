@@ -23,8 +23,8 @@ export default function ProjectPage(props) {
 
       <MediaList col={1}
         links={[
+          "project012.video_01",
           "project012.video_02",
-          "project012.video_01_s",
         ]} />
         
       <Credits foldable>
