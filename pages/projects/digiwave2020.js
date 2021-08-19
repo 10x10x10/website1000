@@ -29,28 +29,28 @@ export default function ProjectPage(props) {
         <TextContent>最後畫面需要停下時，你會選擇留在哪一刻？</TextContent>
       </TextContainer>
 
-      <MediaList col={2}
+      <MediaList col={2} mCol={1}
         links={[
-          "project006.video_01_s",
-          "project006.video_02_s",
-          "project006.video_03_s",
-          "project006.video_04_s",
+          "project006.image_01",
+          "project006.image_02",
+          "project006.image_03",
+          "project006.image_04",
         ]} />
 
       <MediaList col={1}
         title="Motion Graphics"
         links={[
-          "project006.video_05_s",
+          "project006.video_01",
         ]} />
 
-      <MediaList col={3} mCol={2}
+      <MediaList col={2} mCol={1}
         links={[
-          "project006.video_06_s",
-          "project006.video_07_s",
-          "project006.video_08_s",
-          "project006.video_09_s",
-          "project006.video_10_s",
-          "project006.video_11_s",
+          "project006.video_02",
+          "project006.video_03",
+          "project006.video_04",
+          "project006.video_05",
+          "project006.video_06",
+          "project006.video_07",
         ]} />
 
       <Credits>
