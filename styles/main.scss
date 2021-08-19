@@ -775,7 +775,7 @@ h1, h2, h3, h4, h5, h6{
     
     .video-container {
         width: 100%;
-        height: calc(math.div(100vw, 16)* 9);
+        height: calc(100vw / 16 * 9);
     }
     
     .grid-c {
