@@ -22,23 +22,27 @@ export default function ProjectPage(props) {
         <TextContent>反覆地聽著歌曲，讓自己沉浸其中，直到腦海中浮現影像，最後憑著直覺創作，過程所帶來的興奮感與滿足感，也許是持續創作最重要的動力吧。</TextContent>
       </TextContainer>
 
-      <MediaList col={2}
+      <MediaList col={2} mCol={1}
         links={[
-          "project004.video_01_s",
-          "project004.video_02_s",
+          "project004.video_09",
+          "project004.video_10",
         ]} />
 
-      <MediaList col={3} mCol={2}
+      <MediaList col={1}
         title="2D Motion Design"
         links={[
-          //"project004.video_03_s",
-          //"project004.video_04_s",
-          "project004.video_05_s",
-          "project004.video_06_s",
-          "project004.video_07_s",
-          "project004.video_08_s",
-          "project004.video_09_s",
-          "project004.video_10_s",
+          "project004.video_01",
+          "project004.video_02",
+        ]} />
+
+      <MediaList col={2} mCol={1}
+        links={[
+          "project004.video_03",
+          "project004.video_04",
+          "project004.video_05",
+          "project004.video_06",
+          "project004.video_07",
+          "project004.video_08",
         ]} />
 
       <Credits>

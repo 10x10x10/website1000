@@ -56,16 +56,16 @@ export const linkQuery = {
 
     project004: {
         video_main: "https://www.youtube.com/embed/ZcgNckX1k5U?wmode=opaque&widget_referrer=https%3A%2F%2Fwww.1000cheng.cc%2F&enablejsapi=1&origin=https%3A%2F%2Fcdn.embedly.com&widgetid=1",
-        video_01_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a81dabd9832a5c019cb95_005_pip_01.gif",
-        video_02_s: "https://uploads-ssl.webflow.com/5dec1a83675ba8a2b17a8801/600a825e913ca4f22288d57d_005_pip_02.gif",
-        video_03_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626196992/004_PiP_MV_Pony5ibe/Video/004_GIF_03.gif",
-        video_04_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626196992/004_PiP_MV_Pony5ibe/Video/004_GIF_04.gif",
-        video_05_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626196992/004_PiP_MV_Pony5ibe/Video/004_GIF_05.gif",
-        video_06_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626196992/004_PiP_MV_Pony5ibe/Video/004_GIF_06.gif",
-        video_07_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626196992/004_PiP_MV_Pony5ibe/Video/004_GIF_07.gif",
-        video_08_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626196992/004_PiP_MV_Pony5ibe/Video/004_GIF_08.gif",
-        video_09_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626196992/004_PiP_MV_Pony5ibe/Video/004_GIF_09.gif",
-        video_10_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626196992/004_PiP_MV_Pony5ibe/Video/004_GIF_10.gif",
+        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1629541086/004-PiP-MV-Pony5ibe/Video/004-Video-01.mp4",
+        video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1629541086/004-PiP-MV-Pony5ibe/Video/004-Video-02.mp4",
+        video_03: "https://res.cloudinary.com/w10x10x10/video/upload/v1629541086/004-PiP-MV-Pony5ibe/Video/004-Video-03.mp4",
+        video_04: "https://res.cloudinary.com/w10x10x10/video/upload/v1629541086/004-PiP-MV-Pony5ibe/Video/004-Video-04.mp4",
+        video_05: "https://res.cloudinary.com/w10x10x10/video/upload/v1629541086/004-PiP-MV-Pony5ibe/Video/004-Video-05.mp4",
+        video_06: "https://res.cloudinary.com/w10x10x10/video/upload/v1629541086/004-PiP-MV-Pony5ibe/Video/004-Video-06.mp4",
+        video_07: "https://res.cloudinary.com/w10x10x10/video/upload/v1629541086/004-PiP-MV-Pony5ibe/Video/004-Video-07.mp4",
+        video_08: "https://res.cloudinary.com/w10x10x10/video/upload/v1629541086/004-PiP-MV-Pony5ibe/Video/004-Video-08.mp4",
+        video_09: "https://res.cloudinary.com/w10x10x10/video/upload/v1629541086/004-PiP-MV-Pony5ibe/Video/004-Video-09.mp4",
+        video_10: "https://res.cloudinary.com/w10x10x10/video/upload/v1629541086/004-PiP-MV-Pony5ibe/Video/004-Video-10.mp4",
     },
 
     project006: {
@@ -166,8 +166,8 @@ export const projectData = {
             id: "project004",
             title: "Pony5ibe - They said ft.陳嫺靜 【Animated Music Video】",
             link: "/projects/pip-mv-pony5ibe",
-            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626197112/004_PiP_MV_Pony5ibe/Cover/005_Cover_01.png",
-            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626197112/004_PiP_MV_Pony5ibe/Cover/005_Cover_01.png",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629542178/004-PiP-MV-Pony5ibe/Cover/004-Cover.png",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1629542180/004-PiP-MV-Pony5ibe/Cover/004-Hover.mp4",
             type: "default",
         },
         {
