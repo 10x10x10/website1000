@@ -50,9 +50,8 @@ export default class ProjectViewList extends React.Component {
             return (
               <Link href={proj.link} key={proj.id}>
                 <a className="project-view">
-                  <div className="pseudo-cover" />
                   <Media link={proj.cover} classes={["cover"]} />
-                  <Media link={proj.hover} classes={["hover"]} />
+                  <Media link={proj.hover} classes={["hover"]} position={"absolute"} />
                   <div className="title-container">
                     <h3 className="title">{proj.title}</h3>
                   </div>

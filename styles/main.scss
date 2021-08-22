@@ -279,12 +279,6 @@ a{
 
         cursor: pointer;
 
-        .pseudo-cover {
-            width: 100%;
-            padding-top: math.div(530 ,942) * 100%;
-            box-sizing: border-box;
-        }
-
         .cover{
             position: absolute;
             left: 0;
@@ -519,7 +513,9 @@ a{
     .media-container{
         margin: 20px 0;
         
-        .media-img, .media-vedio{
+        .media-img, .media-video, .media-gif{
+            position: absolute;
+            inset: 0;
             background-color: rgba(#fff, 0.05);
         }
     }
@@ -549,6 +545,8 @@ a{
 }
 
 .media-item{
+
+    position: relative;
 
     margin-top: 50px;
     opacity: 0;
