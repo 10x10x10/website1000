@@ -42,7 +42,7 @@ function Media(props) {
 
   useEffect(() => {
 
-    const updateFunc = () => {
+    const UpdateLoadingState = () => {
       useIsLoading(false);
     };
 
@@ -51,9 +51,9 @@ function Media(props) {
 
         const img = mediaRef.current;
         if (img.complete) {
-          updateFunc();
+          UpdateLoadingState();
         } else {
-          img.onload = updateFunc;
+          img.onload = UpdateLoadingState;
         }
 
         break;
@@ -62,9 +62,9 @@ function Media(props) {
         const ved = mediaRef.current;
         console.log()
         if (ved.readyState >= 3) {
-          updateFunc();
+          UpdateLoadingState();
         } else {
-          ved.onloadeddata = updateFunc;
+          ved.onloadeddata = UpdateLoadingState;
         }
 
         break;
