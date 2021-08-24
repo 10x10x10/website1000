@@ -1,14 +1,21 @@
 import React from "react";
-import Head from 'next/head'
+import Script from 'next/script'
 
 export default function HeadGoogleAnalytics(props) {
 
   const id = "UA-171392879-1";
 
   return (
-    <Head>
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=${id}`}></script>
-      <script>
+    <>
+      <Script
+        strategy="beforeInteractive"
+        async={true}
+        src={`https://www.googletagmanager.com/gtag/js?id=${id}`}
+      />
+
+      <Script
+        id="headGoogleAnalytics"
+      >
         {`
         // Google Analytics - in HeadGoogleAnalytics.js
         window.dataLayer = window.dataLayer || [];
@@ -17,7 +24,7 @@ export default function HeadGoogleAnalytics(props) {
 
         gtag("config", "${id}");
         `}
-      </script>
-    </Head>
+      </Script>
+    </>
   );
 }
