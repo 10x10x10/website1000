@@ -52,7 +52,7 @@ export default class Credits extends React.Component {
 
         {
           (foldable && isFold) ? (
-            <p className="credit-more">...More</p>
+            <p className="credit-more">More</p>
           ) : (
             null
           )
