@@ -47,7 +47,6 @@ export default function custom404() {
 
             <Lottie
               animationData={error404Anim}
-              style={{ width: 300 }}
               loop={true}
               autoplay={true}
               initialSegment={[0, 43]}
