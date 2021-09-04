@@ -250,7 +250,7 @@ export const aboutData = {
     intro: {
         title: "I'm 1000 Cheng ✶ ✷ ✸",
         descriptions: [
-            "1000，本名 鄭詒謙，居住於台北，畢業於實踐媒傳，擅長製作迷幻影像與實驗性影片。目前於新創團隊 Eagle App 擔任產品設計師，協助軟體增長與優化，同時以自由接案者身分與多元類型的公司合作，包含影像製作、互動藝術、服飾設計公司，如叁式、group.g、空集設計、羅藝設計等。",
+            "1000，本名 鄭詒謙，居住於台北，畢業於實踐媒傳，擅長製作迷幻影像與實驗性影片。目前於新創團隊 Eagle App 擔任產品設計師，協助軟體增長與優化，同時以自由接案者身分與多元類型的公司合作，包含影像製作、互動藝術、服飾設計公司，如叁式、夢想動畫、group.g、空集設計、羅藝設計等。",
             "I'm 1000, Yi-Chien Cheng, based in Taipei, Taiwan. I'm passionate about make some trippy 3d motion graphics by Cinema 4d and  After Effects. Currently working as a designer in the startup team Eagle App, assisting in software growth and optimization, and working as a freelancer with multiple types of companies, including video production, interactive art, and fashion design companies.",
         ],
     },
@@ -279,15 +279,35 @@ export const aboutData = {
     experiences: [
         {
             year: "2021",
-            items: [
+            items: [{
+                    text: "2021 臺南國際音樂節主視覺 3D動態設計",
+                    link: "",
+                },
                 {
-                    text: "Gogoro VIVA MIX 發表會 動態視覺設計",
-                    link: "projects/gogoro-viva-mix",
+                    text: "Netflix 社群節目台式影劇回顧第一集 動態設計",
+                    link: "",
+                },
+                {
+                    text: "ASUS Zenfone8 發表會倒數影像 動態設計",
+                    link: "",
+                },
+                {
+                    text: "2021 臺灣文博會參拜大廳 投影動態設計",
+                    link: "",
                 },
                 {
                     text: "ROG Phone 5 發表會 動態設計",
                     link: "projects/rog-phone5-countdown",
                 },
+                {
+                    text: "Gogoro VIVA MIX 發表會 動態視覺設計",
+                    link: "projects/gogoro-viva-mix",
+                },
+                {
+                    text: "MUTANT 集體異變實體展 參展",
+                    link: "",
+                },
+               
             ]
         },
         {
