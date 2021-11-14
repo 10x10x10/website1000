@@ -10,12 +10,12 @@ export default function Header(props) {
         <div className="about-container">
             <div className="row m-col">
                 <div className="middle">
-                    <iframe
+                    {/* <iframe
                         className="draw-view"
                         src="https://editor.p5js.org/1000cheng/embed/AIYo4-nCa"
                         height="300px"
                         width="300px"
-                        style={{ borderStyle: 'none' }}></iframe>
+                        style={{ borderStyle: 'none' }}></iframe> */}
                 </div>
                 <div>
                     <div className="intro">
