@@ -115,6 +115,17 @@ export const linkQuery = {
 
     },
 
+    project018: {
+        video_main: "https://player.vimeo.com/video/657119164?h=6b28a5772d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" ,
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1639593082/018-TIMF-TheSongofLife/Image/018-Image-01.jpg?[1920x1277]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1639593083/018-TIMF-TheSongofLife/Image/018-Image-02.jpg?[2480x1650]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1639593085/018-TIMF-TheSongofLife/Image/018-Image-03.jpg?[2480x1650]",
+        image_04: "https://res.cloudinary.com/w10x10x10/image/upload/v1639593087/018-TIMF-TheSongofLife/Image/018-Image-04.jpg?[2480x1650]",
+        image_05: "https://res.cloudinary.com/w10x10x10/image/upload/v1639593088/018-TIMF-TheSongofLife/Image/018-Image-05.jpg?[2480x1650]",
+        image_06: "https://res.cloudinary.com/w10x10x10/image/upload/v1639593090/018-TIMF-TheSongofLife/Image/018-Image-06.jpg?[2480x1650]",
+       
+    },
+
     projectM001: {
         video_main: "https://player.vimeo.com/video/343632581?app_id=122963&referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
         video_01_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170377/M001_Simplex/Video/M001_GIF_01.gif?[1920x1080]",
