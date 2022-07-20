@@ -55,7 +55,7 @@ export default class Header extends React.Component {
           <Link href={headerData.links[0].link}>
             <a>
               {/* <h1 className="title">1000 Cheng</h1> */}
-              <img src="/logo/logo.svg" />
+              <img src="/logo/logo.png" />
             </a>
           </Link>
         </div>
@@ -86,7 +86,7 @@ export default class Header extends React.Component {
                       {item.title}
                     </a>
                   </Link>
-                  {index + 1 < headerData.links.length ? <span className="header-link-spliter">|</span> : null}
+                  {/* {index + 1 < headerData.links.length ? <span className="header-link-spliter">|</span> : null} */}
                 </div>);
             })
           }

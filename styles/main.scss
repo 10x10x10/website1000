@@ -1,10 +1,10 @@
 @use "sass:math";
 
-$background-color: #020202;
+$background-color: #0B0C0E;
 $header-height: 80px;
 $media-list-gap: 20px;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Manrope:wght@700;800&family=Noto+Sans+TC&display=swap');
 
 :root {
     font-size: 16px;
@@ -49,7 +49,7 @@ body, html{
         right:0;
         height: 50px;
         background: rgb(0,0,0,0);
-        background: linear-gradient(0deg, rgba(#000, 0.9) 0%, rgba(#000, 0) 100%);
+        background: linear-gradient(0deg, rgba($background-color, 0.9) 0%, rgba($background-color, 0) 100%);
         pointer-events: none;
     }
 }
@@ -65,8 +65,11 @@ a{
 }
 
 .container{
+    
+    max-width: 1920px;
+
     box-sizing: border-box;
-    padding: $header-height 0 0 0;
+    padding: $header-height 80px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,11 +90,11 @@ a{
 
     position: fixed;
     background: rgb(0,0,0,0);
-    background: linear-gradient(0deg, rgba(#000, 0) 0%, rgba(#000, 0.9) 50%);
+    background: linear-gradient(0deg, rgba($background-color, 0) 0%, rgba($background-color, 0.9) 50%);
 
     display: flex;
     flex-direction: row;
-    padding: 0 20px;
+    padding: 0 80px;
     //border-bottom: solid 1px rgba(#ffffff, 0.05);
 
     height: $header-height;
@@ -106,16 +109,9 @@ a{
     .title-conatainer{
         display: flex;
         align-items: center;
-        .title{
-            font-size: 30px;
-            margin: 0;
-            padding: 0;
-        }
-        .subtitle{
-            font-size: 12px;
-            margin: 0;
-            padding: 0;
-            opacity: 0.6;
+        
+        img {
+            height: 36px;
         }
     }
 
@@ -134,17 +130,16 @@ a{
         
         display: inline-block;
         color: #ffffff;
-        font-size: 1.1rem;
+        font-size: 18px;
         padding: 0 10px;
         margin: 0;
         min-width: 80px;
         text-align: center;
         opacity: 1;
-        letter-spacing: 2px;
 
         cursor: pointer;
 
-        font-weight: 300;
+        font-weight: 400;
         height: $header-height;
         line-height: $header-height;
         box-sizing: border-box;
@@ -172,10 +167,10 @@ a{
             &::after{
                 position: absolute;
                 content: "";
-                height: 2px;
+                height: 1px;
                 left: 8px;
                 right: 8px;
-                bottom: 16px;
+                bottom: 20px;
                 background-color: #fff;
                 border-radius: 1px;
 
@@ -277,7 +272,8 @@ a{
 .project-view-container{
 
     width: 100%;
-    padding: 0px 0;
+    padding: 0 0;
+    box-sizing: border-box;
 
     .project-view{
 
@@ -340,7 +336,7 @@ a{
 
             //background-color: rgba(#000, 0.5);
             background: rgb(0,0,0);
-            background: linear-gradient(0deg, rgba(#000, 0.9) 50%, rgba(#000, 0) 100%);
+            background: linear-gradient(0deg, rgba($background-color, 0.9) 50%, rgba($background-color, 0) 100%);
 
             opacity: 0;
 
@@ -348,8 +344,8 @@ a{
             
             .title{
                 color: #ffffff;
-                
-                font-size: 1.25rem;
+                font-family: 'Inter';
+                font-size: 20px;
                 margin: 0;
                 padding: 10px 20px;
             }
@@ -525,7 +521,7 @@ a{
 
         .credit-more{
 
-            font-size: 1rem;
+            font-size: 16px;
             cursor: pointer;
             width: 50px;
             padding: 8px;
@@ -667,11 +663,11 @@ h1, h2, h3, h4, h5, h6{
 @media only screen and (max-width: 1200px) {
    
     $m-header-height: 64px;
-    $m-media-list-gap: 10px;
+    $m-media-list-gap: 16px;
 
     .container{
         width: 100%;
-        padding: $m-header-height 0 0;
+        padding: $m-header-height 16px 0;
     }
 
     .project-container{
@@ -701,12 +697,13 @@ h1, h2, h3, h4, h5, h6{
         $top-right-btn-size: 30px;
         $top-right-btn-padding: 16px;
 
-        padding: 0;
+        padding: 0 16px;
         flex-direction: row;
 
 
         .title-conatainer{
             flex-grow: 1;
+
         }
 
         .flex-space{
@@ -751,13 +748,12 @@ h1, h2, h3, h4, h5, h6{
                 height: $m-header-link-btn-height;
                 line-height: $m-header-link-btn-height;
 
-                font-size: 1.2rem;
+                font-size: 18px;
                 border: 1px solid rgba(#fff, 0.75);
                 background-color: rgba(#000, 0.8);
                 min-width: 160px;
                 margin: 10px 0;
                 padding: 0 16px;
-                letter-spacing: 3px;
                 
                 &-active {
                     color: #000;
