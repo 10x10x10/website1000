@@ -1,6 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import { aboutData } from "../../data.js";
+import { styled } from "../../styles/stitchesStyles.js";
+
+const HeadIcon = styled('img',{
+    width: 240,
+    height: 240,
+});
 
 export default function Header(props) {
 
@@ -10,12 +16,7 @@ export default function Header(props) {
         <div className="about-container">
             <div className="row m-col">
                 <div className="middle">
-                    {/* <iframe
-                        className="draw-view"
-                        src="https://editor.p5js.org/1000cheng/embed/AIYo4-nCa"
-                        height="300px"
-                        width="300px"
-                        style={{ borderStyle: 'none' }}></iframe> */}
+                    <HeadIcon src={'./logo/logo_l.png'}/>
                 </div>
                 <div>
                     <div className="intro">

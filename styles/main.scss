@@ -377,7 +377,8 @@ a{
 .about-container{
 
     flex-grow: 1;
-    max-width: 1200px;
+    max-width: 1920px;
+    margin-top: 120px;
 
     h1{
         font-size: 30px;
@@ -697,7 +698,7 @@ h1, h2, h3, h4, h5, h6{
         $top-right-btn-size: 30px;
         $top-right-btn-padding: 16px;
 
-        padding: 0 16px;
+        padding: 0 0 0 16px;
         flex-direction: row;
 
 
@@ -809,7 +810,8 @@ h1, h2, h3, h4, h5, h6{
     }
 
     .about-container {
-        padding: 0 20px;
+        //padding: 0 20px;
+        margin-top: 32px;
 
         .draw-view{
             margin: 0;

@@ -240,7 +240,7 @@ export const metaData = {
         title: "1000 Cheng",
         description: "I'm 1000 cheng, Yi-Chien Cheng, basd in Taipei,Taiwan and I'm passionate about make some trippy 3d motion graphics by Cinema 4d and  After Effects.",
         author: "1000 Cheng",
-        icon: "/icons/logo_32.png",
+        icon: "/logo/logo_s.png",
         ogType: "website",
         ogImage: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174406/M002_Entanglement/Cover/M002_Cover_01.png",
         ogSiteName: "1000 Cheng",
