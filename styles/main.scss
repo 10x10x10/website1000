@@ -4,7 +4,7 @@ $background-color: #0B0C0E;
 $header-height: 80px;
 $media-list-gap: 20px;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Manrope:wght@700;800&family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=Manrope:wght@700;800&family=Noto+Sans+TC&display=swap');
 
 :root {
     font-size: 16px;
@@ -374,17 +374,7 @@ a{
     width: 100%;
 }
 
-.about-container{
-
-    flex-grow: 1;
-    max-width: 1920px;
-    margin-top: 120px;
-
-    h1{
-        font-size: 30px;
-        padding: 0;
-        margin-bottom: 10px;
-    }
+.__about-container{
 
     p, li{
         font-size: 18px;
@@ -429,30 +419,6 @@ a{
         }
     }
 
-    .experience{
-        .experience-year-container{
-            margin-bottom: 20px;
-
-            h2{
-                font-size: 22px;
-            }
-
-            ul li::before{
-                content: "";
-                display: flex;
-                flex-shrink: 0;
-                flex-grow: 0;
-                background-color: rgba(#fff, 0.75);
-
-                border-radius: 100%;
-
-                $size: 5px;
-                width: $size;
-                height: $size;
-                margin: math.div(25px - $size, 2);
-            }        
-        }
-    }
 
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function PoweredBy(props) {
+export default function(props) {
 
-  const text = `© 2021 Website powered by `;
+  const text = `© 2022 Website powered by `;
 
   const owenWebsiteUrl = "https://ttesttes93405.github.io/OwenCollections/";
   const owen = (<a

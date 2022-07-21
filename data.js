@@ -116,14 +116,14 @@ export const linkQuery = {
     },
 
     project018: {
-        video_main: "https://player.vimeo.com/video/657119164?h=6b28a5772d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" ,
+        video_main: "https://player.vimeo.com/video/657119164?h=6b28a5772d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
         image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1639593082/018-TIMF-TheSongofLife/Image/018-Image-01.jpg?[1920x1277]",
         image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1639593083/018-TIMF-TheSongofLife/Image/018-Image-02.jpg?[2480x1650]",
         image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1639593085/018-TIMF-TheSongofLife/Image/018-Image-03.jpg?[2480x1650]",
         image_04: "https://res.cloudinary.com/w10x10x10/image/upload/v1639593087/018-TIMF-TheSongofLife/Image/018-Image-04.jpg?[2480x1650]",
         image_05: "https://res.cloudinary.com/w10x10x10/image/upload/v1639593088/018-TIMF-TheSongofLife/Image/018-Image-05.jpg?[2480x1650]",
         image_06: "https://res.cloudinary.com/w10x10x10/image/upload/v1639593090/018-TIMF-TheSongofLife/Image/018-Image-06.jpg?[2480x1650]",
-       
+
     },
 
     projectM001: {
@@ -267,66 +267,38 @@ export const metaData = {
 
 export const aboutData = {
     intro: {
-        title: "I'm 1000 Cheng ✶ ✷ ✸",
+        title: "HI, I'm 1000 Cheng.\nA designer specialising in Experimental Visual, Motion Graphics, Generative Art, and Product Design.",
         descriptions: [
-            "1000，本名 鄭詒謙，居住於台北，畢業於實踐媒傳，擅長製作迷幻影像與實驗性影片。目前於新創團隊 Eagle App 擔任產品設計師，協助軟體增長與優化，同時以自由接案者身分與多元類型的公司合作，包含影像製作、互動藝術、服飾設計公司，如叁式、夢想動畫、group.g、空集設計、羅藝設計等。",
-            "I'm 1000, Yi-Chien Cheng, based in Taipei, Taiwan. I'm passionate about make some trippy 3d motion graphics by Cinema 4d and  After Effects. Currently working as a designer in the startup team Eagle App, assisting in software growth and optimization, and working as a freelancer with multiple types of companies, including video production, interactive art, and fashion design companies.",
+            "1000 Cheng，本名鄭詒謙，現居台北，為十立方科技有限公司創辦人，致力於製作實驗性影像與嶄新的視覺體驗，已累積超過 20 個專案合作經驗，曾與多元類型的公司合作，專案包含大型展覽投影、產品發表會與各類動態影像。同時也有 2 年數位產品設計經歷，具備協助產品與網站的優化與介面設計之經驗。",
         ],
     },
-    contacts: [
-        {
-            text: "10x10x10w1000@gmail.com",
-            icon: "/icons/social-mail.svg",
-            link: "mailto:10x10x10w1000@gmail.com",
-        },
-        {
-            text: "Instagram",
-            icon: "/icons/social-instagram.svg",
-            link: "https://www.instagram.com/10x10x10_1000/",
-        },
-        {
-            text: "Facebook",
-            icon: "/icons/social-facebook.svg",
-            link: "https://www.facebook.com/1000cheng",
-        },
-        {
-            text: "Behance",
-            icon: "/icons/social-14-white.svg",
-            link: "https://www.behance.net/10x10x10_1000",
-        },
-    ],
-    experiences: [
+    projects: [
         {
             year: "2021",
             items: [{
-                    text: "2021 臺南國際音樂節主視覺 3D動態設計",
-                    link: "",
-                },
-                {
-                    text: "Netflix 社群節目台式影劇回顧第一集 動態設計",
-                    link: "",
-                },
-                {
-                    text: "ASUS Zenfone8 發表會倒數影像 動態設計",
-                    link: "",
-                },
-                {
-                    text: "2021 臺灣文博會參拜大廳 投影動態設計",
-                    link: "",
-                },
-                {
-                    text: "ROG Phone 5 發表會 動態設計",
-                    link: "projects/rog-phone5-countdown",
-                },
-                {
-                    text: "Gogoro VIVA MIX 發表會 動態視覺設計",
-                    link: "projects/gogoro-viva-mix",
-                },
-                {
-                    text: "MUTANT 集體異變實體展 參展",
-                    link: "",
-                },
-               
+                text: "2021 臺南國際音樂節主視覺 3D動態設計",
+            },
+            {
+                text: "Netflix 社群節目台式影劇回顧第一集 動態設計",
+            },
+            {
+                text: "ASUS Zenfone8 發表會倒數影像 動態設計",
+            },
+            {
+                text: "2021 臺灣文博會參拜大廳 投影動態設計",
+            },
+            {
+                text: "ROG Phone 5 發表會 動態設計",
+                link: "projects/rog-phone5-countdown",
+            },
+            {
+                text: "Gogoro VIVA MIX 發表會 動態視覺設計",
+                link: "projects/gogoro-viva-mix",
+            },
+            {
+                text: "MUTANT 集體異變實體展 參展",
+            },
+
             ]
         },
         {
@@ -338,23 +310,18 @@ export const aboutData = {
                 },
                 {
                     text: "PONY5IBE -【They Said】ft 陳嫻靜",
-                    link: "",
                 },
                 {
                     text: "台北電影節 Taipei Film Festival 片頭",
-                    link: "",
                 },
                 {
                     text: "金馬 57 最佳攝影 入圍動畫",
-                    link: "",
                 },
                 {
                     text: "金馬 57 最佳劇情短片 入圍動畫",
-                    link: "",
                 },
                 {
                     text: "實踐大學媒體傳達設計學系 畢業",
-                    link: "",
                 },
             ]
         },
@@ -363,7 +330,6 @@ export const aboutData = {
             items: [
                 {
                     text: "《 TGIF台北設計電波 》國際設計交流年會 宣傳片",
-                    link: "",
                 },
                 {
                     text: "2019 實踐大學設計學院國際設計學術與創作研討會 宣傳片",
@@ -371,6 +337,72 @@ export const aboutData = {
                 },
             ]
         },
+    ],
+    experiences: [
+        {
+            title: "2020.6 — 2022.7",
+            items: [
+                {
+                    text: "Eagle App | Product Designer",
+                }
+            ]
+        },
+        {
+            title: "2020.6 — 2022.7",
+            items: [
+                {
+                    text: "Shih Chien University, Department of Communications Design",
+                }
+            ]
+        },
+        {
+            title: "2018.7 — 2018.8",
+            items: [
+                {
+                    text: "LAVI Animation Studio | Animation Intern",
+                }
+            ]
+        },
+    ],
+    toolkit: [
+        {
+            title: "Motion",
+            items: [
+                {
+                    text: "After Effects | Cinema 4d | Blender | Touch Designer  | p5.js",
+                }
+            ]
+        },
+        {
+            title: "UI / Graphics",
+            items: [
+                {
+                    text: "Figma | Webflow | illustrator | Photoshop",
+                }
+            ]
+        },
+    ],
+    contacts: [
+        {
+            text: "10x10x10w1000@gmail.com",
+            icon: "/icons/social-mail.svg",
+            link: "mailto:10x10x10w1000@gmail.com",
+        },
+        // {
+        //     text: "Instagram",
+        //     icon: "/icons/social-instagram.svg",
+        //     link: "https://www.instagram.com/10x10x10_1000/",
+        // },
+        // {
+        //     text: "Facebook",
+        //     icon: "/icons/social-facebook.svg",
+        //     link: "https://www.facebook.com/1000cheng",
+        // },
+        // {
+        //     text: "Behance",
+        //     icon: "/icons/social-14-white.svg",
+        //     link: "https://www.behance.net/10x10x10_1000",
+        // },
     ],
 }
 
@@ -419,5 +451,5 @@ export const footerData = {
         },
     ],
     description: "Plz feel free to contact me",
-    copyright: "Copyright © 2019-2021 1000 Cheng",
+    copyright: "Copyright © 2019-2022 1000 Cheng",
 };

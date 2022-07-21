@@ -17,7 +17,7 @@ const BigTitle = styled('h1', {
   lineHeight: 1.2,
   whiteSpace: 'pre-line',
   variants: {
-    size: {
+    media: {
       s: {
         fontSize: 32,
         margin: '64px 0 32px',
@@ -41,10 +41,11 @@ export default function () {
 
       <div className="container" >
 
-        <BigTitle size={{ 
-          '@initial': 's', 
-          '@s': 's', 
-          '@m': 'm' }}>{'Experimental Visual,\nMotion Graphics, Generative Art,\nDigital Product Design'}</BigTitle>
+        <BigTitle media={{
+          '@initial': 's',
+          '@s': 's',
+          '@m': 'm',
+        }}>{'Experimental Visual,\nMotion Graphics, Generative Art,\nDigital Product Design'}</BigTitle>
         <ProjectViewList type="default"></ProjectViewList>
       </div>
 
