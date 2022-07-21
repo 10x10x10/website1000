@@ -274,31 +274,49 @@ export const aboutData = {
     },
     projects: [
         {
-            year: "2021",
-            items: [{
-                text: "2021 臺南國際音樂節主視覺 3D動態設計",
-            },
-            {
-                text: "Netflix 社群節目台式影劇回顧第一集 動態設計",
-            },
-            {
-                text: "ASUS Zenfone8 發表會倒數影像 動態設計",
-            },
-            {
-                text: "2021 臺灣文博會參拜大廳 投影動態設計",
-            },
-            {
-                text: "ROG Phone 5 發表會 動態設計",
-                link: "projects/rog-phone5-countdown",
-            },
-            {
-                text: "Gogoro VIVA MIX 發表會 動態視覺設計",
-                link: "projects/gogoro-viva-mix",
-            },
-            {
-                text: "MUTANT 集體異變實體展 參展",
-            },
+            year: "2022",
+            items: [
+                {
+                    text: "臺北表演藝術中心開幕主視覺 動態設計",
+                },
 
+            ]
+        },
+        {
+            year: "2021",
+            items: [
+                {
+                    text: "台北服裝時裝週開幕秀 投影動態設計",
+                },
+                {
+                    text: "2021 臺南國際音樂節主視覺 3D動態設計",
+                },
+                {
+                    text: "佳世達 Qisda 立柱抽象影片設計",
+                },
+                {
+                    text: "Netflix 社群節目台式影劇回顧第一集 動態設計",
+                },
+                {
+                    text: "ASUS Zenfone8 發表會倒數影像 動態設計",
+                },
+                {
+                    text: "2021 臺灣文博會參拜大廳 投影動態設計",
+                },
+                {
+                    text: "ROG Phone 5 發表會 動態設計",
+                    link: "projects/rog-phone5-countdown",
+                },
+                {
+                    text: "Gogoro VIVA MIX 發表會 動態視覺設計",
+                    link: "projects/gogoro-viva-mix",
+                },
+                {
+                    text: "瀚宇博德公司介紹片頭設計",
+                },
+                {
+                    text: "MUTANT 集體異變實體展 參展",
+                },
             ]
         },
         {
@@ -319,9 +337,6 @@ export const aboutData = {
                 },
                 {
                     text: "金馬 57 最佳劇情短片 入圍動畫",
-                },
-                {
-                    text: "實踐大學媒體傳達設計學系 畢業",
                 },
             ]
         },

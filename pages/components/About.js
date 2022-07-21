@@ -171,7 +171,7 @@ export default function About(props) {
 
 
         <Block>
-          <Title>Projects</Title>
+          <Title>Project</Title>
           {
             projects.map((el) => {
               return (
@@ -237,7 +237,7 @@ export default function About(props) {
         </Block>
 
         <Block className="contact">
-          <Title>Contact me</Title>
+          <Title>Let's connect</Title>
           {
             contacts.map((contact) => {
               return (
