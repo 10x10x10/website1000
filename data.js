@@ -363,7 +363,7 @@ export const aboutData = {
             ]
         },
         {
-            title: "2020.6 — 2022.7",
+            title: "2016.9 — 2020.6",
             items: [
                 {
                     text: "Shih Chien University, Department of Communications Design",
@@ -384,7 +384,7 @@ export const aboutData = {
             title: "Motion",
             items: [
                 {
-                    text: "After Effects | Cinema 4d | Blender | Touch Designer  | p5.js",
+                    text: "After Effects | Cinema 4d | Blender | TouchDesigner  | p5.js",
                 }
             ]
         },
