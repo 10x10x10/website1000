@@ -30,7 +30,7 @@ const BigTitle = styled('h1', {
   },
 });
 
-export default function () {
+export default function HomePage() {
 
   return (
     <div id="index">

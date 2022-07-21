@@ -139,7 +139,7 @@ const BlockList = styled('ul', {
   }
 })
 
-export default function (props) {
+export default function About(props) {
 
   const { intro, contacts, projects, experiences, toolkit, } = aboutData;
 
