@@ -1,3 +1,14 @@
+/* 
+projectData 填入專案的基本資料
+id: 唯一值
+itle: 顯示的專案名
+link: 查詢專案檔案頁 pages 的相對位置 (不包含.js)
+cover: 封面影像
+hover: 懸停時的影像
+type: 動態專案填寫"default" uiux專案填寫"uiux"
+*/
+
+
 
 export const linkQuery = {
 
@@ -151,8 +162,22 @@ export const linkQuery = {
         video_10_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174400/M002_Entanglement/Image/M002_Image_02.png?[1808x1058]",
         video_11_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174400/M002_Entanglement/Image/M002_Image_03.png?[1814x1058]",
     },
-}
 
+    projectU001: {
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594012/U001-Eagle-Community/Image/U001-Image-01.jpg?[1920x720]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594014/U001-Eagle-Community/Image/U001-Image-02.jpg?[1280x720]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594015/U001-Eagle-Community/Image/U001-Image-03.jpg?[1280x720]",
+        image_04: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594015/U001-Eagle-Community/Image/U001-Image-04.jpg?[1280x720]",
+        image_05: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594015/U001-Eagle-Community/Image/U001-Image-05.jpg?[1920x1885]",
+        image_06: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594015/U001-Eagle-Community/Image/U001-Image-06.jpg?[1080x966]",
+        image_07: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594015/U001-Eagle-Community/Image/U001-Image-07.jpg?[1600x940]",
+        image_08: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594015/U001-Eagle-Community/Image/U001-Image-08.jpg?[1600x940]",
+        image_09: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594015/U001-Eagle-Community/Image/U001-Image-09.jpg?[1600x940]",
+        image_10: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594015/U001-Eagle-Community/Image/U001-Image-10.jpg?[1600x940]",
+    },
+
+    // Key 為專案 Id
+}
 
 
 export const projectData = {
@@ -161,40 +186,40 @@ export const projectData = {
             id: "project012",
             title: "Gogoro VIVA MIX 新車發表會",
             link: "/projects/gogoro-viva-mix",
-            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629296335/012-GogoroVivaMix/Cover/012-Cover.png?[1920x1080]",
-            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1629296337/012-GogoroVivaMix/Cover/012-Hover.mp4?[1920x1080]",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629296335/012-GogoroVivaMix/Cover/012-Cover.png?[960x540]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1629296337/012-GogoroVivaMix/Cover/012-Hover.mp4?[480x270]",
             type: "default",
         },
         {
             id: "project013",
             title: "ROG Phone 5 Launch Event Countdown Video",
             link: "/projects/rog-phone5-countdown",
-            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629051377/013-ROG-phone5-countdown/Cover/013-Cover.jpg?[1920x1080]",
-            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1629051378/013-ROG-phone5-countdown/Cover/013-Hover.mp4?[1920x1080]",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629051377/013-ROG-phone5-countdown/Cover/013-Cover.jpg?[960x540]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1629051378/013-ROG-phone5-countdown/Cover/013-Hover.mp4?[480x270]",
             type: "default",
         },
         {
             id: "project018",
             title: "TIMF－The Song of Life",
             link: "/projects/timf-the-song-of-life",
-            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1638470147/018-TIMF-TheSongofLife/018-Cover.jpg?[1920x1080]",
-            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1638470149/018-TIMF-TheSongofLife/018-Hover.mp4?[1920x1080]",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1638470147/018-TIMF-TheSongofLife/018-Cover.jpg?[960x540]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1638470149/018-TIMF-TheSongofLife/018-Hover.mp4?[960x540]",
             type: "default",
         },
         {
             id: "project004",
             title: "Pony5ibe - They said ft.陳嫺靜 【Animated Music Video】",
             link: "/projects/pip-mv-pony5ibe",
-            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629542178/004-PiP-MV-Pony5ibe/Cover/004-Cover.png?[1920x1080]",
-            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1629542180/004-PiP-MV-Pony5ibe/Cover/004-Hover.mp4?[1920x1080]",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629542178/004-PiP-MV-Pony5ibe/Cover/004-Cover.png?[960x540]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1629542180/004-PiP-MV-Pony5ibe/Cover/004-Hover.mp4?[960x540]",
             type: "default",
         },
         {
             id: "project006",
             title: "DigiWave 2020《遙視 Clairvoyance》 ",
             link: "/projects/digiwave2020",
-            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629390553/006-Digiwave2020/Cover/006-Cover.jpg?[1920x1080]",
-            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629390553/006-Digiwave2020/Cover/006-Cover.jpg?[1920x1080]",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629390553/006-Digiwave2020/Cover/006-Cover.jpg?[960x540]",
+            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629390553/006-Digiwave2020/Cover/006-Cover.jpg?[960x540]",
             type: "default",
         },
         {
@@ -202,15 +227,15 @@ export const projectData = {
             title: "2020 台北電影節 Taipei Film Festival | 片頭動畫",
             link: "/projects/taipei-film-festival2020",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177130/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Cover/003_Cover_01.png?[1920x1080]",
-            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177132/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Cover/003_Cover_02.gif?[1920x1080]",
+            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177132/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Cover/003_Cover_02.gif?[480x270]",
             type: "default",
         },
         {
             id: "project001",
             title: "TGIF 台北設計電波｜國際設計交流年會主視覺影片",
             link: "/projects/tgif2019",
-            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626175880/001_TGIF/Cover/001_cover_01.jpg?[1920x1080]",
-            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626175882/001_TGIF/Cover/001_Cover_02.gif?[1920x1080]",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626175880/001_TGIF/Cover/001_cover_01.jpg?[1280x720]",
+            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626175882/001_TGIF/Cover/001_Cover_02.gif?[1440x810]",
             type: "default",
         },
         {
@@ -218,7 +243,7 @@ export const projectData = {
             title: "SIMPLEX",
             link: "/projects/simplex",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170361/M001_Simplex/Cover/M001_Cover_01.png?[1920x1080]",
-            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170362/M001_Simplex/Cover/M001_Cover_02.gif?[1920x1080]",
+            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170362/M001_Simplex/Cover/M001_Cover_02.gif?[480x270]",
             type: "default",
         },
         {
@@ -226,9 +251,18 @@ export const projectData = {
             title: "Entanglement",
             link: "/projects/entanglement",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174406/M002_Entanglement/Cover/M002_Cover_01.png?[1920x1080]",
-            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174530/M002_Entanglement/Cover/M002_Cover_02.gif?[1920x1080]",
+            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174530/M002_Entanglement/Cover/M002_Cover_02.gif?[480x270]",
             type: "default",
         },
+        {
+            id: "projectU002",
+            title: "Eagle Community",
+            link: "/uiux/eagle-community",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594059/U001-Eagle-Community/Cover/U001-Cover.jpg?[1920x1080]",
+            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594059/U001-Eagle-Community/Cover/U001-Cover.jpg?[1920x1080]",
+            type: "uiux",
+        },
+
 
     ]
 };
