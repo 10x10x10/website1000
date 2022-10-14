@@ -91,28 +91,153 @@ export default function ProjectPage(props) {
           "projectU001.image_02",
         ]} />
 
-      <MediaList col={1} mCol={1}
+      <TextContainer>
+        <TextTitle>設計流程</TextTitle>
+        <TextContent>
+          {'定義需求與問題 → 收集資料（用戶、競品研究）→ 思考解決方案 → 介面規劃與設計 → 測試計畫 → 更新迭代'}
+        </TextContent>
+      </TextContainer>
+
+      <TextContainer>
+        <TextTitle>過程中遇到的問題與解決方案</TextTitle>
+        <TextContent>
+          1. 需不需有首頁呢？
+        </TextContent>
+        <TextContent>
+          因為社群網站，包含眾多的設計領域。因此在設計資源的部分，需要考量使用者是否想要看到別的領域的資源，全部顯示可能會造成閱讀上的混亂，但如果太侷限又會無法快速呈現這個網站全貌。
+          因此我提出需要有首頁統整訊息，在首頁上呈現出主要的領域，以及以不同的區塊呈現各領域的資源，使用者可以由首頁選擇要前往的特定設計領域。
+        </TextContent>
+        <TextContent>
+          然而這個提議並沒有馬上被採納。因為原先社群網站規劃上主要是由官網導流，會在官網的 navigation 上顯示名稱，並且有下拉選單，預期使用者可以直接由選單選擇要前往的設計領域。
+        </TextContent>
+        <TextContent>
+          專案後期，由於社群網站除了官網導流，還會內嵌到軟體介面中，並且考量到首頁可以呈現有更多的資訊，例如 banner 、部落格文章以及推薦設計工具等等，因此最後將首頁納入網站規畫之中。
+        </TextContent>
+      </TextContainer>
+
+      <TextContainer>
+        <TextContent>
+          2. 分類系統該怎麼規劃？
+        </TextContent>
+        <TextContent>
+          設計資源頁可以想像成是一個資料庫，主要可以分成五大設計領域，在各領域之下又會有眾多的子分類，
+          但是不同領域之間也有可能有共通的子分類，例如：Icons、mockups、插圖等等。
+          另外，同個素材資源也有可能同時需要在不同子分類之下，這個狀況除了考慮前端該如何呈現，也要考慮後端是否要用同一份資料。
+        </TextContent>
+        <TextContent>
+          最後討論出的解法是，後台資料並非直接分到不同的領域資料夾，而是類似標籤一樣，
+          單份資料可以標註資料是屬於哪些子分類，並且可以多重選擇。而在不同領域中的共同子分類，
+          也是採用了一樣的做法，單個子分類可以標註是屬於哪些領域。
+        </TextContent>
+        <TextContent>
+          這個做法的優點是，避免重複的資料，可以節省資料庫的儲存空間，並且有良好的擴充性，不會因為更動資源或是子分類而消耗大幅成本。
+        </TextContent>
+      </TextContainer>
+
+      <TextContainer>
+        <TextContent>
+          3. 篩選器該使用直式還是橫式的呢？
+        </TextContent>
+        <TextContent>
+          設計資源頁的篩選器主要就是呈現分類系統，可以選擇不同的領域以及子分類。
+        </TextContent>
+        <TextContent>
+          最初篩選器設計成直式的，也就是畫面中的側欄，而領域是利用下拉選單切換。優點是結構與 Eagle App 的資料夾結構類似，符合使用者過去的使用習慣。
+          而且分類名稱的顯示長度較有彈性，且可以有更多層級的分類結構。缺點是會占用畫面左側的空間，壓縮到主要的素材資源顯示區域。 而且領域只能利用下拉選單切換，在頻繁切換領域的狀況上較不夠直覺、方便。
+        </TextContent>
+        <TextContent>
+          後來因為確定分類的層級只會有兩層 — 設計領域與子分類，因此改為橫式篩選器。橫式雖然就沒有直式的優點，但在分類層級不多的情況下切換以及瀏覽更為快速、占用的畫面空間也比較小，還有可以將其他篩選功能一併整合到同個區塊。
+        </TextContent>
+      </TextContainer>
+
+      <TextContainer>
+        <TextTitle>Wireframe</TextTitle>
+        <TextContent>
+
+        </TextContent>
+      </TextContainer>
+
+      <MediaList col={2} mCol={1}
         links={[
           "projectU001.image_03",
           "projectU001.image_04",
+        ]} />
+
+      <TextContainer>
+        <TextTitle>Guideline</TextTitle>
+        <TextContent>
+
+        </TextContent>
+      </TextContainer>
+
+      <MediaList col={1} mCol={1}
+        links={[
           "projectU001.image_05",
+        ]} />
+
+      <TextContainer>
+        <TextTitle>QA 測試計畫</TextTitle>
+        <TextContent>
+
+        </TextContent>
+      </TextContainer>
+
+      <MediaList col={1} mCol={1}
+        links={[
           "projectU001.image_06",
-          "projectU001.image_07",
-          "projectU001.image_08",
-          "projectU001.image_09",
-          "projectU001.image_10",
         ]} />
 
 
 
-      <Credits>
-        <p>Client : Tainan City Government</p>
-        <p>Art Director : Midnight Design</p>
-        <p>Design : I Chan Su、Hsuan Yu Hsu</p>
-        <p>3D Motion Design : 1000 Cheng</p>
-        <p>Typeface : 文鼎字型</p>
+      <TextContainer>
+        <TextTitle>最終設計產出</TextTitle>
+        <TextContent>
 
-      </Credits>
+        </TextContent>
+      </TextContainer>
+
+
+      <MediaList col={1} mCol={1}
+        title="首頁"
+
+        links={[
+          "projectU001.image_07",
+        ]} />
+
+      <MediaList col={1} mCol={1}
+        title="設計資源"
+
+        links={[
+          "projectU001.image_08",
+        ]} />
+
+      <MediaList col={1} mCol={1}
+        title="設計工具"
+
+        links={[
+          "projectU001.image_09",
+        ]} />
+
+      <MediaList col={1} mCol={1}
+        title="優秀作者"
+
+        links={[
+          "projectU001.image_10",
+        ]} />          
+
+      <TextContainer>
+        <TextTitle>結語</TextTitle>
+        <TextContent>
+          1. UX Writing 的在地化：由於同時規劃多國語言的版本，由於簡體中文的內容初步規劃也是由設計師負責，所以要多參考其他簡體中文網站實際上會使用的用語，避免語意不清。
+        </TextContent>
+        <TextContent>
+          2. 保持迭代的彈性：雖然盡可能的在初期將網站規劃完善，專案過程中免不了會有大幅度的調整，因此保持彈性是很重要的，初期有將畫面中的元件拆分好，會讓版面調整上更有彈性。
+        </TextContent>
+        <TextContent>
+          3. 溝通的重要性：這次專案的團隊雖然規模不大，但偶爾還是會遇到溝通或期待有落差的時刻，執行專案的過程中逐漸學習到如何清楚的表達需求與困境，也很感謝團隊的包容，期許後續運作上能夠更加的順暢。
+        </TextContent>
+
+      </TextContainer>
 
     </Project>);
 }
