@@ -10,7 +10,11 @@ import ProjectViewList from ".//ProjectViewList.js";
  * 
  * @id 指定這個 Project 的 id
  */
-export default function Project({ id, children }) {
+export default function Project({
+  id,
+  children,
+  showOtherProject,
+}) {
 
   return (
     <div className="convert-selection">
@@ -24,14 +28,14 @@ export default function Project({ id, children }) {
 
           {children}
 
-          <div className="related-project-container">
+          {showOtherProject && (<div className="related-project-container">
             <div className="project-text-container project-view-title">
               <h2>Other Projects</h2>
             </div>
             <ProjectViewList
               projectType="default"
               randomPick={3} />
-          </div>
+          </div>)}
 
         </div>
       </div>
