@@ -27,7 +27,7 @@ export default function Text(props) {
   } = props;
 
   if (Array.isArray(content)) {
-    return content.map(c => <P>{c}</P>);
+    return content.map((c, i) => <P key={i}>{c}</P>);
   }
 
   return (<P>{content}</P>)

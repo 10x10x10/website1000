@@ -34,7 +34,7 @@ export default function List(props) {
 
 
   return (<Wrapper>
-    {content.map(el => (<LI>{el}</LI>))}
+    {content.map((el, i) => (<LI key={i}>{el}</LI>))}
   </Wrapper>)
 
 
