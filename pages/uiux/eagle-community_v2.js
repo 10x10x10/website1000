@@ -11,9 +11,12 @@ import { linkQuery } from "../../data.js";
 
 import Title from '../components/v2/Title.js';
 import List from '../components/v2/List.js';
-import Text from '../components/v2/Text.js'
-import Space from '../components/v2/Space.js'
-import Divider from '../components/v2/Divider.js'
+import Text from '../components/v2/Text.js';
+import Space from '../components/v2/Space.js';
+import Divider from '../components/v2/Divider.js';
+import Section from '../components/v2/Section.js';
+import GridLayout from '../components/v2/GridLayout.js';
+import Card from "../components/v2/Card.js";
 
 
 
@@ -32,66 +35,69 @@ export default function ProjectPage(props) {
           "projectU001.image_01",
         ]} />
 
-      <TextContainer>
+      <Section>
         <Title type='h1' content='Eagle Community — 免費的設計資源、靈感社群' />
         <Text content='專案期間：10 個月' />
         <Text content='擔任角色：產品設計師' />
         <Text content='負責內容：完整網站架構規劃與設計完稿' />
-      </TextContainer>
+      </Section>
 
-      <TextContainer>
+      <Section>
         <Title type='h2' content='專案背景' />
         <Text content={[
           '公司產品 Eagle App 是一款專為設計師打造的素材管理軟體。為了提升產品的被動流量，因此規劃建立社群平台，讓使用者可以交流收集的素材與靈感，並提升使用者對產品的黏著度。',
           'Eagle App 適用於各產業類別的設計師，而社群平台著重於最主要的用戶設計類別，包含 UI 設計、平面設計、插畫設計、遊戲設計、室內設計等，依照上述類別設計師的使用習慣作為主要考量。',
           '網站風格定位為簡潔乾淨，依循原產品官網的調性。網站依主要客群分為三個語系，包含英文、繁中、簡中，不同語系的資料內容為獨立運作、不共享。',
         ]} />
-      </TextContainer>
+      </Section>
 
-      <TextContainer>
+      <Section>
         <Title type='h2' content='定義需求' />
         <List type='order' content={[
           '建立讓 Eagle App 用戶方便分享設計靈感、素材、工具的社群網站。',
           '引導潛在用戶了解 Eagle App 的相關資訊，進而下載或購買軟體。',
           '培養自主創作者，不須透過官方推動，社群就能長久穩定的運行。',
         ]} />
-      </TextContainer>
+      </Section>
 
-      <TextContainer>
+      <Section>
         <Title type='h2' content='專案成果' />
-        <TextContent>
-          上線三個月的網站成效（以簡中網站計算）
-        </TextContent>
-        <TextContent>
-          1. 用戶提交近 1500 個資源投稿。
-        </TextContent>
-        <TextContent>
-          2. 約有 180K 網站總訪問量。
-        </TextContent>
-        <TextContent>
-          3. 網站平均訪問時長 08:42。
-        </TextContent>
-      </TextContainer>
+        <Text content={'上線三個月的網站成效（以簡中網站計算）'} />
+        <GridLayout sCol={1} mCol={3}>
+          <Card>
+            <Text content={'用戶提交資源投稿數量'} type={'small'} />
+            <Text content={'1500'} type={'big'} />
+          </Card>
+          <Card>
+            <Text content={'網站總訪問量'} type={'small'} />
+            <Text content={'180K'} type={'big'} />
+          </Card>
+          <Card>
+            <Text content={'網站平均訪問時長'} type={'small'} />
+            <Text content={'08:42'} type={'big'} />
+          </Card>
+        </GridLayout>
+      </Section>
 
 
 
-      <TextContainer>
+      <Section>
         <Title type='h2' content='資訊架構' />
         <Text content='以網站資訊架構圖和工程師與主管討論，確認方向正確後開始著手頁面規劃與視覺設計。' />
-      </TextContainer>
+        <MediaList col={1} mCol={1}
+          links={[
+            "projectU001.image_02",
+          ]} />
+
+      </Section>
 
 
-      <MediaList col={1} mCol={1}
-        links={[
-          "projectU001.image_02",
-        ]} />
-
-      <TextContainer>
+      <Section>
         <Title type='h2' content='設計流程' />
         <Text content='定義需求與問題 → 收集資料（用戶、競品研究）→ 思考解決方案 → 介面規劃與設計 → 測試計畫 → 更新迭代' />
-      </TextContainer>
+      </Section>
 
-      <TextContainer>
+      <Section>
 
         <Title type='h2' content='過程中遇到的問題與解決方案' />
 
@@ -108,10 +114,6 @@ export default function ProjectPage(props) {
 
         <Title type='h3' content='2. 分類系統該怎麼規劃？' />
         <Text content={[
-          '設計資源頁可以想像成是一個資料庫，主要可以分成五大設計領域，在各領域之下又會有眾多的子分類，' +
-          '但是不同領域之間也有可能有共通的子分類，例如：Icons、mockups、插圖等等。' +
-          '另外，同個素材資源也有可能同時需要在不同子分類之下，這個狀況除了考慮前端該如何呈現，也要考慮後端是否要用同一份資料。',
-
           '設計資源頁可以想像成是一個資料庫，主要可以分成五大設計領域，在各領域之下又會有眾多的子分類，' +
           '但是不同領域之間也有可能有共通的子分類，例如：Icons、mockups、插圖等等。' +
           '另外，同個素材資源也有可能同時需要在不同子分類之下，這個狀況除了考慮前端該如何呈現，也要考慮後端是否要用同一份資料。',
@@ -137,80 +139,68 @@ export default function ProjectPage(props) {
         ]}
         />
 
-      </TextContainer>
+      </Section>
 
       <Divider />
 
-      <TextContainer>
+      <Section>
         <Title content='Wireframe' />
-        <TextContent>
+        <MediaList col={2} mCol={1}
+          links={[
+            "projectU001.image_03",
+            "projectU001.image_04",
+          ]} />
+      </Section>
 
-        </TextContent>
-      </TextContainer>
 
-      <MediaList col={2} mCol={1}
-        links={[
-          "projectU001.image_03",
-          "projectU001.image_04",
-        ]} />
-
-      <TextContainer>
+      <Section>
         <Title type='h2' content='Guideline' />
-      </TextContainer>
+        <MediaList col={1} mCol={1}
+          links={[
+            "projectU001.image_05",
+          ]} />
+      </Section>
 
-      <MediaList col={1} mCol={1}
-        links={[
-          "projectU001.image_05",
-        ]} />
+      <Section>
+        <GridLayout mCol={2}>
+          <MediaList col={1} mCol={1}
+            links={[
+              "projectU001.image_06",
+            ]} />
+          <div>
+            <Title content={'QA 測試計畫'} />
+            <Text content={'QA 測試計畫 QA 測試計畫_________________________'} />
+          </div>
+        </GridLayout>
+      </Section>
 
-      <TextContainer>
-        <TextTitle content='QA 測試計畫' />
-        <TextContent>
-
-        </TextContent>
-      </TextContainer>
-
-      <MediaList col={1} mCol={1}
-        links={[
-          "projectU001.image_06",
-        ]} />
-
-
-
-      <TextContainer>
+      <Section>
         <Title type='h2' content='最終設計產出' />
-      </TextContainer>
+      </Section>
 
 
-      <MediaList col={1} mCol={1}
-        title="首頁"
-
+      <MediaList col={1} mCol={1} title="首頁"
         links={[
           "projectU001.image_07",
         ]} />
 
-      <MediaList col={1} mCol={1}
-        title="設計資源"
-
+      <MediaList col={1} mCol={1} title="設計資源"
         links={[
           "projectU001.image_08",
         ]} />
 
-      <MediaList col={1} mCol={1}
-        title="設計工具"
-
+      <MediaList col={1} mCol={1} title="設計工具"
         links={[
           "projectU001.image_09",
         ]} />
 
-      <MediaList col={1} mCol={1}
-        title="優秀作者"
-
+      <MediaList col={1} mCol={1} title="優秀作者"
         links={[
           "projectU001.image_10",
         ]} />
 
-      <TextContainer>
+
+      <Section>
         <Title type='h2' content='結語' />
 
         <List type='order' content={[
@@ -220,7 +210,7 @@ export default function ProjectPage(props) {
         ]}
         />
 
-      </TextContainer>
+      </Section>
 
     </Project>);
 }

@@ -24,7 +24,7 @@ export default function Project({
       <Header />
 
       <div className="container" >
-        <div className="project-container">
+        <article className="project-container">
 
           {children}
 
@@ -37,7 +37,7 @@ export default function Project({
               randomPick={3} />
           </div>)}
 
-        </div>
+        </article>
       </div>
 
       <Footer />
