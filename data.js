@@ -186,6 +186,14 @@ export const linkQuery = {
         video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1677177992/022-TPAC-opening/Video/022-video-02.mp4?[1920x1080]",
 
     },
+
+    project027: {
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1677189844/027-2023-greeting-card/Image/027-Image-01.jpg?[1250x699]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1677189846/027-2023-greeting-card/Image/027-Image-02.jpg?[1250x739]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1677189848/027-2023-greeting-card/Image/027-Image-03.jpg?[1250x834]",
+        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1677190026/027-2023-greeting-card/Video/027-Video-01.mp4?[1920x1920]",
+
+    },
     
 
     // Key 為專案 Id
@@ -200,6 +208,14 @@ export const projectData = {
             link: "/projects/TPAC-opening",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1677175922/022-TPAC-opening/Cover/022-Cover.jpg?[960x540]",
             hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1677176597/022-TPAC-opening/Cover/022-Hover.mp4?[960x540]",
+            type: "default",
+        },
+        {
+            id: "project027",
+            title: "卯兔 52 設計師賀卡創作聯展 參展",
+            link: "/projects/2023-greeting-card",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1677186328/027-2023-greeting-card/Cover/027-Cover.jpg?[960x540]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1677186330/027-2023-greeting-card/Cover/027-Hover.mp4?[960x540]",
             type: "default",
         },
         {
