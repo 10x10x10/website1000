@@ -176,12 +176,32 @@ export const linkQuery = {
         image_10: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594015/U001-Eagle-Community/Image/U001-Image-10.jpg?[1600x940]",
     },
 
+    project022: {
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1677177760/022-TPAC-opening/Image/022-image-01.jpg?[1920x1080]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1677177760/022-TPAC-opening/Image/022-image-02.jpg?[1080x1530]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1677177760/022-TPAC-opening/Image/022-image-03.jpg?[1200x848]",
+        image_04: "https://res.cloudinary.com/w10x10x10/image/upload/v1677177760/022-TPAC-opening/Image/022-image-04.jpg?[1200x848]",
+        image_05: "https://res.cloudinary.com/w10x10x10/image/upload/v1677177760/022-TPAC-opening/Image/022-image-05.jpg?[720x1080]",
+        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1677177992/022-TPAC-opening/Video/022-video-01.mp4?[720x1080]",
+        video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1677177992/022-TPAC-opening/Video/022-video-02.mp4?[1920x1080]",
+
+    },
+    
+
     // Key 為專案 Id
 }
 
 
 export const projectData = {
     projects: [
+        {
+            id: "project022",
+            title: "臺北表演藝術中心開幕主視覺",
+            link: "/projects/TPAC-opening",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1677175922/022-TPAC-opening/Cover/022-Cover.jpg?[960x540]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1677176597/022-TPAC-opening/Cover/022-Hover.mp4?[960x540]",
+            type: "default",
+        },
         {
             id: "project012",
             title: "Gogoro VIVA MIX 新車發表會",
