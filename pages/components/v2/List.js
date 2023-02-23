@@ -22,6 +22,10 @@ const LI = styled('li', TextStyle, {
 
 
 
+/**
+ * @param {!string} type - `'order'` | `'unorder'`
+ * @param {!string} content - 
+ */
 export default function List(props) {
 
   const {
@@ -34,7 +38,7 @@ export default function List(props) {
 
 
   return (<Wrapper>
-    {content.map((el, i) => (<LI key={i}>{el}</LI>))}
+    {content.map((el, i) => (<LI key={i} type={'normal'}>{el}</LI>))}
   </Wrapper>)
 
 

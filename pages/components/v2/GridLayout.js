@@ -13,19 +13,23 @@ const StyledGridLayout = styled('section', {
 });
 
 
+/**
+ * @param {number} sCol - 
+ * @param {number} lCol - 
+ */
 export default function GridLayout(props) {
 
   const {
     children,
     sCol,
-    mCol,
+    lCol,
   } = props;
 
 
   return (<StyledGridLayout
     css={{
       '@s': { gridTemplateColumns: `repeat(${sCol}, 1fr)`, },
-      '@l': { gridTemplateColumns: `repeat(${mCol}, 1fr)`, },
+      '@l': { gridTemplateColumns: `repeat(${lCol}, 1fr)`, },
     }}
   >
     {children}
@@ -35,10 +39,10 @@ export default function GridLayout(props) {
 
 GridLayout.propTypes = {
   sCol: PropTypes.number,
-  mCol: PropTypes.number,
+  lCol: PropTypes.number,
 };
 
 GridLayout.defaultProps = {
   sCol: 1,
-  mCol: 1,
+  lCol: 1,
 };

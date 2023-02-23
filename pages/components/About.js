@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { aboutData } from "../../data.js";
-import { styled } from "../../styles/stitchesStyles.js";
+import { styled, mediaMap, } from "../../styles/stitchesStyles.js";
 
 
 
@@ -26,7 +26,7 @@ const AboutContainer = styled('div', {
         flexDirection: 'column',
         marginTop: 64,
       },
-      m: {
+      l: {
         flexDirection: 'row',
         marginTop: 120,
       }
@@ -49,7 +49,7 @@ const HeadIconContainer = styled('div',{
       s: {
         width: '100%',
       },
-      m: {
+      l: {
         width: 240,
       }
     }
@@ -64,7 +64,7 @@ const HeadIcon = styled('img', {
       s: {
         position: 'inherit',
       },
-      m: {
+      l: {
         position: 'fixed',
       }
     }
@@ -86,7 +86,7 @@ const IntroTitle = styled(Title, {
         fontSize: 32,
       },
       m: {
-        fontSize: 44,
+        fontSize: 440,
       }
     }
   }
@@ -118,7 +118,7 @@ const SubBlock = styled('div', {
           paddingLeft: 4,
         },
       },
-      m: {
+      l: {
         flexDirection: 'row',
         gap: 48,
       }
@@ -143,25 +143,19 @@ export default function About(props) {
 
   const { intro, contacts, projects, experiences, toolkit, } = aboutData;
 
-  const media = {
-    '@initial': 's',
-    '@s': 's',
-    '@m': 'm',
-  };
-
   return (
     <AboutContainer
       className="about-container"
-      media={media}
+      media={mediaMap}
     >
 
-      <HeadIconContainer media={media}>
-        <HeadIcon media={media} src={'./logo/logo_l.png'} />
+      <HeadIconContainer media={mediaMap}>
+        <HeadIcon media={mediaMap} src={'./logo/logo_l.png'} />
       </HeadIconContainer>
 
       <ContextContainer>
         <Block>
-          <IntroTitle media={media}>{intro.title}</IntroTitle>
+          <IntroTitle media={mediaMap}>{intro.title}</IntroTitle>
           {
             intro.descriptions.map((description) => {
               return <p key={description}>{description}</p>;
@@ -175,7 +169,7 @@ export default function About(props) {
           {
             projects.map((el) => {
               return (
-                <SubBlock key={el.year} media={media}>
+                <SubBlock key={el.year} media={mediaMap}>
                   <h2>{el.year}</h2>
                   <BlockList>
                     {
@@ -197,7 +191,7 @@ export default function About(props) {
           {
             experiences.map((el) => {
               return (
-                <SubBlock key={el.title} media={media}>
+                <SubBlock key={el.title} media={mediaMap}>
                   <h2>{el.title}</h2>
                   <BlockList>
                     {
@@ -219,7 +213,7 @@ export default function About(props) {
           {
             toolkit.map((el) => {
               return (
-                <SubBlock key={el.title} media={media}>
+                <SubBlock key={el.title} media={mediaMap}>
                   <h2>{el.title}</h2>
                   <BlockList>
                     {

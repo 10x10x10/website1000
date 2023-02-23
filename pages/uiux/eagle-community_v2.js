@@ -1,22 +1,24 @@
 import React from "react";
 import Project from "../components/Project.js";
-import MediaList from "../components/MediaList.js";
-import Credits from "../components/Credits.js";
-import EmbedVideo from "../components/EmbedVideo.js";
-import TextContainer from "../components/TextContainer.js";
-import TextTitle from "../components/TextTitle.js";
-import TextContent from "../components/TextContent.js";
 import { linkQuery } from "../../data.js";
 
 
-import Title from '../components/v2/Title.js';
-import List from '../components/v2/List.js';
-import Text from '../components/v2/Text.js';
-import Space from '../components/v2/Space.js';
-import Divider from '../components/v2/Divider.js';
-import Section from '../components/v2/Section.js';
-import GridLayout from '../components/v2/GridLayout.js';
-import Card from "../components/v2/Card.js";
+import {
+
+  Title,
+  Text,
+
+  Space,
+  Divider,
+
+  Section,
+  List,
+  MediaList,
+  GridLayout,
+  Card,
+
+  Credits,
+} from "../components/v2";
 
 
 
@@ -32,7 +34,7 @@ export default function ProjectPage(props) {
 
       <MediaList col={1} mCol={1}
         links={[
-          "projectU001.image_01",
+          link.image_01,
         ]} />
 
       <Section>
@@ -63,7 +65,7 @@ export default function ProjectPage(props) {
       <Section>
         <Title type='h2' content='專案成果' />
         <Text content={'上線三個月的網站成效（以簡中網站計算）'} />
-        <GridLayout sCol={1} mCol={3}>
+        <GridLayout sCol={1} lCol={3}>
           <Card>
             <Text content={'用戶提交資源投稿數量'} type={'small'} />
             <Text content={'1500'} type={'big'} />
@@ -86,7 +88,7 @@ export default function ProjectPage(props) {
         <Text content='以網站資訊架構圖和工程師與主管討論，確認方向正確後開始著手頁面規劃與視覺設計。' />
         <MediaList col={1} mCol={1}
           links={[
-            "projectU001.image_02",
+            link.image_02,
           ]} />
 
       </Section>
@@ -144,11 +146,11 @@ export default function ProjectPage(props) {
       <Divider />
 
       <Section>
-        <Title content='Wireframe' />
+        <Title type='h2' content='Wireframe' />
         <MediaList col={2} mCol={1}
           links={[
-            "projectU001.image_03",
-            "projectU001.image_04",
+            link.image_03,
+            link.image_04
           ]} />
       </Section>
 
@@ -157,18 +159,18 @@ export default function ProjectPage(props) {
         <Title type='h2' content='Guideline' />
         <MediaList col={1} mCol={1}
           links={[
-            "projectU001.image_05",
+            link.image_05,
           ]} />
       </Section>
 
       <Section>
-        <GridLayout mCol={2}>
+        <GridLayout lCol={2}>
           <MediaList col={1} mCol={1}
             links={[
-              "projectU001.image_06",
+              link.image_06,
             ]} />
           <div>
-            <Title content={'QA 測試計畫'} />
+            <Title type='h2' content={'QA 測試計畫'} />
             <Text content={'QA 測試計畫 QA 測試計畫_________________________'} />
           </div>
         </GridLayout>
@@ -176,29 +178,29 @@ export default function ProjectPage(props) {
 
       <Section>
         <Title type='h2' content='最終設計產出' />
+
+        <Title type='h3' content={'首頁'} />
+        <MediaList col={1} mCol={1}
+          links={[
+            link.image_07,
+          ]} />
+        <Title type='h3' content={'設計資源'} />
+        <MediaList col={1} mCol={1}
+          links={[
+            link.image_08,
+          ]} />
+        <Title type='h3' content={'設計工具'} />
+        <MediaList col={1} mCol={1}
+          links={[
+            link.image_09,
+          ]} />
+        <Title type='h3' content={'優秀作者'} />
+        <MediaList col={1} mCol={1}
+          links={[
+            link.image_10,
+          ]} />
+
       </Section>
-
-
-      <MediaList col={1} mCol={1} title="首頁"
-        links={[
-          "projectU001.image_07",
-        ]} />
-
-      <MediaList col={1} mCol={1} title="設計資源"
-        links={[
-          "projectU001.image_08",
-        ]} />
-
-      <MediaList col={1} mCol={1} title="設計工具"
-        links={[
-          "projectU001.image_09",
-        ]} />
-
-      <MediaList col={1} mCol={1} title="優秀作者"
-        links={[
-          "projectU001.image_10",
-        ]} />
-
 
       <Section>
         <Title type='h2' content='結語' />
@@ -211,6 +213,7 @@ export default function ProjectPage(props) {
         />
 
       </Section>
+
 
     </Project>);
 }

@@ -12,10 +12,10 @@ const ViewportMedia = handleViewport(Media);
  * 
  * 用欄位格狀清單顯示圖片、影片。
  * 
- * @links 圖片、影片的連結。可有多個，並用`,`分隔
- * @col   在電腦要顯示的欄位數
- * @mCol  在手機要顯示的欄位數 - `[可選]`
- * @title 此清單的標題 - `[可選]`
+ * @param {!string[]|string} links 圖片、影片的連結。可有多個
+ * @param {!number} col   在電腦要顯示的欄位數
+ * @param {number} mCol  在手機要顯示的欄位數 - `[可選]`
+ * @param {string} title 此清單的標題 - `[可選]`
  * 
  */
 export default function MediaList(props) {
@@ -40,7 +40,7 @@ export default function MediaList(props) {
 
     let result = linkList
       .filter((n) => n !== "" && n.startsWith("//") === false)
-      .map((n) => queryLink(n))
+      .map((n) => n.startsWith('http') ? n : queryLink(n))
       .filter((n) => n !== undefined);
 
     return result;

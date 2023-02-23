@@ -25,6 +25,10 @@ const H3 = styled('h3', H, {
 });
 
 
+/**
+ * @param {!string} type - `'h1'` | `'h2'` | `'h3'`
+ * @param {!string} content - 
+ */
 export default function Title(props) {
 
   const {

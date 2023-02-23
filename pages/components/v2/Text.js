@@ -18,7 +18,7 @@ export const TextStyle = css({
         color: '#ffffff80',
       },
       normal: {
-        fontSize: 18,
+        fontSize: 16,
         color: '#ffffffc0',
       },
       big: {
@@ -35,6 +35,10 @@ const P = styled('p', TextStyle, {
 
 
 
+/**
+ * @param {!string} type - `'normal'` | `'small'` | `'big'`
+ * @param {!string|string[]} content - 
+ */
 export default function Text(props) {
 
   const {
@@ -43,7 +47,7 @@ export default function Text(props) {
   } = props;
 
   if (Array.isArray(content)) {
-    return content.map((c, i) => <P key={i}>{c}</P>);
+    return content.map((c, i) => <P key={i} type={type}>{c}</P>);
   }
 
   return (<P type={type}>{content}</P>)
