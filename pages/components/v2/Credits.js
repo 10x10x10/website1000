@@ -39,6 +39,9 @@ const FoldContainer = styled('div', {
             false: {
                 maxHeight: 1000,
                 cursor: 'pointer',
+                '&::after': {
+                    display: 'none',
+                },
             }
         }
     },
@@ -80,10 +83,10 @@ export default function Credits(props) {
     const [fold, setFold] = useState(false);
 
     return (<StyledCredits>
-        <FoldContainer fold={foldable ? fold : true} onClick={() => setFold(!fold)}>
+        <FoldContainer fold={foldable ? fold : false} onClick={() => setFold(!fold)}>
             {content.map((el, i) => (<CreditItem key={i} type={'normal'}>{el}</CreditItem>))}
         </FoldContainer>
-        {fold && <MoreButton onClick={() => setFold(false)}>More</MoreButton>}
+        {foldable && <MoreButton onClick={() => setFold(false)}>More</MoreButton>}
     </StyledCredits>)
 
 }
