@@ -303,16 +303,36 @@ export const aboutData = {
     intro: {
         title: "HI, I'm 1000 Cheng.\nA designer specialising in Experimental Visual, Motion Graphics, Generative Art, and Product Design.",
         descriptions: [
-            "1000 Cheng，本名鄭詒謙，現居台北，為十立方科技有限公司創辦人，致力於製作實驗性影像與嶄新的視覺體驗，已累積超過 20 個專案合作經驗，曾與多元類型的公司合作，專案包含大型展覽投影、產品發表會與各類動態影像。同時也有 2 年數位產品設計經歷，具備協助產品與網站的優化與介面設計之經驗。",
+            "1000 Cheng，本名鄭詒謙，現居台北，為十立方科技有限公司創辦人，致力於製作實驗性影像與嶄新的視覺體驗，已累積近 30 個專案合作經驗，曾與多元類型的公司與設計師合作，如叁式、夢想動畫、半夜設計、何庭安、葉忠宜等。專案包含大型展覽投影、產品發表會、活動主視覺與各類動態影像。同時也有 2 年數位產品設計經歷，具備協助產品與網站的優化與介面設計之經驗。",
         ],
     },
     projects: [
+        {
+            year: "2023",
+            items: [
+                {
+                    text: "卯兔 52 設計師賀卡創作聯展 參展",
+                },
+                {
+                    text: "DAMN Logo 動態設計",
+                },
+
+            ]
+        },
         {
             year: "2022",
             items: [
                 {
                     text: "臺北表演藝術中心開幕主視覺 動態設計",
                 },
+                {
+                    text: "屏東菸廠沉浸體驗特展 投影動態設計",
+                },
+                {
+                    text: "多重宇宙手帳募資影片 動態設計",
+                },
+
+
 
             ]
         },
@@ -346,7 +366,7 @@ export const aboutData = {
                     link: "projects/gogoro-viva-mix",
                 },
                 {
-                    text: "瀚宇博德公司介紹片頭設計",
+                    text: "瀚宇博德公司簡介 片頭",
                 },
                 {
                     text: "MUTANT 集體異變實體展 參展",
@@ -357,20 +377,20 @@ export const aboutData = {
             year: "2020",
             items: [
                 {
-                    text: "DigiWave 2020《遙視 Clairvoyance》",
+                    text: "DigiWave 2020《遙視 Clairvoyance》 投影動態設計",
                     link: "https://vimeo.com/488057651",
                 },
                 {
-                    text: "PONY5IBE -【They Said】ft 陳嫻靜",
+                    text: "PONY5IBE -【They Said】ft 陳嫻靜 MV 動態設計",
                 },
                 {
                     text: "台北電影節 Taipei Film Festival 片頭",
                 },
                 {
-                    text: "金馬 57 最佳攝影 入圍動畫",
+                    text: "金馬 57 最佳攝影入圍 動態設計",
                 },
                 {
-                    text: "金馬 57 最佳劇情短片 入圍動畫",
+                    text: "金馬 57 最佳劇情短片入圍 動態設計",
                 },
             ]
         },
@@ -389,7 +409,17 @@ export const aboutData = {
     ],
     experiences: [
         {
-            title: "2020.6 — 2022.7",
+            
+            title: "2021.9 —",
+            items: [
+                {
+                    text: "10x10x10 Studio | Founder",
+                }
+            ]
+        },
+        {
+            
+            title: "2020.6 — 2022.8",
             items: [
                 {
                     text: "Eagle App | Product Designer",
@@ -423,7 +453,7 @@ export const aboutData = {
             ]
         },
         {
-            title: "UI / Graphics",
+            title: "Graphics / UI",
             items: [
                 {
                     text: "Figma | Webflow | illustrator | Photoshop",
