@@ -10,3 +10,6 @@ export { default as Card } from "./Card.js";
 export { default as MediaList } from "../MediaList.js";
 export { default as Credits } from "./Credits.js";
 
+export default function ComponentsV2() {
+    return <p>{'ComponentsV2'}</p>
+}
