@@ -4,7 +4,7 @@ import Footer from './components/Footer.js'
 import HeadMeta from './components/HeadMeta.js'
 import EmbedVideo from './components/EmbedVideo.js'
 import { projectData } from '../data.js'
-import { styled } from '../styles/stitchesStyles'
+import { styled, mediaMap } from '../styles/stitchesStyles'
 
 
 const BigTitle = styled('h1', {
@@ -22,7 +22,7 @@ const BigTitle = styled('h1', {
         fontSize: 32,
         margin: '64px 0 32px',
       },
-      m: {
+      l: {
         fontSize: 64,
         margin: '120px 0',
       },
@@ -41,11 +41,7 @@ export default function HomePage() {
 
       <div className="container" >
 
-        <BigTitle media={{
-          '@initial': 's',
-          '@s': 's',
-          '@m': 'm',
-        }}>{'Experimental Visual,\nMotion Graphics, Generative Art,\nDigital Product Design'}</BigTitle>
+        <BigTitle media={mediaMap}>{'Experimental Visual,\nMotion Graphics, Generative Art,\nDigital Product Design'}</BigTitle>
         <ProjectViewList type="default"></ProjectViewList>
       </div>
 

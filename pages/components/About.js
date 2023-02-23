@@ -85,8 +85,8 @@ const IntroTitle = styled(Title, {
       s: {
         fontSize: 32,
       },
-      m: {
-        fontSize: 440,
+      l: {
+        fontSize: 44,
       }
     }
   }
