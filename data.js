@@ -139,28 +139,28 @@ export const linkQuery = {
 
     projectM001: {
         video_main: "https://player.vimeo.com/video/343632581?app_id=122963&referrer=https%3A%2F%2Fwww.1000cheng.cc%2F",
-        video_01_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170377/M001_Simplex/Video/M001_GIF_01.gif?[1920x1080]",
-        video_02_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170377/M001_Simplex/Video/M001_GIF_02.gif?[1920x1080]",
-        video_03_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170377/M001_Simplex/Video/M001_GIF_03.gif?[1920x1080]",
-        video_04_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170377/M001_Simplex/Video/M001_GIF_04.gif?[1920x1080]",
-        video_05_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170369/M001_Simplex/Image/M001_Image_01.jpg?[1920x1080]",
-        video_06_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170369/M001_Simplex/Image/M001_Image_02.jpg?[1920x1080]",
-        video_07_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170369/M001_Simplex/Image/M001_Image_03.jpg?[1920x1080]",
+        video_01_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681201223/M001_Simplex/Video/M001_01.mp4?[480x270]",
+        video_02_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681201221/M001_Simplex/Video/M001_02.mp4?[480x270]",
+        video_03_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681201221/M001_Simplex/Video/M001_03.mp4?[480x270]",
+        video_04_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681201223/M001_Simplex/Video/M001_04.mp4?[480x270]",
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1681201140/M001_Simplex/Image/M001_Image_01.jpg?[1920x1080]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1681201139/M001_Simplex/Image/M001_Image_02.jpg?[1920x1080]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1681201139/M001_Simplex/Image/M001_Image_03.jpg?[1920x1080]",
     },
 
     projectM002: {
         video_main: "https://www.youtube.com/embed/TjNABiQaQUE?wmode=opaque&widget_referrer=https%3A%2F%2Fwww.1000cheng.cc%2F&enablejsapi=1&origin=https%3A%2F%2Fcdn.embedly.com&widgetid=1",
-        video_01_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_01.gif?[1920x1080]",
-        video_02_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_02.gif?[1920x1080]",
-        video_03_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_03.gif?[1920x1080]",
-        video_04_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_04.gif?[1920x1080]",
-        video_05_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_05.gif?[1920x1080]",
-        video_06_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_06.gif?[1920x1080]",
-        video_07_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_07.gif?[1920x1080]",
-        video_08_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174335/M002_Entanglement/Video/M002_GIF_08.gif?[1920x1080]",
-        video_09_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174400/M002_Entanglement/Image/M002_Image_01.png?[1824x1196]",
-        video_10_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174400/M002_Entanglement/Image/M002_Image_02.png?[1808x1058]",
-        video_11_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174400/M002_Entanglement/Image/M002_Image_03.png?[1814x1058]",
+        video_01_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681213371/M002_Entanglement/Video/M002_video_01.mp4?[1920x1080]",
+        video_02_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681213370/M002_Entanglement/Video/M002_video_02.mp4?[1920x1080]",
+        video_03_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681213370/M002_Entanglement/Video/M002_video_03.mp4?[1920x1080]",
+        video_04_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681213370/M002_Entanglement/Video/M002_video_04.mp4?[1920x1080]",
+        video_05_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681213369/M002_Entanglement/Video/M002_video_05.mp4?[1920x1080]",
+        video_06_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681213370/M002_Entanglement/Video/M002_video_06.mp4?[1920x1080]",
+        video_07_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681213368/M002_Entanglement/Video/M002_video_07.mp4?[1920x1080]",
+        video_08_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681213369/M002_Entanglement/Video/M002_video_08.mp4?[1920x1080]",
+        video_09_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1681213383/M002_Entanglement/Image/M002_Image_01.jpg?[1824x1196]",
+        video_10_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1681213382/M002_Entanglement/Image/M002_Image_02.jpg?[1808x1058]",
+        video_11_s: "https://res.cloudinary.com/w10x10x10/image/upload/v1681213383/M002_Entanglement/Image/M002_Image_03.jpg?[1814x1058]",
     },
 
     projectU001: {
@@ -176,12 +176,48 @@ export const linkQuery = {
         image_10: "https://res.cloudinary.com/w10x10x10/image/upload/v1665594015/U001-Eagle-Community/Image/U001-Image-10.jpg?[1600x940]",
     },
 
+    project022: {
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1677177760/022-TPAC-opening/Image/022-image-01.jpg?[1920x1080]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1677177760/022-TPAC-opening/Image/022-image-02.jpg?[1080x1530]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1677177760/022-TPAC-opening/Image/022-image-03.jpg?[1200x848]",
+        image_04: "https://res.cloudinary.com/w10x10x10/image/upload/v1677177760/022-TPAC-opening/Image/022-image-04.jpg?[1200x848]",
+        image_05: "https://res.cloudinary.com/w10x10x10/image/upload/v1677177760/022-TPAC-opening/Image/022-image-05.jpg?[720x1080]",
+        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1677177992/022-TPAC-opening/Video/022-video-01.mp4?[720x1080]",
+        video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1677177992/022-TPAC-opening/Video/022-video-02.mp4?[1920x1080]",
+
+    },
+
+    project027: {
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1677189844/027-2023-greeting-card/Image/027-Image-01.jpg?[1250x699]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1677189846/027-2023-greeting-card/Image/027-Image-02.jpg?[1250x739]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1677189848/027-2023-greeting-card/Image/027-Image-03.jpg?[1250x834]",
+        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1677190026/027-2023-greeting-card/Video/027-Video-01.mp4?[1920x1920]",
+
+    },
+    
+
     // Key 為專案 Id
 }
 
 
 export const projectData = {
     projects: [
+        {
+            id: "project022",
+            title: "臺北表演藝術中心開幕主視覺",
+            link: "/projects/TPAC-opening",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1677175922/022-TPAC-opening/Cover/022-Cover.jpg?[960x540]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1677176597/022-TPAC-opening/Cover/022-Hover.mp4?[960x540]",
+            type: "default",
+        },
+        {
+            id: "project027",
+            title: "卯兔 52 設計師賀卡創作聯展 參展",
+            link: "/projects/2023-greeting-card",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1677186328/027-2023-greeting-card/Cover/027-Cover.jpg?[960x540]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1677186330/027-2023-greeting-card/Cover/027-Hover.mp4?[960x540]",
+            type: "default",
+        },
         {
             id: "project012",
             title: "Gogoro VIVA MIX 新車發表會",
@@ -224,7 +260,7 @@ export const projectData = {
         },
         {
             id: "project003",
-            title: "2020 台北電影節 Taipei Film Festival | 片頭動畫",
+            title: "2020 台北電影節 Taipei Film Festival 片頭動畫",
             link: "/projects/taipei-film-festival2020",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177130/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Cover/003_Cover_01.png?[1920x1080]",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177132/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Cover/003_Cover_02.gif?[480x270]",
@@ -232,7 +268,7 @@ export const projectData = {
         },
         {
             id: "project001",
-            title: "TGIF 台北設計電波｜國際設計交流年會主視覺影片",
+            title: "TGIF 台北設計電波｜國際設計交流年會主視覺",
             link: "/projects/tgif2019",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626175880/001_TGIF/Cover/001_cover_01.jpg?[1280x720]",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626175882/001_TGIF/Cover/001_Cover_02.gif?[1440x810]",
@@ -242,16 +278,16 @@ export const projectData = {
             id: "projectM001",
             title: "SIMPLEX",
             link: "/projects/simplex",
-            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170361/M001_Simplex/Cover/M001_Cover_01.png?[1920x1080]",
-            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170362/M001_Simplex/Cover/M001_Cover_02.gif?[480x270]",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626170361/M001_Simplex/Cover/M001_Cover.jpg?[1920x1080]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1681200825/M001_Simplex/Cover/M001_Hover.mp4?[480x270]",
             type: "default",
         },
         {
             id: "projectM002",
             title: "Entanglement",
             link: "/projects/entanglement",
-            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174406/M002_Entanglement/Cover/M002_Cover_01.png?[1920x1080]",
-            hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626174530/M002_Entanglement/Cover/M002_Cover_02.gif?[480x270]",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1681213282/M002_Entanglement/Cover/M002_Cover.jpg?[1920x1080]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1681213282/M002_Entanglement/Cover/M002_Hover.mp4?[480x270]",
             type: "default",
         },
         {
@@ -303,16 +339,36 @@ export const aboutData = {
     intro: {
         title: "HI, I'm 1000 Cheng.\nA designer specialising in Experimental Visual, Motion Graphics, Generative Art, and Product Design.",
         descriptions: [
-            "1000 Cheng，本名鄭詒謙，現居台北，為十立方科技有限公司創辦人，致力於製作實驗性影像與嶄新的視覺體驗，已累積超過 20 個專案合作經驗，曾與多元類型的公司合作，專案包含大型展覽投影、產品發表會與各類動態影像。同時也有 2 年數位產品設計經歷，具備協助產品與網站的優化與介面設計之經驗。",
+            "1000 Cheng，本名鄭詒謙，現居台北，為十立方科技有限公司創辦人，致力於製作實驗性影像與嶄新的視覺體驗，已累積近 30 個專案合作經驗，曾與多元類型的公司與設計師合作，如叁式、夢想動畫、半夜設計、何庭安、葉忠宜等。專案包含大型展覽投影、產品發表會、活動主視覺與各類動態影像。同時也有 2 年數位產品設計經歷，具備協助產品與網站的優化與介面設計之經驗。",
         ],
     },
     projects: [
+        {
+            year: "2023",
+            items: [
+                {
+                    text: "卯兔 52 設計師賀卡創作聯展 參展",
+                },
+                {
+                    text: "DAMN Logo 動態設計",
+                },
+
+            ]
+        },
         {
             year: "2022",
             items: [
                 {
                     text: "臺北表演藝術中心開幕主視覺 動態設計",
                 },
+                {
+                    text: "屏東菸廠沉浸體驗特展 投影動態設計",
+                },
+                {
+                    text: "多重宇宙手帳募資影片 動態設計",
+                },
+
+
 
             ]
         },
@@ -346,7 +402,7 @@ export const aboutData = {
                     link: "projects/gogoro-viva-mix",
                 },
                 {
-                    text: "瀚宇博德公司介紹片頭設計",
+                    text: "瀚宇博德公司簡介 片頭",
                 },
                 {
                     text: "MUTANT 集體異變實體展 參展",
@@ -357,20 +413,20 @@ export const aboutData = {
             year: "2020",
             items: [
                 {
-                    text: "DigiWave 2020《遙視 Clairvoyance》",
+                    text: "DigiWave 2020《遙視 Clairvoyance》 投影動態設計",
                     link: "https://vimeo.com/488057651",
                 },
                 {
-                    text: "PONY5IBE -【They Said】ft 陳嫻靜",
+                    text: "PONY5IBE -【They Said】ft 陳嫻靜 MV 動態設計",
                 },
                 {
                     text: "台北電影節 Taipei Film Festival 片頭",
                 },
                 {
-                    text: "金馬 57 最佳攝影 入圍動畫",
+                    text: "金馬 57 最佳攝影入圍 動態設計",
                 },
                 {
-                    text: "金馬 57 最佳劇情短片 入圍動畫",
+                    text: "金馬 57 最佳劇情短片入圍 動態設計",
                 },
             ]
         },
@@ -389,7 +445,17 @@ export const aboutData = {
     ],
     experiences: [
         {
-            title: "2020.6 — 2022.7",
+            
+            title: "2021.9 —",
+            items: [
+                {
+                    text: "10x10x10 Studio | Founder",
+                }
+            ]
+        },
+        {
+            
+            title: "2020.6 — 2022.8",
             items: [
                 {
                     text: "Eagle App | Product Designer",
@@ -423,7 +489,7 @@ export const aboutData = {
             ]
         },
         {
-            title: "UI / Graphics",
+            title: "Graphics / UI",
             items: [
                 {
                     text: "Figma | Webflow | illustrator | Photoshop",
