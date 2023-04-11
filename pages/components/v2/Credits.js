@@ -37,7 +37,7 @@ const FoldContainer = styled('div', {
                 },
             },
             false: {
-                maxHeight: 1000,
+                maxHeight: 10000,
                 cursor: 'pointer',
                 '&::after': {
                     display: 'none',
