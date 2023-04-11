@@ -9,4 +9,5 @@ export { default as GridLayout } from './GridLayout.js';
 export { default as Card } from "./Card.js";
 export { default as MediaList } from "../MediaList.js";
 export { default as Credits } from "./Credits.js";
+export { default as EmbedVideo } from "./EmbedVideo.js";
 
