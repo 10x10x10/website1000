@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { styled, css, mediaMap, } from "../../../styles/stitchesStyles";
+import { styled, css, mediaMap, } from "../../../styles/stitchesStyles.ts";
 
 const StyledGridLayout = styled('section', {
   display: 'grid',
@@ -13,11 +13,18 @@ const StyledGridLayout = styled('section', {
 });
 
 
+type GridLayoutProps = {
+  sCol: number,
+  lCol: number,
+  children: React.ReactNode,
+}
+
+
 /**
  * @param {number} sCol - 
  * @param {number} lCol - 
  */
-export default function GridLayout(props) {
+export default function GridLayout(props: GridLayoutProps) {
 
   const {
     children,

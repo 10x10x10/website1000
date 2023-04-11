@@ -7,7 +7,11 @@ export const { styled, css } = createStitches({
     },
 });
 
-export const mediaMap = {
+type MediaMap = {
+    '@s': 's',
+    '@l': 'l',
+}
+export const mediaMap: MediaMap = {
     '@s': 's',
     '@l': 'l',
 };

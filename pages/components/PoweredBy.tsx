@@ -1,6 +1,9 @@
 import React from "react";
 
-export default function PoweredBy(props) {
+type PoweredByProps = {
+};
+
+export default function PoweredBy(props: PoweredByProps) {
 
   const text = `© 2023 Website powered by `;
 
@@ -8,11 +11,11 @@ export default function PoweredBy(props) {
   const owen = (<a
     href={owenWebsiteUrl}
     target="_blank"
-  >Owen Sun</a>)
+  > Owen Sun </a>)
 
   return (
-    <div className="powered-by">
-      <p>{text}{owen}</p>
+    <div className="powered-by" >
+      <p>{text}{owen} </p>
     </div>
   );
 }

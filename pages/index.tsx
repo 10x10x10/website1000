@@ -1,11 +1,9 @@
 import ProjectViewList from './components/ProjectViewList.js'
 import Header from './components/Header.js'
-import Footer from './components/Footer.js'
-import HeadMeta from './components/HeadMeta.js'
-import EmbedVideo from './components/EmbedVideo.js'
-import { projectData } from '../data.js'
-import { styled, mediaMap } from '../styles/stitchesStyles'
-
+import Footer from './components/Footer.jsx'
+import HeadMeta from './components/HeadMeta.jsx'
+import { projectData } from '../data.ts'
+import { styled, mediaMap } from '../styles/stitchesStyles.ts'
 
 const BigTitle = styled('h1', {
   display: 'flex',
@@ -45,7 +43,7 @@ export default function HomePage() {
         <ProjectViewList type="default"></ProjectViewList>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
   )

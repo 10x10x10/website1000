@@ -1,3 +1,9 @@
+import {
+    ProjectData,
+    ProjectItemData,
+    MetaData,
+} from './lib/types/dataTypes';
+
 /* 
 projectData 填入專案的基本資料
 id: 唯一值
@@ -194,13 +200,13 @@ export const linkQuery = {
         video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1677190026/027-2023-greeting-card/Video/027-Video-01.mp4?[1920x1920]",
 
     },
-    
+
 
     // Key 為專案 Id
 }
 
 
-export const projectData = {
+export const projectData: ProjectData = {
     projects: [
         {
             id: "project022",
@@ -305,7 +311,7 @@ export const projectData = {
 
 
 
-export const metaData = {
+export const metaData: MetaData = {
     defaultProjectMetaData: {
         title: "1000 Cheng",
         description: "I'm 1000 cheng, Yi-Chien Cheng, basd in Taipei,Taiwan and I'm passionate about make some trippy 3d motion graphics by Cinema 4d and  After Effects.",
@@ -445,7 +451,7 @@ export const aboutData = {
     ],
     experiences: [
         {
-            
+
             title: "2021.9 —",
             items: [
                 {
@@ -454,7 +460,7 @@ export const aboutData = {
             ]
         },
         {
-            
+
             title: "2020.6 — 2022.8",
             items: [
                 {

@@ -1,8 +1,8 @@
 import React, { useState, } from "react";
 import PropTypes from "prop-types";
 
-import { styled, } from "../../../styles/stitchesStyles";
-import { TextStyle, } from "./Text";
+import { styled, } from "../../../styles/stitchesStyles.ts";
+import { TextStyle, } from "./Text.tsx";
 
 
 const StyledCredits = styled('div', {
@@ -32,7 +32,7 @@ const FoldContainer = styled('div', {
                     right: 0,
                     bottom: 0,
                     height: 150,
-                    background: '#0B0C0E',
+                    // background: '#0B0C0E',
                     background: 'linear-gradient(0deg, #0B0C0EFF 0%, #0B0C0E00 100%)',
                 },
             },
@@ -70,10 +70,17 @@ const MoreButton = styled('button', {
     }
 })
 
+
+type CreditsProps = {
+    content: string[],
+    foldable: boolean,
+};
+
+
 /**
  * @param {string[]} content -
  */
-export default function Credits(props) {
+export default function Credits(props: CreditsProps) {
 
     const {
         content,

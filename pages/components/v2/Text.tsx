@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { styled, css, } from "../../../styles/stitchesStyles";
+import { styled, css, } from "../../../styles/stitchesStyles.ts";
 
 
 export const TextStyle = css({
@@ -34,12 +34,17 @@ const P = styled('p', TextStyle, {
 });
 
 
+type TextProps = {
+  content: string | string[],
+  type: 'normal' | 'small' | 'big',
+};
+
 
 /**
  * @param {!string} type - `'normal'` | `'small'` | `'big'`
  * @param {!string|string[]} content - 
  */
-export default function Text(props) {
+export default function Text(props: TextProps) {
 
   const {
     content,

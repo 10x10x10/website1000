@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { styled, css, } from "../../../styles/stitchesStyles";
+import { styled, css, } from "../../../styles/stitchesStyles.ts";
 
 const StyledSpace = styled('span', {
   display: 'flex',
@@ -10,8 +10,10 @@ const StyledSpace = styled('span', {
   height: 32,
 });
 
+type SpaceProps = {
+};
 
-export default function Space(props) {
+export default function Space(props: SpaceProps) {
 
   const { } = props;
 

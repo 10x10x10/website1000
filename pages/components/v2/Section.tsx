@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { styled, css, mediaMap, } from "../../../styles/stitchesStyles";
+import { styled, css, mediaMap } from "../../../styles/stitchesStyles.ts";
 
 const StyledSection = styled('section', {
   boxSizing: 'border-box',
@@ -20,12 +20,15 @@ const StyledSection = styled('section', {
 });
 
 
-export default function Section(props) {
+type SectionProps = {
+  children: React.ReactNode,
+}
+
+export default function Section(props: SectionProps) {
 
   const {
     children,
   } = props;
-
 
   return (<StyledSection size={mediaMap}>
     {children}

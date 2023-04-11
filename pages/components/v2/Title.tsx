@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { styled, css, } from "../../../styles/stitchesStyles";
+import { styled, css, } from "../../../styles/stitchesStyles.ts";
 
 const H = css({
   padding: 0,
@@ -25,11 +25,18 @@ const H3 = styled('h3', H, {
 });
 
 
+type TitleProps = {
+  type: 'h1' | 'h2' | 'h3',
+  content: string,
+};
+
+
+
 /**
  * @param {!string} type - `'h1'` | `'h2'` | `'h3'`
  * @param {!string} content - 
  */
-export default function Title(props) {
+export default function Title(props: TitleProps) {
 
   const {
     type,

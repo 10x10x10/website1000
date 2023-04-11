@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { styled, css, } from "../../../styles/stitchesStyles";
+import { styled, css, } from "../../../styles/stitchesStyles.ts";
 
 const StyledCard = styled('div', {
   backgroundColor: '#88888820',
@@ -9,7 +9,11 @@ const StyledCard = styled('div', {
   padding: 16,
 });
 
-export default function Card(props) {
+type CardProps = {
+  children: React.ReactNode,
+};
+
+export default function Card(props: CardProps) {
 
   const {
     children,

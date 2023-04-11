@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { styled, css, } from "../../../styles/stitchesStyles";
+import { styled, css, } from "../../../styles/stitchesStyles.ts";
 
 const StyledDivider = styled('span', {
   display: 'flex',
@@ -13,7 +13,10 @@ const StyledDivider = styled('span', {
 });
 
 
-export default function Divider(props) {
+type DividerProps = {
+};
+
+export default function Divider(props: DividerProps) {
 
   const { } = props;
 

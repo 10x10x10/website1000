@@ -1,13 +1,24 @@
 import React from "react";
 import Head from 'next/head'
 import HeadGoogleAnalytics from './HeadGoogleAnalytics.js';
-import { metaData, projectData } from "../../data.js";
+import { metaData, projectData } from "../../data.ts";
+import { ProjectItemData } from "../../lib/types/dataTypes.ts";
 
-export default function HeadMeta({ type, id }) {
 
+type HeadMetaProps = {
+  type: 'project' | 'index' | 'lab' | 'about';
+  id?: string;
+};
+
+
+export default function HeadMeta(props: HeadMetaProps) {
+  const { type, id } = props;
   const defaultMetaData = metaData.defaultProjectMetaData;
 
-  let targetMetaData;
+  let targetMetaData: Partial<ProjectItemData> & {
+    ogImage?: string;
+  };
+  
   switch (type) {
 
     case "project":
@@ -41,9 +52,9 @@ export default function HeadMeta({ type, id }) {
   return (
     <>
       <HeadGoogleAnalytics />
-      <Head>
-        <title>{resultMetaData.title}</title>
-        <link rel="icon" href={resultMetaData.icon} />
+      < Head >
+        <title>{resultMetaData.title} </title>
+        < link rel="icon" href={resultMetaData.icon} />
         <meta name="description" content={resultMetaData.description} />
         <meta name="author" content={resultMetaData.author} />
         <meta property="og:type" content={resultMetaData.ogType} />

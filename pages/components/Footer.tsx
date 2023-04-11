@@ -1,10 +1,20 @@
 import React from "react";
-import { footerData } from "../../data.js";
-import PoweredBy from "./PoweredBy.js";
+import { footerData } from "../../data.ts";
+import PoweredBy from "./PoweredBy.ts";
 
-export default function Header(props) {
+type FooterProps = {
+  links: Array<{ link: string, icon: string }>,
+  description: string,
+  copyright: string,
+}
 
-  const { links, description, copyright } = footerData;
+export default function Footer(props: FooterProps) {
+
+  const {
+    links,
+    description,
+    copyright,
+  } = footerData;
 
   return (
     <div className="footer">
@@ -21,7 +31,7 @@ export default function Header(props) {
       </div>
       <p>{description}</p>
 
-      <div style={{height: 10}} />   {/* split space */}
+      <div style={{ height: 10 }} />   {/* split space */}
 
       <p>{copyright}</p>
       <PoweredBy />

@@ -1,8 +1,8 @@
-import { linkQuery } from "../data.js";
+import { linkQuery } from "../data.ts";
 
-const queryLink = function (link) {
+const queryLink = function (link: string) {
   let linkBlocks = link.split(".");
-  let pointer = linkQuery;
+  let pointer: any = linkQuery;
   for (let i = 0; i < linkBlocks.length; i++) {
     pointer = pointer[linkBlocks[i]];
   }

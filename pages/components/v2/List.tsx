@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { styled, css, } from "../../../styles/stitchesStyles";
-import { TextStyle, } from "./Text";
+import { styled, css, } from "../../../styles/stitchesStyles.ts";
+import { TextStyle, } from "./Text.tsx";
 
 const ListStyle = css({
   paddingLeft: 24,
@@ -22,11 +22,18 @@ const LI = styled('li', TextStyle, {
 
 
 
+
+type ListProps = {
+  type: 'order' | 'unorder',
+  content: string[],
+}
+
+
 /**
  * @param {!string} type - `'order'` | `'unorder'`
  * @param {!string} content - 
  */
-export default function List(props) {
+export default function List(props: ListProps) {
 
   const {
     type,
