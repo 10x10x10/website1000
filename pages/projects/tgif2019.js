@@ -2,8 +2,6 @@ import React from "react";
 import Project from "../components/Project.js";
 import { linkQuery } from "../../data.js";
 
-import EmbedVideo from "../components/EmbedVideo.js";
-
 import {
 
   Title,
@@ -17,6 +15,7 @@ import {
   MediaList,
   GridLayout,
   Card,
+  EmbedVideo,
 
   Credits,
 } from "../components/v2";
@@ -33,7 +32,7 @@ export default function ProjectPage(props) {
 
 
 
-      <EmbedVideo link="project001.video_main" />
+      <EmbedVideo link={link.video_main} />
 
       <Section>
         <Title type='h1' content='TGIF 台北設計電波｜國際設計交流年會主視覺影片' />

@@ -1,27 +1,20 @@
 import React from "react";
 import { queryLink } from "../../../lib/module.js";
-import { styled, MediaList, } from '../../../lib/stitches.config.js';
+import { styled, } from '../../../styles/stitchesStyles.js';
 
 const StyledEmbedVideo = styled('div', {
   position: 'relative',
+  width: '100%',
+  paddingTop: `${9 / 16 * 100}%`,
 
   '& iframe': {
     width: '100%',
     height: '100%',
+    position: 'absolute',
+    top: 0,
+    left: 0,
   },
 
-  variants: {
-    size: {
-      l: {
-        width: 1200,
-        height: 1200 / 16 * 9,
-      },
-      s: {
-        width: '100%',
-        height: 'calc(100vw / 16 * 9)',
-      }
-    }
-  }
 });
 
 
@@ -38,7 +31,7 @@ export default function EmbedVideo(props) {
   } = props;
 
   return (
-    <StyledEmbedVideo size={MediaList}>
+    <StyledEmbedVideo>
       <iframe
         src={link}
         scrolling="no"
