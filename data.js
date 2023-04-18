@@ -194,7 +194,14 @@ export const linkQuery = {
         video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1677190026/027-2023-greeting-card/Video/027-Video-01.mp4?[1920x1920]",
 
     },
-    
+
+    project029: {
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1681829250/029-DAMN-logo/Image/029-Image-01.jpg?[2048x1448]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1681829252/029-DAMN-logo/Image/029-Image-02.jpg?[2048x1448]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1681829253/029-DAMN-logo/Image/029-Image-03.jpg?[2048x1448]",
+        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1681829211/029-DAMN-logo/Video/027-Video-01.mp4?[1920x1080]",
+    },
+
 
     // Key 為專案 Id
 }
@@ -202,6 +209,14 @@ export const linkQuery = {
 
 export const projectData = {
     projects: [
+        {
+            id: "project029",
+            title: "Animated logo design for DAMN",
+            link: "/projects/DAMN-logo",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1681829235/029-DAMN-logo/Cover/029-Cover.jpg?[960x540]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1681829237/029-DAMN-logo/Cover/029-Hover.mp4?[960x540]",
+            type: "default",
+        },
         {
             id: "project022",
             title: "臺北表演藝術中心開幕主視覺",
@@ -445,7 +460,7 @@ export const aboutData = {
     ],
     experiences: [
         {
-            
+
             title: "2021.9 —",
             items: [
                 {
@@ -454,7 +469,7 @@ export const aboutData = {
             ]
         },
         {
-            
+
             title: "2020.6 — 2022.8",
             items: [
                 {
