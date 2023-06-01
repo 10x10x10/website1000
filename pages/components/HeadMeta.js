@@ -27,6 +27,10 @@ export default function HeadMeta({ type, id }) {
       targetMetaData = metaData.aboutMetaData;
       break;
 
+    case "blog":
+      targetMetaData = metaData.blogMetaData;
+      break;
+
     default:
       targetMetaData = {};
       break;

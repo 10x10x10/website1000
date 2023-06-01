@@ -340,6 +340,9 @@ export const metaData = {
     indexMetaData: {
         title: "",
     },
+    blogMetaData: {
+        title: "Blog",
+    }
     // //可以用 project id 來覆寫 meta data，預設會用 project title,cover ，其餘使用 defaultProjectMetaData 的值
     // project012: {   
     //     title: "覆寫的標題",
@@ -550,6 +553,11 @@ export const headerData = {
             title: "LAB",
             link: "/lab",
             type: "lab",
+        },
+        {
+            title: "BLOG",
+            link: "/blog",
+            type: "blog",
         },
         {
             title: "ABOUT",
