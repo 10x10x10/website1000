@@ -53,10 +53,10 @@ export default class Header extends React.Component {
 
         <div className="title-conatainer">
           <Link href={headerData.links[0].link}>
-            <a>
-              {/* <h1 className="title">1000 Cheng</h1> */}
-              <img src="/logo/logo.png" />
-            </a>
+
+            {/* <h1 className="title">1000 Cheng</h1> */}
+            <img src="/logo/logo.png" />
+
           </Link>
         </div>
 
@@ -81,16 +81,20 @@ export default class Header extends React.Component {
               const isLocation = item.type === type;
               return (
                 <div className="header-link-item" key={item.link}>
-                  <Link href={isLocation ? '' : item.link} >
-                    <a className={classNames("header-link", { 'header-link-active': isLocation })}>
-                      {item.title}
-                    </a>
+                  <Link
+                    href={isLocation ? '' : item.link}
+                    className={classNames("header-link", { 'header-link-active': isLocation })}>
+
+                    {item.title}
+
                   </Link>
                   {/* {index + 1 < headerData.links.length ? <span className="header-link-spliter">|</span> : null} */}
-                </div>);
+                </div>
+              );
             })
           }
         </div>
-      </div>);
+      </div>
+    );
   }
 }
