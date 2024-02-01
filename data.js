@@ -485,7 +485,7 @@ export const aboutData = {
         },
         {
 
-            title: "2023.7－2023.8",
+            title: "2023.7 — 2023.8",
             items: [
                 {
                     text: "Dimension Plus | Engineering Intern",
