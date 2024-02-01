@@ -354,13 +354,28 @@ export const aboutData = {
     intro: {
         title: "HI, I'm 1000 Cheng.\nA designer specialising in Experimental Visual, Motion Graphics, Generative Art, and Product Design.",
         descriptions: [
-            "1000 Cheng，本名鄭詒謙，現居台北，為十立方科技有限公司創辦人，致力於製作實驗性影像與嶄新的視覺體驗，已累積近 30 個專案合作經驗，曾與多元類型的公司與設計師合作，如叁式、夢想動畫、半夜設計、何庭安、葉忠宜等。專案包含大型展覽投影、產品發表會、活動主視覺與各類動態影像。同時也有 2 年數位產品設計經歷，具備協助產品與網站的優化與介面設計之經驗。",
+            "1000 Cheng，本名鄭詒謙，現居台北，為十立方科技有限公司創辦人，致力於製作實驗性影像與嶄新的視覺體驗，跨足於動態設計、生成藝術與互動影像。至今以獨立接案者的身分已累積超過 40 個專案合作經驗，曾與多元類型的公司與設計師合作。專案包含大型展覽投影、產品發表會、活動主視覺、品牌形象與各類動態影像。同時具有 2 年數位產品設計經驗，曾協助產品與網站優化體驗。",
         ],
     },
     projects: [
         {
             year: "2023",
             items: [
+                {
+                    text: "國泰世華 CUBE 簡單生活節展場 互動生成式影像設計",
+                },
+                {
+                    text: "三得利 歐肯 14 年發表會 主視覺動態 與 沉浸式影像設計",
+                },
+                {
+                    text: "CNU Bridge Trading Logo 動態設計",
+                },
+                {
+                    text: "RIDERMENT 品牌形象影片 動態設計",
+                },
+                {
+                    text: "VS AI 街頭對戰 主視覺 動態設計",
+                },
                 {
                     text: "卯兔 52 設計師賀卡創作聯展 參展",
                 },
@@ -461,10 +476,19 @@ export const aboutData = {
     experiences: [
         {
 
-            title: "2021.9 —",
+            title: "2021.9 — Present",
             items: [
                 {
-                    text: "10x10x10 Studio | Founder",
+                    text: "10x10x10 Studio | Founder & Motion Designer",
+                }
+            ]
+        },
+        {
+
+            title: "2023.7－2023.8",
+            items: [
+                {
+                    text: "Dimension Plus | Engineering Intern",
                 }
             ]
         },
@@ -499,7 +523,7 @@ export const aboutData = {
             title: "Motion",
             items: [
                 {
-                    text: "After Effects | Cinema 4d | Blender | TouchDesigner  | p5.js",
+                    text: "After Effects | Cinema 4d | Blender",
                 }
             ]
         },
@@ -507,7 +531,15 @@ export const aboutData = {
             title: "Graphics / UI",
             items: [
                 {
-                    text: "Figma | Webflow | illustrator | Photoshop",
+                    text: "Figma | illustrator | Photoshop",
+                }
+            ]
+        }, 
+        {
+            title: "Coding",
+            items: [
+                {
+                    text: "TouchDesigner  | p5.js",
                 }
             ]
         },
