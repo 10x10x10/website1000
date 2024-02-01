@@ -5,6 +5,6 @@ module.exports = {
   reactStrictMode: true,
   assetPrefix: isProd ? "" : "",
   compiler: {
-    styledComponents: true,
+    // styledComponents: true,
   },
 }
