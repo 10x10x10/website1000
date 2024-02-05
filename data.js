@@ -202,6 +202,13 @@ export const linkQuery = {
         video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1681829211/029-DAMN-logo/Video/029-Video-01.mp4?[1920x1080]",
     },
 
+    project037: {
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1707116252/037-CNU-Bridge-logo/Image/037-Image-01.jpg?[1755x1242]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1707116253/037-CNU-Bridge-logo/Image/037-Image-02.jpg?[1755x1241]",
+        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1707116295/037-CNU-Bridge-logo/Video/037-Video-01.mp4?[1920x1080]",
+    },
+
+
 
     // Key 為專案 Id
 }
@@ -209,6 +216,14 @@ export const linkQuery = {
 
 export const projectData = {
     projects: [
+        {
+            id: "project037",
+            title: "Animated logo design for CNU Bridge Trading",
+            link: "/projects/CNU-Bridge-Trading-logo",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1707116276/037-CNU-Bridge-logo/Cover/037-Cover.jpg?[960x540]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1707116277/037-CNU-Bridge-logo/Cover/037-Hover.mp4?[960x540]",
+            type: "default",
+        },
         {
             id: "project029",
             title: "Animated logo design for DAMN",
@@ -534,7 +549,7 @@ export const aboutData = {
                     text: "Figma | illustrator | Photoshop",
                 }
             ]
-        }, 
+        },
         {
             title: "Coding",
             items: [
