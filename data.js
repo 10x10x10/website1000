@@ -199,7 +199,7 @@ export const linkQuery = {
         image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1681829250/029-DAMN-logo/Image/029-Image-01.jpg?[2048x1448]",
         image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1681829252/029-DAMN-logo/Image/029-Image-02.jpg?[2048x1448]",
         image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1681829253/029-DAMN-logo/Image/029-Image-03.jpg?[2048x1448]",
-        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1681829211/029-DAMN-logo/Video/027-Video-01.mp4?[1920x1080]",
+        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1681829211/029-DAMN-logo/Video/029-Video-01.mp4?[1920x1080]",
     },
 
 
@@ -613,5 +613,5 @@ export const footerData = {
         },
     ],
     description: "Plz feel free to contact me",
-    copyright: "Copyright © 2019-2022 1000 Cheng",
+    copyright: "Copyright © 2019-2024 1000 Cheng",
 };
