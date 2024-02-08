@@ -66,6 +66,7 @@ export default function ProjectPage(props) {
       <Section>
         <MediaList col={4} mCol={2}
           links={[
+            link.video_07_s,
             link.video_08_s,
             link.video_09_s,
             link.video_10_s,

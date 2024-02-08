@@ -149,7 +149,7 @@ export const linkQuery = {
     },
 
     projectM002: {
-        video_main: "https://www.youtube.com/embed/TjNABiQaQUE?wmode=opaque&widget_referrer=https%3A%2F%2Fwww.1000cheng.cc%2F&enablejsapi=1&origin=https%3A%2F%2Fcdn.embedly.com&widgetid=1",
+        video_main: "https://player.vimeo.com/video/910270117",
         video_01_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681213371/M002_Entanglement/Video/M002_video_01.mp4?[1920x1080]",
         video_02_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681213370/M002_Entanglement/Video/M002_video_02.mp4?[1920x1080]",
         video_03_s: "https://res.cloudinary.com/w10x10x10/video/upload/v1681213370/M002_Entanglement/Video/M002_video_03.mp4?[1920x1080]",
@@ -234,7 +234,7 @@ export const projectData = {
         },
         {
             id: "project022",
-            title: "臺北表演藝術中心開幕主視覺",
+            title: "TPAC Opening Visual Design",
             link: "/projects/TPAC-opening",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1677175922/022-TPAC-opening/Cover/022-Cover.jpg?[960x540]",
             hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1677176597/022-TPAC-opening/Cover/022-Hover.mp4?[960x540]",
@@ -250,7 +250,7 @@ export const projectData = {
         },
         {
             id: "project012",
-            title: "Gogoro VIVA MIX 新車發表會",
+            title: "Gogoro VIVA MIX",
             link: "/projects/gogoro-viva-mix",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629296335/012-GogoroVivaMix/Cover/012-Cover.png?[960x540]",
             hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1629296337/012-GogoroVivaMix/Cover/012-Hover.mp4?[480x270]",
@@ -282,7 +282,7 @@ export const projectData = {
         },
         {
             id: "project006",
-            title: "DigiWave 2020《遙視 Clairvoyance》 ",
+            title: "DigiWave 2020《Clairvoyance》 ",
             link: "/projects/digiwave2020",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629390553/006-Digiwave2020/Cover/006-Cover.jpg?[960x540]",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1629390553/006-Digiwave2020/Cover/006-Cover.jpg?[960x540]",
@@ -290,7 +290,7 @@ export const projectData = {
         },
         {
             id: "project003",
-            title: "2020 台北電影節 Taipei Film Festival 片頭動畫",
+            title: "2020 台北電影節 Taipei Film Festival",
             link: "/projects/taipei-film-festival2020",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177130/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Cover/003_Cover_01.png?[1920x1080]",
             hover: "https://res.cloudinary.com/w10x10x10/image/upload/v1626177132/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Cover/003_Cover_02.gif?[480x270]",
