@@ -208,6 +208,17 @@ export const linkQuery = {
         video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1707116295/037-CNU-Bridge-logo/Video/037-Video-01.mp4?[1920x1080]",
     },
 
+    project032: {
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1707442795/032-Auchentoshan14/Image/032-Image-01.jpg?[2048x1536]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1707442796/032-Auchentoshan14/Image/032-Image-02.jpg?[2048x1536]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1707442797/032-Auchentoshan14/Image/032-Image-03.jpg?[2048x1536]",
+        image_04: "https://res.cloudinary.com/w10x10x10/image/upload/v1707442798/032-Auchentoshan14/Image/032-Image-04.jpg?[2048x1536]",
+        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1707442736/032-Auchentoshan14/Video/032-Video-01.mp4?[1920x1080]",
+        video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1707442738/032-Auchentoshan14/Video/032-Video-02.mp4?[1920x1080]",
+        video_03: "https://res.cloudinary.com/w10x10x10/video/upload/v1707442739/032-Auchentoshan14/Video/032-Video-03.mp4?[1920x1080]",
+        video_main: "https://player.vimeo.com/video/910268277",
+    },
+
 
 
     // Key 為專案 Id
@@ -216,6 +227,14 @@ export const linkQuery = {
 
 export const projectData = {
     projects: [
+        // {
+        //     id: "project032",
+        //     title: "Suntory Auchentoshan 14 wiskey launch party",
+        //     link: "/projects/Suntory-Auchentoshan-14",
+        //     cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1707442763/032-Auchentoshan14/Cover/032-Cover.jpg?[960x540]",
+        //     hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1707442764/032-Auchentoshan14/Cover/032-Hover.mp4?[960x540]",
+        //     type: "default",
+        // },
         {
             id: "project037",
             title: "Animated logo design for CNU Bridge Trading",
@@ -380,7 +399,7 @@ export const aboutData = {
                     text: "國泰世華 CUBE 簡單生活節展場 互動生成式影像設計",
                 },
                 {
-                    text: "三得利 歐肯 14 年發表會 主視覺動態 與 沉浸式影像設計",
+                    text: "三得利歐肯 14 年品酩會 主視覺與開幕秀動態設計",
                 },
                 {
                     text: "CNU Bridge Trading Logo 動態設計",
