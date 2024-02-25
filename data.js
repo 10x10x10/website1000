@@ -227,14 +227,14 @@ export const linkQuery = {
 
 export const projectData = {
     projects: [
-        // {
-        //     id: "project032",
-        //     title: "Suntory Auchentoshan 14 wiskey launch party",
-        //     link: "/projects/Suntory-Auchentoshan-14",
-        //     cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1707442763/032-Auchentoshan14/Cover/032-Cover.jpg?[960x540]",
-        //     hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1707442764/032-Auchentoshan14/Cover/032-Hover.mp4?[960x540]",
-        //     type: "default",
-        // },
+        {
+            id: "project032",
+            title: "Suntory Auchentoshan 14 wiskey launch party",
+            link: "/projects/Suntory-Auchentoshan-14",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1707442763/032-Auchentoshan14/Cover/032-Cover.jpg?[960x540]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1707442764/032-Auchentoshan14/Cover/032-Hover.mp4?[960x540]",
+            type: "default",
+        },
         {
             id: "project037",
             title: "Animated logo design for CNU Bridge Trading",
