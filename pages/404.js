@@ -2,9 +2,10 @@ import Head from 'next/head'
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
 import ProjectViewList from "./components/ProjectViewList.js";
-import Lottie, { useLottie } from "lottie-react";
 import error404Anim from "../src/animations/404.json";
 
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const styleSheet = {
   dialog: {

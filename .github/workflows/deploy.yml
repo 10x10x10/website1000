@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.17]
+        node-version: [22.12]
 
     steps:
       - uses: actions/checkout@v2
@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Use NPM 7
+      - name: Use NPM
         run: npm i -g npm@latest
 
       - name: Cache dependencies

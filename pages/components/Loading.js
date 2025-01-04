@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import Lottie from "lottie-react";
 import loadingAnim from "../../src/animations/loading.json";
+
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 function Loading(props) {
 
