@@ -386,12 +386,38 @@ export const metaData = {
 
 export const aboutData = {
     intro: {
-        title: "HI, I'm 1000 Cheng.\nA designer specialising in Experimental Visual, Motion Graphics, Generative Art, and Product Design.",
+        title: "HI, I'm 1000 Cheng.\nA designer specialising in Experimental Visual, Motion Graphics, and Generative Art.",
         descriptions: [
-            "1000 Cheng，十立方科技有限公司創辦人，致力於製作實驗性影像與嶄新的視覺體驗，跨足於動態設計、生成藝術與互動影像。至今以獨立接案者的身分已累積超過 40 個專案合作經驗，曾與多元類型的公司與設計師合作。專案包含大型展覽投影、產品發表會、活動主視覺、品牌形象與各類動態影像。同時具有 2 年數位產品設計經驗，曾協助產品與網站優化體驗。",
+            "鄭詒謙 1000 Cheng，十立方科技有限公司創辦人，致力於製作實驗性影像與嶄新的視覺體驗，跨足於動態設計、生成藝術與互動影像。至今以獨立接案者的身分已累積超過 50 個專案合作經驗，曾與多元類型的公司與設計師合作。專案包含大型展覽投影、產品發表會、活動主視覺、品牌形象與各類動態影像。",
         ],
     },
     projects: [
+        {
+            year: "2024",
+            items: [
+                {
+                    text: "陽明交通大學人文藝術與社會學院 識別動態",
+                },
+                {
+                    text: "TTXC 2024「G.A.M.E.」未來主題展 主視覺動態",
+                },
+                {
+                    text: "Temporarily Open 展覽主視覺動態",
+                },
+                {
+                    text: "Project Patching 動態設計",
+                },
+                {
+                    text: "春池 Original 識別動態",
+                },
+                {
+                    text: "山丘藍台灣藍莓 發表會動態",
+                },
+                {
+                    text: "The Book of Veles 解說影片",
+                },
+            ]
+        },
         {
             year: "2023",
             items: [
@@ -402,19 +428,22 @@ export const aboutData = {
                     text: "三得利歐肯 14 年品酩會 主視覺與開幕秀動態設計",
                 },
                 {
-                    text: "CNU Bridge Trading Logo 動態設計",
+                    text: "Spine 投影視覺與動態設計",
                 },
                 {
-                    text: "RIDERMENT 品牌形象影片 動態設計",
+                    text: "VS AI 街頭對戰 主視覺動態",
                 },
                 {
-                    text: "VS AI 街頭對戰 主視覺 動態設計",
+                    text: "CNU Bridge Trading 識別動態",
+                },
+                {
+                    text: "RIDERMENT 品牌形象動態",
                 },
                 {
                     text: "卯兔 52 設計師賀卡創作聯展 參展",
                 },
                 {
-                    text: "DAMN Logo 動態設計",
+                    text: "DAMN 識別動態",
                 },
 
             ]
@@ -428,45 +457,33 @@ export const aboutData = {
                 {
                     text: "屏東菸廠沉浸體驗特展 投影動態設計",
                 },
-                {
-                    text: "多重宇宙手帳募資影片 動態設計",
-                },
-
-
-
             ]
         },
         {
             year: "2021",
             items: [
                 {
-                    text: "台北服裝時裝週開幕秀 投影動態設計",
-                },
-                {
-                    text: "2021 臺南國際音樂節主視覺 3D動態設計",
-                },
-                {
-                    text: "佳世達 Qisda 立柱抽象影片設計",
-                },
-                {
-                    text: "Netflix 社群節目台式影劇回顧第一集 動態設計",
-                },
-                {
-                    text: "ASUS Zenfone8 發表會倒數影像 動態設計",
-                },
-                {
-                    text: "2021 臺灣文博會參拜大廳 投影動態設計",
-                },
-                {
-                    text: "ROG Phone 5 發表會 動態設計",
-                    link: "projects/rog-phone5-countdown",
-                },
-                {
-                    text: "Gogoro VIVA MIX 發表會 動態視覺設計",
+                    text: "Gogoro VIVA MIX 發表會動態",
                     link: "projects/gogoro-viva-mix",
                 },
                 {
-                    text: "瀚宇博德公司簡介 片頭",
+                    text: "台北服裝時裝週開幕秀 投影動態",
+                },
+                {
+                    text: "ROG Phone 5 發表會動態",
+                    link: "projects/rog-phone5-countdown",
+                },
+                {
+                    text: "2021 臺南國際音樂節 主視覺動態",
+                },
+                {
+                    text: "2021 臺灣文博會參拜大廳 投影動態",
+                },
+                {
+                    text: "Netflix 社群節目台式影劇回顧 動態設計",
+                },
+                {
+                    text: "佳世達 Qisda 立柱動態設計",
                 },
                 {
                     text: "MUTANT 集體異變實體展 參展",
@@ -477,20 +494,20 @@ export const aboutData = {
             year: "2020",
             items: [
                 {
-                    text: "DigiWave 2020《遙視 Clairvoyance》 投影動態設計",
+                    text: "DigiWave 2020《遙視 Clairvoyance》 投影動態",
                     link: "https://vimeo.com/488057651",
                 },
                 {
-                    text: "PONY5IBE -【They Said】ft 陳嫻靜 MV 動態設計",
+                    text: "PONY5IBE -【They Said】ft 陳嫻靜 MV",
                 },
                 {
                     text: "台北電影節 Taipei Film Festival 片頭",
                 },
                 {
-                    text: "金馬 57 最佳攝影入圍 動態設計",
+                    text: "金馬 57 最佳劇情短片 入圍片頭動畫",
                 },
                 {
-                    text: "金馬 57 最佳劇情短片入圍 動態設計",
+                    text: "金馬 57 最佳攝影 入圍片頭動畫",
                 },
             ]
         },
@@ -647,5 +664,5 @@ export const footerData = {
         },
     ],
     description: "Plz feel free to contact me",
-    copyright: "Copyright © 2019-2024 1000 Cheng",
+    copyright: "Copyright © 2019-2025 1000 Cheng",
 };

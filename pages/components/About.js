@@ -165,7 +165,7 @@ export default function About(props) {
 
 
         <Block>
-          <Title>Project</Title>
+          <Title>Projects</Title>
           {
             projects.map((el) => {
               return (
@@ -209,7 +209,7 @@ export default function About(props) {
         </Block>
 
         <Block>
-          <Title>Toolkit</Title>
+          <Title>Toolkits</Title>
           {
             toolkit.map((el) => {
               return (
