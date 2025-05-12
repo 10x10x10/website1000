@@ -50,6 +50,17 @@ export default function ProjectPage(props) {
 
             </Section>
 
+                  <Section>
+                    <MediaList col={2} mCol={1}
+                      links={[
+                        link.image_01,
+                        link.image_02,
+                        link.image_03,
+                        link.image_04,
+            
+                      ]} />
+                  </Section>
+
             <Space />
 
             <Title type='h2' content='Credits' />

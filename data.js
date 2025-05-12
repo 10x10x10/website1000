@@ -220,13 +220,10 @@ export const linkQuery = {
     },
 
     project049: {
-        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1707442795/032-Auchentoshan14/Image/032-Image-01.jpg?[2048x1536]",
-        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1707442796/032-Auchentoshan14/Image/032-Image-02.jpg?[2048x1536]",
-        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1707442797/032-Auchentoshan14/Image/032-Image-03.jpg?[2048x1536]",
-        image_04: "https://res.cloudinary.com/w10x10x10/image/upload/v1707442798/032-Auchentoshan14/Image/032-Image-04.jpg?[2048x1536]",
-        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1707442736/032-Auchentoshan14/Video/032-Video-01.mp4?[1920x1080]",
-        video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1707442738/032-Auchentoshan14/Video/032-Video-02.mp4?[1920x1080]",
-        video_03: "https://res.cloudinary.com/w10x10x10/video/upload/v1707442739/032-Auchentoshan14/Video/032-Video-03.mp4?[1920x1080]",
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1747019886/049-ttxc-game/Image/049-ttxc-game-image-01.jpg?[640x360]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1747019886/049-ttxc-game/Image/049-ttxc-game-image-02.jpg?[640x360]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1747019886/049-ttxc-game/Image/049-ttxc-game-image-03.jpg?[640x360]",
+        image_04: "https://res.cloudinary.com/w10x10x10/image/upload/v1747019886/049-ttxc-game/Image/049-ttxc-game-image-04.jpg?[640x360]",
         video_main: "https://player.vimeo.com/video/1083379085",
     },
 
