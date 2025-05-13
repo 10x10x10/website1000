@@ -227,6 +227,14 @@ export const linkQuery = {
         video_main: "https://player.vimeo.com/video/1083379085",
     },
 
+    project044: {
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1747019886/049-ttxc-game/Image/049-ttxc-game-image-01.jpg?[640x360]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1747019886/049-ttxc-game/Image/049-ttxc-game-image-02.jpg?[640x360]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1747019886/049-ttxc-game/Image/049-ttxc-game-image-03.jpg?[640x360]",
+        image_04: "https://res.cloudinary.com/w10x10x10/image/upload/v1747019886/049-ttxc-game/Image/049-ttxc-game-image-04.jpg?[640x360]",
+        video_main: "https://player.vimeo.com/video/1083744995",
+    },
+
 
 
     // Key 為專案 Id
@@ -235,6 +243,14 @@ export const linkQuery = {
 
 export const projectData = {
     projects: [
+        {
+            id: "project044",
+            title: "Identity Animation for College of Humanities, NYCU",
+            link: "/projects/nycu-hss",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1747104730/044-nycu-hss/Cover/NYCU_HSS_cover.jpg?[1920x1080]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1747104731/044-nycu-hss/Cover/NYCU_HSS_hover.mp4?[1920x1080]",
+            type: "default",
+        },
         {
             id: "project049",
             title: "TTXC 2024 “G.A.M.E.”",
