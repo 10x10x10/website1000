@@ -42,8 +42,8 @@ export default function ProjectPage(props) {
 
 
       <Section>
-        <Title type='h1' content='CNU Bridge Trading Logo 動態設計' />
-        <Title type='h1' content='Animated logo design for DAMN' />
+        <Title type='h1' content='CNU Bridge Trading 識別動態' />
+        <Title type='h1' content='CNU Bridge Trading Identity Animation' />
         <Text content={[
           '樂好實業 / 樂和實業是從一間面向歐美市場嬰兒設計家具起家的整合型貿易公司。CNU Bridge針對輸出貿易，NEXK2針對輸入貿易。',
           '象徵貿易的「橋樑」則是這間公司重要的符號。rebranding的logo圖形概念則以橋樑以及鐵橋結構（Truss）延伸成的雙向箭頭符號組合而成。並以互補色的藍橘，連結貿易輸出與輸入的互補意象。',

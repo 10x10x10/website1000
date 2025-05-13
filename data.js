@@ -228,10 +228,14 @@ export const linkQuery = {
     },
 
     project044: {
-        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1747019886/049-ttxc-game/Image/049-ttxc-game-image-01.jpg?[640x360]",
-        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1747019886/049-ttxc-game/Image/049-ttxc-game-image-02.jpg?[640x360]",
-        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1747019886/049-ttxc-game/Image/049-ttxc-game-image-03.jpg?[640x360]",
-        image_04: "https://res.cloudinary.com/w10x10x10/image/upload/v1747019886/049-ttxc-game/Image/049-ttxc-game-image-04.jpg?[640x360]",
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1747118990/044-nycu-hss/Image/044-nycu-hss-image-01.jpg?[1080x1080]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1747118990/044-nycu-hss/Image/044-nycu-hss-image-02.jpg?[1080x1080]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1747118990/044-nycu-hss/Image/044-nycu-hss-image-03.jpg?[1080x1080]",
+        image_04: "https://res.cloudinary.com/w10x10x10/image/upload/v1747118990/044-nycu-hss/Image/044-nycu-hss-image-04.jpg?[1080x1080]",
+        video_01: "https://res.cloudinary.com/w10x10x10/video/upload/v1747105934/044-nycu-hss/Video/NYCU_HSS_logo_1920X1080.mp4?[1920x1080]",
+        video_02: "https://res.cloudinary.com/w10x10x10/video/upload/v1747119232/044-nycu-hss/Video/logo_1920x1080_black.mp4?[1920x1080]",
+        video_03: "https://res.cloudinary.com/w10x10x10/video/upload/v1747119408/044-nycu-hss/Video/Output_designB_v01.mp4?[1920x1080]",
+        video_04: "https://res.cloudinary.com/w10x10x10/video/upload/v1747119409/044-nycu-hss/Video/Output_designC_v01.mp4?[1920x1080]",
         video_main: "https://player.vimeo.com/video/1083744995",
     },
 
@@ -269,7 +273,7 @@ export const projectData = {
         },
         {
             id: "project037",
-            title: "Animated logo design for CNU Bridge Trading",
+            title: "CNU Bridge Trading Identity Animation",
             link: "/projects/CNU-Bridge-Trading-logo",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1707116276/037-CNU-Bridge-logo/Cover/037-Cover.jpg?[960x540]",
             hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1707116277/037-CNU-Bridge-logo/Cover/037-Hover.mp4?[960x540]",

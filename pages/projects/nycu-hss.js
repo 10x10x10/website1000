@@ -52,16 +52,28 @@ export default function ProjectPage(props) {
 
             </Section>
 
-                  {/* <Section>
-                    <MediaList col={2} mCol={1}
-                      links={[
-                        link.image_01,
-                        link.image_02,
-                        link.image_03,
-                        link.image_04,
-            
-                      ]} />
-                  </Section> */}
+            <Section>
+                <Title type='h2' content='Concept' />
+                <MediaList col={2} mCol={1}
+                links={[
+                    link.image_01,
+                    link.image_02,
+                    // link.image_03,
+                    // link.image_04,
+        
+                ]} />
+            </Section>
+
+            <Section>
+            <Title type='h2' content='Motion' />
+
+                <MediaList col={1} mCol={1}
+                links={[
+                    link.video_03,
+                    link.video_04,
+        
+                ]} />
+            </Section>
 
             <Space />
 
