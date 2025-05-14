@@ -238,6 +238,13 @@ export const linkQuery = {
         video_04: "https://res.cloudinary.com/w10x10x10/video/upload/v1747119409/044-nycu-hss/Video/Output_designC_v01.mp4?[1920x1080]",
         video_main: "https://player.vimeo.com/video/1083744995",
     },
+    project047: {
+        image_01: "https://res.cloudinary.com/w10x10x10/image/upload/v1747208469/047-original/Image/047-original-image-01.jpg?[1920x960]",
+        image_02: "https://res.cloudinary.com/w10x10x10/image/upload/v1747208469/047-original/Image/047-original-image-02.jpg?[1620x1080]",
+        image_03: "https://res.cloudinary.com/w10x10x10/image/upload/v1747208469/047-original/Image/047-original-image-03.jpg?[1620x1080]",
+        image_04: "https://res.cloudinary.com/w10x10x10/image/upload/v1747208469/047-original/Image/047-original-image-04.jpg?[1440x1080]",
+        video_main: "https://player.vimeo.com/video/1084158729",
+    },
 
 
 
@@ -261,6 +268,14 @@ export const projectData = {
             link: "/projects/ttxc-game",
             cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1747018649/049-ttxc-game/Cover/049-ttxc-game-cover.jpg?[1920x1080]",
             hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1747018650/049-ttxc-game/Cover/049-ttxc-game-hover.mp4?[1920x1080]",
+            type: "default",
+        },
+        {
+            id: "project047",
+            title: "Spring Pool Glass Original Identity Animation",
+            link: "/projects/spring-pool-glass-original",
+            cover: "https://res.cloudinary.com/w10x10x10/image/upload/v1747207736/047-original/Cover/Original_cover.jpg?[1920x1080]",
+            hover: "https://res.cloudinary.com/w10x10x10/video/upload/v1747207737/047-original/Cover/Original_hover.mp4?[1920x1080]",
             type: "default",
         },
         {
