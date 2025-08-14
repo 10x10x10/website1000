@@ -439,7 +439,7 @@ export const aboutData = {
     intro: {
         title: "HI, I'm 1000 Cheng.\nA designer specialising in Experimental Visual, Motion Graphics, and Generative Art.",
         descriptions: [
-            "鄭詒謙 1000 Cheng，十立方科技有限公司創辦人，致力於製作實驗性影像與嶄新的視覺體驗，跨足於動態設計、生成藝術與互動影像。至今以獨立接案者的身分已累積超過 50 個專案合作經驗，曾與多元類型的公司與設計師合作。專案包含大型展覽投影、產品發表會、活動主視覺、品牌形象與各類動態影像。",
+            "1000 Cheng，十立方科技有限公司創辦人，致力於製作實驗性影像與嶄新的視覺體驗，跨足於動態設計、生成藝術與互動影像。至今以獨立接案者的身分已累積超過 50 個專案合作經驗，曾與多元類型的公司與設計師合作。專案包含大型展覽投影、產品發表會、活動主視覺、品牌形象與各類動態影像。",
         ],
     },
     projects: [
