@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "id": "project003",
+    "title": "2020 台北電影節 Taipei Film Festival",
+    "order": 0,
+    "cover": "https://res.cloudinary.com/w10x10x10/image/upload/v1626177130/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Cover/003_Cover_01.png?[1920x1080]",
+    "hover": "https://res.cloudinary.com/w10x10x10/image/upload/v1626177132/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Cover/003_Cover_02.gif?[480x270]",
+    "tags": [
+      "default"
+    ]
+  },
+  "tree": [
+    {
+      "type": "EmbedVideo",
+      "props": {
+        "link": "https://player.vimeo.com/video/434576970?app_id=122963&referrer=https%3A%2F%2Fwww.1000cheng.cc%2F"
+      }
+    },
+    {
+      "type": "Section",
+      "children": [
+        {
+          "type": "Title",
+          "props": {
+            "type": "h1",
+            "content": "2020 台北電影節 片頭動畫"
+          }
+        },
+        {
+          "type": "Title",
+          "props": {
+            "type": "h1",
+            "content": "2020 Taipei Film Festival Opening Animation"
+          }
+        },
+        {
+          "type": "Text",
+          "props": {
+            "content": [
+              "台北電影節是每年於台灣台北市舉辦的電影節，主要由兩大競賽單元「國際新導演競賽」與「臺北電影獎」以及觀摩單元所組成。",
+              "今年台北電影節再度邀請知名設計師廖小子創作主視覺，由「純粹」此一概念出發，運用光線直來直往的傳達與接收，呈現創作者的直抒胸臆與觀眾觀影時的感官動員。",
+              "片頭動畫由平面主視覺所延伸，透過 3D 動畫呈現更豐的光影效果與金屬質感，觀影體驗猶如穿梭在三種感官之中，時而交替，時而重疊，最終由如快門般的出口看到全貌，也許觀者在觀影的同時於腦海錄製全新的影像。"
+            ]
+          }
+        },
+        {
+          "type": "Text",
+          "props": {
+            "content": [
+              "\"Taipei Graphic Interflow Festival\" was an international design exchange conference held in 2019, inviting top professionals in the fields of graphic design, visual effects, and motion design from around the world to discuss and analyze design face-to-face, absorb new knowledge from different countries, and showcase future design trends.",
+              "The Chinese name of the event called “台北設計電波” (Taipei Design Radiowave). We visited the organizer for the reason for this naming: The word \"radio wave\" is taken from the book \"Darwin Radio Waves\". It aims to tell that evolution may not be a gradual change, but an instantaneous evolution. Inspired by this concept, dynamic and design elements were used as visual imagery, representing constant dissemination and breaking of frameworks, with Taipei as the center emitting waves of rays, ultimately creating stunning experimental visual animations."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "Section",
+      "children": [
+        {
+          "type": "MediaList",
+          "props": {
+            "col": 2,
+            "mCol": 2,
+            "links": [
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177115/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_01.png?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_02.png?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_03.png?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_04.png?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_05.png?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177117/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Image/003_Image_06.png?[1920x1080]"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "Section",
+      "children": [
+        {
+          "type": "MediaList",
+          "props": {
+            "col": 4,
+            "mCol": 2,
+            "links": [
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177109/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Video/003_GIF_01.gif?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177109/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Video/003_GIF_02.gif?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177109/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Video/003_GIF_03.gif?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177109/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Video/003_GIF_04.gif?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177109/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Video/003_GIF_05.gif?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177109/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Video/003_GIF_06.gif?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177109/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Video/003_GIF_07.gif?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1626177109/003_%E5%8F%B0%E5%8C%97%E9%9B%BB%E5%BD%B1%E7%AF%80/Video/003_GIF_08.gif?[1920x1080]"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "Space"
+    },
+    {
+      "type": "Title",
+      "props": {
+        "type": "h2",
+        "content": "Credits"
+      }
+    },
+    {
+      "type": "Credits",
+      "props": {
+        "content": [
+          "Client : 台北電影節 Taipei Film Festival",
+          "Visual Art Designer : 廖小子 Godkidlla",
+          "Production : 罡風創意映像有限公司 DCraft Studio、宇宙潔癖有限公司 JP SPACE Studio",
+          "Producer : 嚴振欽 ArChin Yen",
+          "Director : 蔣承翰 Double Jiang",
+          "Concept & Storyboard : 鄭詒謙 1000 Cheng",
+          "Motion Design : 鄭詒謙 1000 Cheng",
+          "Sound Designer : 吳梵霖 Hans Wu"
+        ]
+      }
+    }
+  ]
+}

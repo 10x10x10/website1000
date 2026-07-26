@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "id": "project037",
+    "title": "CNU Bridge Trading Identity Animation",
+    "order": 0,
+    "cover": "https://res.cloudinary.com/w10x10x10/image/upload/v1707116276/037-CNU-Bridge-logo/Cover/037-Cover.jpg?[960x540]",
+    "hover": "https://res.cloudinary.com/w10x10x10/video/upload/v1707116277/037-CNU-Bridge-logo/Cover/037-Hover.mp4?[960x540]",
+    "tags": [
+      "default"
+    ]
+  },
+  "tree": [
+    {
+      "type": "Section",
+      "children": [
+        {
+          "type": "MediaList",
+          "props": {
+            "col": 1,
+            "mCol": 1,
+            "links": [
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1707116295/037-CNU-Bridge-logo/Video/037-Video-01.mp4?[1920x1080]"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "Section",
+      "children": [
+        {
+          "type": "Title",
+          "props": {
+            "type": "h1",
+            "content": "CNU Bridge Trading 識別動態"
+          }
+        },
+        {
+          "type": "Title",
+          "props": {
+            "type": "h1",
+            "content": "CNU Bridge Trading Identity Animation"
+          }
+        },
+        {
+          "type": "Text",
+          "props": {
+            "content": [
+              "樂好實業 / 樂和實業是從一間面向歐美市場嬰兒設計家具起家的整合型貿易公司。CNU Bridge針對輸出貿易，NEXK2針對輸入貿易。",
+              "象徵貿易的「橋樑」則是這間公司重要的符號。rebranding的logo圖形概念則以橋樑以及鐵橋結構（Truss）延伸成的雙向箭頭符號組合而成。並以互補色的藍橘，連結貿易輸出與輸入的互補意象。"
+            ]
+          }
+        },
+        {
+          "type": "Text",
+          "props": {
+            "content": [
+              "CNU Bridge Trading Company is a reputable and dynamic trading company that specializes in facilitating international trade and fostering business connections. With our extensive experience and expertise in the field, we strive to provide top-notch services to our clients, ensuring smooth and efficient transactions."
+            ]
+          }
+        },
+        {
+          "type": "Section",
+          "children": [
+            {
+              "type": "MediaList",
+              "props": {
+                "col": 1,
+                "mCol": 1,
+                "links": [
+                  "https://res.cloudinary.com/w10x10x10/image/upload/v1707116252/037-CNU-Bridge-logo/Image/037-Image-01.jpg?[1755x1242]",
+                  "https://res.cloudinary.com/w10x10x10/image/upload/v1707116253/037-CNU-Bridge-logo/Image/037-Image-02.jpg?[1755x1241]"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Space"
+    },
+    {
+      "type": "Title",
+      "props": {
+        "type": "h2",
+        "content": "Credits"
+      }
+    },
+    {
+      "type": "Credits",
+      "props": {
+        "content": [
+          "Client: CNU Bridge Trading Co.",
+          "Ad / Deisgn: 葉忠宜 yehchungyi",
+          "Motion:  鄭詒謙 1000 Cheng"
+        ]
+      }
+    }
+  ]
+}

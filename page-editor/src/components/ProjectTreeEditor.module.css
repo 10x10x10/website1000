@@ -1,0 +1,200 @@
+.root {
+  display: grid;
+  gap: 12px;
+  justify-content: center;
+}
+
+.treeContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  gap: 8px;
+}
+
+.nodeWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nodeContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nodeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid #ffffff10;
+  border-radius: 10px;
+  background: #80808004;
+  color: #fff;
+  padding: 12px 12px 12px 12px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  box-sizing: border-box;
+}
+
+.nodeContainer:hover {
+  border: 1px solid #ffffff20;
+}
+
+.nodeContainerDragging {
+  opacity: 0.35;
+}
+
+.nodeSelected {
+  background: #141415;
+  border: 1px solid #3878b0a0;
+  box-shadow: 0 0 5px 5px #3878b010;
+}
+.nodeSelected:hover {
+  border: 1px solid #3878b0ff;
+}
+
+
+.nodeOver {
+  background: #1f344d;
+}
+
+.nodeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.nodeHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dragHandle {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  /* border: 1px solid #555; */
+  /* background: #0f1720; */
+  color: #fff;
+  cursor: grab;
+  flex-shrink: 0;
+}
+
+.dragHandle:hover {
+  background: #323232;
+  cursor: grab;
+}
+
+.dragHandle:hover svg {
+  color: #fff;
+}
+
+.nodeTitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+}
+
+.nodeMeta {}
+
+.childListContainer {
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 16px;
+  padding-top: 8px;
+  border-left: 1px solid #222;
+}
+
+.propsList {
+  display: grid;
+  gap: 10px;
+}
+
+.propItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow: hidden;
+}
+
+.propName {
+  color: #bbb;
+  font-weight: 700;
+}
+
+.propType {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+}
+
+.propValue {
+  color: #ddd;
+  font-size: 14px;
+  white-space: nowrap;
+  flex-shrink: 1;
+}
+
+.invalidBox {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  background: #661111;
+  border-radius: 10px;
+  color: #ffdddd;
+}
+
+.invalidTitle {
+  font-weight: 700;
+}
+
+.invalidIssue {
+  font-size: 12px;
+}
+
+.dropZone {
+  min-height: 10px;
+  margin: 4px 0;
+  border-radius: 6px;
+  background: transparent;
+}
+
+.rootDropZone {
+  padding: 8px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.dropInsideTip {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+.dragOverlay {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #0f1720;
+  border: 1px solid #34d399;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  min-width: 160px;
+}
+
+.dragOverlayTitle {
+  font-weight: 700;
+  color: #fff;
+}

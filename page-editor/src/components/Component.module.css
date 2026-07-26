@@ -1,0 +1,51 @@
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #888888;
+  flex-grow: 1;
+  transform: skewX(-8deg);
+}
+
+.titleIcon {
+  color: #666666;
+}
+
+.titleBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 8px 0;
+}
+
+.container {
+  padding: 12px 16px 16px 16px;
+  border-radius: 12px;
+  background: #111111;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #222222;
+}
+
+.button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #1c1c1c;
+  border: 1px solid #444444;
+  color: #fff;
+}
+
+.button:hover {
+  background: #363636;
+}
+
+
+.grid_c2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}

@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "id": "project013",
+    "title": "ROG Phone 5 Launch Event Countdown Video",
+    "order": 0,
+    "cover": "https://res.cloudinary.com/w10x10x10/image/upload/v1629051377/013-ROG-phone5-countdown/Cover/013-Cover.jpg?[960x540]",
+    "hover": "https://res.cloudinary.com/w10x10x10/video/upload/v1629051378/013-ROG-phone5-countdown/Cover/013-Hover.mp4?[480x270]",
+    "tags": [
+      "default"
+    ]
+  },
+  "tree": [
+    {
+      "type": "EmbedVideo",
+      "props": {
+        "link": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F554866857%3Fapp_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F554866857&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1146738428_1280&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=vimeo"
+      }
+    },
+    {
+      "type": "Section",
+      "children": [
+        {
+          "type": "Title",
+          "props": {
+            "type": "h1",
+            "content": "ROG Phone 5 發表會倒數影片"
+          }
+        },
+        {
+          "type": "Title",
+          "props": {
+            "type": "h1",
+            "content": "ROG Phone 5 Launch Event Countdown Video"
+          }
+        },
+        {
+          "type": "Text",
+          "props": {
+            "content": [
+              "這是一支全世界引頸期盼的電競手機——ROG PHONE 5，是一款效能極佳的電競手機。這次的產品發表從影像呈現到手機的開箱體驗，從影像拍攝、動畫製作到互動製作，都有夢想動畫的全面參與，加上專案總監製 Freaks 4U Gaming 與各國 KOL 的聯合競賽，將線上線下的體驗連成一氣。"
+            ]
+          }
+        },
+        {
+          "type": "Text",
+          "props": {
+            "content": [
+              "This is the highly anticipated gaming phone worldwide - the ROG PHONE 5, which is an extremely powerful gaming phone. The product launch this time involved Dream Animation's full participation in everything from image presentation to unboxing experience of the phone, from image shooting, animation production to interactive production. In addition, the project director Freaks 4U Gaming and KOLs from various countries were invited to join the joint competition, connecting the online and offline experiences seamlessly."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "Section",
+      "children": [
+        {
+          "type": "MediaList",
+          "props": {
+            "col": 3,
+            "mCol": 1,
+            "links": [
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629045760/013-ROG-phone5-countdown/Video/013-Video-01.mp4?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629045760/013-ROG-phone5-countdown/Video/013-Video-02.mp4?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629045760/013-ROG-phone5-countdown/Video/013-Video-04.mp4?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629045760/013-ROG-phone5-countdown/Video/013-Video-05.mp4?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629045760/013-ROG-phone5-countdown/Video/013-Video-06.mp4?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629045760/013-ROG-phone5-countdown/Video/013-Video-07.mp4?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629045760/013-ROG-phone5-countdown/Video/013-Video-10.mp4?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629045760/013-ROG-phone5-countdown/Video/013-Video-11.mp4?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629045760/013-ROG-phone5-countdown/Video/013-Video-12.mp4?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629045760/013-ROG-phone5-countdown/Video/013-Video-15.mp4?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629045760/013-ROG-phone5-countdown/Video/013-Video-17.mp4?[1920x1080]",
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629045760/013-ROG-phone5-countdown/Video/013-Video-19.mp4?[1920x1080]"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "Space"
+    },
+    {
+      "type": "Title",
+      "props": {
+        "type": "h2",
+        "content": "Credits"
+      }
+    },
+    {
+      "type": "Credits",
+      "props": {
+        "content": [
+          "Client : ASUS Republic of Gamers",
+          "Production : MoonShine Animation",
+          "Motion Design : 1000 Cheng, Li Feng Cheng"
+        ]
+      }
+    }
+  ]
+}

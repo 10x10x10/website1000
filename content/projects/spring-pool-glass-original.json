@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "id": "project047",
+    "title": "Spring Pool Glass Original Identity Animation",
+    "order": 0,
+    "cover": "https://res.cloudinary.com/w10x10x10/image/upload/v1747207736/047-original/Cover/Original_cover.jpg?[1920x1080]",
+    "hover": "https://res.cloudinary.com/w10x10x10/video/upload/v1747207737/047-original/Cover/Original_hover.mp4?[1920x1080]",
+    "tags": [
+      "default"
+    ]
+  },
+  "tree": [
+    {
+      "type": "EmbedVideo",
+      "props": {
+        "link": "https://player.vimeo.com/video/1084158729"
+      }
+    },
+    {
+      "type": "Section",
+      "children": [
+        {
+          "type": "Title",
+          "props": {
+            "type": "h1",
+            "content": "春池 Original 識別動態"
+          }
+        },
+        {
+          "type": "Title",
+          "props": {
+            "type": "h1",
+            "content": "Spring Pool Glass Original Identity Animation"
+          }
+        },
+        {
+          "type": "Text",
+          "props": {
+            "content": [
+              "玻璃在退火之前的狀態，並不是透明的。  在綠能工廠內，有窯爐炙熱的橘紅色玻璃糕、有灰階的模具設備、也有穿梭於工作台揮汗如雨的工藝師傅，透明之前的玻璃有著生猛的活力，自由流體的姿態，由不同的製程方式，形塑出我們日常看見的剔透作品。",
+              "在近10年內W Glass Project與眾多設計師、藝術家合作，讓循環設計成為一種意識，2024年春池也將回到創立的第一間綠能觀光工廠，發起Original品牌再造計畫，標準字上也大膽的融合工藝師共創的玻璃字體，流動感中回溯透明之前的多元狀態，凝固成最終的透明作品。"
+            ]
+          }
+        },
+        {
+          "type": "Text",
+          "props": {
+            "content": [
+              "Before annealing, glass is not transparent. Inside the green energy factory, there are molten, glowing orange slabs fresh from the furnace, grayscale mold machines, and artisans working tirelessly at their stations. Before it becomes clear, glass is full of raw vitality—fluid in form, shaped by diverse processes into the brilliant clarity we see in daily life.",
+              "Over the past decade, the W Glass Project has collaborated with numerous designers and artists, promoting circular design as a conscious practice. In 2024, Spring Pool Glass will return to its very first green energy tourism factory to launch the “Original” brand revival project. The new logotype boldly incorporates glass letterforms co-created with artisans, tracing the many states of glass before transparency—fluid, diverse, alive—until they are ultimately crystallized into clarity."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "Section",
+      "children": [
+        {
+          "type": "MediaList",
+          "props": {
+            "col": 2,
+            "mCol": 1,
+            "links": [
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1747208469/047-original/Image/047-original-image-02.jpg?[1620x1080]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1747208469/047-original/Image/047-original-image-03.jpg?[1620x1080]"
+            ]
+          }
+        },
+        {
+          "type": "MediaList",
+          "props": {
+            "col": 1,
+            "mCol": 1,
+            "links": [
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1747208469/047-original/Image/047-original-image-01.jpg?[1920x960]",
+              "https://res.cloudinary.com/w10x10x10/image/upload/v1747208469/047-original/Image/047-original-image-04.jpg?[1440x1080]"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "Space"
+    },
+    {
+      "type": "Title",
+      "props": {
+        "type": "h2",
+        "content": "Credits"
+      }
+    },
+    {
+      "type": "Credits",
+      "props": {
+        "content": [
+          "Exhibition Curators : W Glass Project & PiliWu Design",
+          "Brand Visual Design : PiliWu Design",
+          "Motion Identity Design : 1000 Cheng",
+          "Documentary Filming : Youren Lin"
+        ]
+      }
+    }
+  ]
+}

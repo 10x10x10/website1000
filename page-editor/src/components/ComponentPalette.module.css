@@ -1,0 +1,22 @@
+.container {
+  padding: 16px;
+  border-radius: 12px;
+  background: #111111;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #d1d5db;
+}
+
+button {
+  display: flex;
+  align-items: center;
+}
+

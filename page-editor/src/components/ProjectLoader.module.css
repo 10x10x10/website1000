@@ -1,0 +1,49 @@
+.container {
+  padding: 16px;
+  border-radius: 12px;
+  background: #111111;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #555;
+  color: #fff;
+}
+
+.fileList {
+  display: grid;
+  gap: 8px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.fileButton {
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #444444;
+  background: #121212;
+  color: #fff;
+  cursor: pointer;
+}
+
+.selected {
+  border-color: #5fb7ff;
+  background: #1e2a3a;
+}
+
+.invalid {
+  color: #ff8b8b;
+}
+
+.fileName {
+  margin-left: 8px;
+  font-size: 14px;
+}

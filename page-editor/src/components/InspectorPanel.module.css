@@ -1,0 +1,129 @@
+.container {
+  padding: 16px;
+  border-radius: 12px;
+  background: #111111;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notSelected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.deleteButton {
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #661111;
+  color: #fff;
+  border: none;
+}
+
+.description {
+  color: #eee;
+  margin: 6px 0;
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+}
+
+.warningBox {
+  padding: 12px;
+  border-radius: 10px;
+  background: #661111;
+  color: #ffdddd;
+  font-size: 12px;
+}
+
+.warningTitle {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.propRow {
+  display: grid;
+  gap: 6px;
+}
+
+.propLabelRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.propLabel {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.propType {
+  font-size: 12px;
+  color: #888;
+}
+
+.rawProps {
+  display: grid;
+  gap: 8px;
+}
+
+.rawPropItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.rawPropKey {
+  color: #ddd;
+}
+
+.rawPropValue {
+  color: #aaa;
+  text-align: right;
+}
+
+.noProps {
+  color: #888;
+}
+
+.allowChildren {
+  color: #aaa;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+
+.allowChildren_item{
+  display: flex;
+  align-items: center;
+  color: #aaa;
+  padding: 4px 10px 4px 8px;
+  gap: 4px;
+  background-color: #222222;
+  border-radius: 99999px;
+}
+
+.allowChildren_item p {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}

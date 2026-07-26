@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "id": "project012",
+    "title": "Gogoro VIVA MIX",
+    "order": 0,
+    "cover": "https://res.cloudinary.com/w10x10x10/image/upload/v1629296335/012-GogoroVivaMix/Cover/012-Cover.png?[960x540]",
+    "hover": "https://res.cloudinary.com/w10x10x10/video/upload/v1629296337/012-GogoroVivaMix/Cover/012-Hover.mp4?[480x270]",
+    "tags": [
+      "default"
+    ]
+  },
+  "tree": [
+    {
+      "type": "EmbedVideo",
+      "props": {
+        "link": "https://player.vimeo.com/video/527284650?app_id=122963&amp;referrer=https%3A%2F%2Fwww.1000cheng.cc%2F"
+      }
+    },
+    {
+      "type": "Section",
+      "children": [
+        {
+          "type": "Title",
+          "props": {
+            "type": "h1",
+            "content": "Gogoro VIVA MIX 新車發表會"
+          }
+        },
+        {
+          "type": "Title",
+          "props": {
+            "type": "h1",
+            "content": "Gogoro VIVA MIX New Scooter Launch Event"
+          }
+        },
+        {
+          "type": "Text",
+          "props": {
+            "content": [
+              "2021 第一季，Gogoro 發表了全新車款 — VIVA MIX。一如其名強調混搭精神，兼具以往車型的特點，也一貫在騎乘體驗科技上持續突破，更加入 POP 個性化配件系統，與結合音樂主題元素的多款車色，自我風格更加鮮明。VIVA MIX 是近期 Gogoro 平衡市場需求、使用者體驗與品牌價值的巔峰之作。而 Gogoro 邀請團隊一起共同策劃此車款登場秀。"
+            ]
+          }
+        },
+        {
+          "type": "Text",
+          "props": {
+            "content": [
+              "In the first quarter of 2021, Gogoro unveiled a new scooter model - the VIVA MIX. As the name suggests, it emphasizes the spirit of mix and match, combining the characteristics of previous models while continuing to break through in riding experience technology. It also incorporates the POP personalized accessory system and multiple color schemes that combine music-themed elements to make the self-style more distinctive. VIVA MIX is the pinnacle of Gogoro's recent efforts to balance market demand, user experience, and brand value. Gogoro invited the team to jointly plan the launch of this new scooter model."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "Section",
+      "children": [
+        {
+          "type": "MediaList",
+          "props": {
+            "col": 1,
+            "mCol": 1,
+            "links": [
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629296361/012-GogoroVivaMix/Video/012-Video-01.mp4?[1200x300]",
+              "https://res.cloudinary.com/w10x10x10/video/upload/v1629296364/012-GogoroVivaMix/Video/012-Video-02.mp4?[1920x1080]"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "Space"
+    },
+    {
+      "type": "Title",
+      "props": {
+        "type": "h2",
+        "content": "Credits"
+      }
+    },
+    {
+      "type": "Credits",
+      "props": {
+        "content": [
+          "Client : Gogoro",
+          "Chief Director : Gogoro Creative Team",
+          "Director & Executive : Ultra Combos",
+          "Project Manager : William Liu",
+          "Producer : Nate Wu",
+          "Creative Director : Jay Tseng",
+          "Art Director : Ting-An Ho",
+          "Motion Designer : Ting-An Ho, Hauzhen Yen, Lynn Chiang, Group.G, 1000 Cheng",
+          "Generative Designer : Ke Jyun Wu"
+        ]
+      }
+    }
+  ]
+}
