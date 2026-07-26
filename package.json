@@ -4,7 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsx ./scripts/ssg.ts",
     "test:snapshot": "npm run build && tsx ./scripts/compareSnapshot.ts",
     "preview": "vite preview"

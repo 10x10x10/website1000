@@ -28,15 +28,13 @@ const BigTitle = styled('h1', {
   },
 });
 
-const title = "1000 Cheng";
 const metadata: PageMetadata  = {
-  title: title,
+  title: null,
 };
 function HomePage() {
 
   return (
     <div id="index">
-
 
       <Header type="index" />
 
