@@ -9,7 +9,7 @@ export type ProjectMetadata = PageMetadata & {
 };
 
 export type PageMetadata = {
-  title: string,
+  title: string | null,
 };
 
 export type HeadMetadata = ProjectMetadata | PageMetadata;
