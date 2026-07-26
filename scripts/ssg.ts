@@ -104,6 +104,8 @@ async function main() {
     const routesModule = await server.ssrLoadModule('/src/routes') as RoutesModule
     const App = appModule.default
     const { routes } = routesModule
+    
+    await server.close();
 
     const routePaths = routes
         .map((route: RouteConfig) => route.path)
@@ -142,7 +144,6 @@ async function main() {
         log(`Generated (${currentRouteCount}/${totalRouteCount})\t${routePath}`)
     }
 
-    await server.close();
     log(`SSG completed`)
     console.log('');
 }
