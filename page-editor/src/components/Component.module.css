@@ -49,3 +49,26 @@
   grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
+
+.panelActions {
+  display: grid;
+  gap: 10px;
+}
+
+.buttonIcon {
+  margin-right: 8px;
+}
+
+.sectionHeader {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.sectionBody {
+  display: grid;
+  gap: 12px;
+}
+

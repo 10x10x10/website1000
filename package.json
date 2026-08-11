@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "tsx ./scripts/ssg.ts",
-    "test:snapshot": "npm run build && tsx ./scripts/compareSnapshot.ts",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:snapshot": "npm run build && tsx ./scripts/compareSnapshot.ts"
   },
   "dependencies": {
     "@1000website/shared": "file:./shared",

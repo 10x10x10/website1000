@@ -47,3 +47,47 @@
   margin-left: 8px;
   font-size: 14px;
 }
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 990;
+  padding: 16px;
+}
+
+.modal {
+  width: min(400px, 100%);
+  max-height: min(90vh, 840px);
+  overflow: auto;
+  background: #111111;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+  border: 1px solid #2a2a2a;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.fieldLabel {
+  display: block;
+  margin-bottom: 8px;
+  color: #d0d0d0;
+}
+
+.closeButton {
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+}
