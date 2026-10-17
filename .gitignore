@@ -32,3 +32,6 @@ yarn-error.log*
 
 /issues/*
 *.code-workspace
+
+# Local OpenSpec specs and change history
+/openspec/
