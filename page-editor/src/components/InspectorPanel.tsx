@@ -35,7 +35,25 @@ export default function InspectorPanel({ selectedNode, selectedPath, definitions
     )
   }
 
-  const treeNode = selectedNode as TreeNode
+  return (
+    <SelectedNodeInspector
+      key={selectedPath.join(',')}
+      selectedNode={selectedNode}
+      selectedPath={selectedPath}
+      definitions={definitions}
+      onUpdateNode={onUpdateNode}
+      onDeleteNode={onDeleteNode}
+    />
+  )
+}
+
+type SelectedNodeProps = Omit<Props, 'selectedNode' | 'selectedPath'> & {
+  selectedNode: TreeNode
+  selectedPath: NodePath
+}
+
+function SelectedNodeInspector({ selectedNode, selectedPath, definitions, onUpdateNode, onDeleteNode }: SelectedNodeProps) {
+  const treeNode = selectedNode
   const definition = definitions[treeNode.type]
   const props = treeNode.props ?? {}
   const validation = useMemo(() => validateComponentProps(definition, props), [definition, props])
@@ -95,7 +113,7 @@ export default function InspectorPanel({ selectedNode, selectedPath, definitions
           Allowed children
           {definition.allowChildren.map(c => {
             const Icon = isTreeNode(selectedNode) ? iconMap[c] : null;
-            return (<div className={styles.allowChildren_item}>
+            return (<div key={c} className={styles.allowChildren_item}>
               {Icon ? <Icon size={16} /> : null}
               <p>{c}</p>
             </div>)

@@ -320,6 +320,19 @@ export default function ProjectTreeEditor({ tree, selectedPath, onSelect, onTree
     setOverId(event.over?.id?.toString() ?? null)
   }
 
+  const commitMove = (sourcePath: NodePath, target: { type: DropTargetType; path: NodePath }) => {
+    if (target.type === 'inside') {
+      const targetNode = getNodeAtPath(tree, target.path)
+      if (!canContainChildren(targetNode)) return
+    }
+    const destination = dropPathForTarget(tree, target)
+    if (isDescendantPath(destination, sourcePath)) return
+    const updated = moveNode(tree, sourcePath, destination)
+    if (updated === tree) return
+    onTreeChange(updated)
+    onSelect(null)
+  }
+
   const handleDragEnd = (event: DragEndEvent) => {
     const { active, over } = event
     setActiveId(null)
@@ -329,27 +342,13 @@ export default function ProjectTreeEditor({ tree, selectedPath, onSelect, onTree
 
     const sourcePath = active.id.toString().replace(/^drag-/, '').split(',').map(Number).filter((x) => !Number.isNaN(x))
     const target = parseDropzoneId(over.id.toString())
-    const destination = dropPathForTarget(tree, target)
-
-    if (sourcePath.join(',') === destination.join(',')) return
-    if (isDescendantPath(destination, sourcePath)) return
-
-    const updated = moveNode(tree, sourcePath, destination)
-    onTreeChange(updated)
-    onSelect(null)
+    commitMove(sourcePath, target)
   }
 
   const handleDropTarget = (path: NodePath, type: DropTargetType) => {
     if (!activeId) return
     const sourcePath = activeId.replace(/^drag-/, '').split(',').map(Number).filter((x) => !Number.isNaN(x))
-    if (type === 'inside') {
-      const targetNode = getNodeAtPath(tree, path)
-      if (!targetNode || !isTreeNode(targetNode) || !canContainChildren(targetNode)) return
-    }
-    const destination = dropPathForTarget(tree, { type, path })
-    if (sourcePath.join(',') === destination.join(',')) return
-    if (isDescendantPath(destination, sourcePath)) return
-    onTreeChange(moveNode(tree, sourcePath, destination))
+    commitMove(sourcePath, { type, path })
   }
 
   const activePath = activeId ? activeId.replace(/^drag-/, '').split(',').map(Number).filter((x) => !Number.isNaN(x)) : null

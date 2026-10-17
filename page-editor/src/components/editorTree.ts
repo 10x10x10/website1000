@@ -72,7 +72,7 @@ export function deleteNodeAtPath(tree: EditorTreeNode[], path: NodePath): Editor
 
   const [head, ...rest] = path;
   const next = tree[head];
-  if (next === undefined) {
+  if (!(head in tree)) {
     return tree;
   }
 
@@ -135,27 +135,50 @@ function getParentPath(path: NodePath): NodePath {
   return path.slice(0, -1);
 }
 
+function getChildrenAtPath(tree: EditorTreeNode[], path: NodePath): EditorTreeNode[] | undefined {
+  if (path.length === 0) return tree;
+  const parent = getNodeAtPath(tree, path);
+  if (typeof parent !== 'object' || parent === null || !('type' in parent)) return undefined;
+  if (!('children' in parent)) return [];
+  return Array.isArray(parent.children) ? parent.children : undefined;
+}
+
 export function moveNode(
   tree: EditorTreeNode[],
   fromPath: NodePath,
   toPath: NodePath,
 ): EditorTreeNode[] {
-  const node = getNodeAtPath(tree, fromPath);
-  if (node === undefined) {
-    return tree;
+  const validPath = (path: NodePath) => path.length > 0 &&
+    path.every((index) => Number.isInteger(index) && index >= 0);
+  if (!validPath(fromPath) || !validPath(toPath)) return tree;
+
+  const fromParentPath = getParentPath(fromPath);
+  const toParentPath = getParentPath(toPath);
+  const sourceChildren = getChildrenAtPath(tree, fromParentPath);
+  const targetChildren = getChildrenAtPath(tree, toParentPath);
+  const fromIndex = fromPath[fromPath.length - 1];
+  let insertIndex = toPath[toPath.length - 1];
+  if (!sourceChildren || !(fromIndex in sourceChildren) ||
+      !targetChildren || insertIndex > targetChildren.length) return tree;
+
+  // A node cannot become its own parent, including through a descendant.
+  if (fromPath.length <= toParentPath.length &&
+      fromPath.every((value, index) => value === toParentPath[index])) return tree;
+
+  if (JSON.stringify(toParentPath) === JSON.stringify(fromParentPath)) {
+    if (fromIndex < insertIndex) insertIndex -= 1;
+    if (fromIndex === insertIndex) return tree;
+  }
+
+  // Removing a preceding sibling shifts the target parent and all its descendants.
+  const adjustedParentPath = [...toParentPath];
+  if (toParentPath.length > fromParentPath.length &&
+      fromParentPath.every((value, index) => value === toParentPath[index]) &&
+      toParentPath[fromParentPath.length] > fromIndex) {
+    adjustedParentPath[fromParentPath.length] -= 1;
   }
 
   const treeAfterDelete = deleteNodeAtPath(tree, fromPath);
-  const toParentPath = getParentPath(toPath);
-  let insertIndex = toPath[toPath.length - 1];
-
-  const fromParentPath = getParentPath(fromPath);
-  if (JSON.stringify(toParentPath) === JSON.stringify(fromParentPath)) {
-    const fromIndex = fromPath[fromPath.length - 1];
-    if (fromIndex < insertIndex) {
-      insertIndex -= 1;
-    }
-  }
-
-  return insertNodeAtParent(treeAfterDelete, toParentPath, node, insertIndex);
+  if (!getChildrenAtPath(treeAfterDelete, adjustedParentPath)) return tree;
+  return insertNodeAtParent(treeAfterDelete, adjustedParentPath, sourceChildren[fromIndex], insertIndex);
 }
