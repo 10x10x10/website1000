@@ -26,7 +26,7 @@ export default function ProjectPickerModal({
 
   return (
     <div className={styles.overlay} onClick={onClose}>
-      <div className={styles.modal} onClick={(event) => event.stopPropagation()}>
+      <div className={styles.modal} role="dialog" aria-modal="true" aria-label={title} onClick={(event) => event.stopPropagation()}>
         <div className={styles.modalHeader}>
           <div className={compStyles.titleBar}>
             <h2 className={compStyles.title}>{title}</h2>
@@ -36,8 +36,8 @@ export default function ProjectPickerModal({
           </button>
         </div>
         {children}
-        {statusMessage ? <div className={styles.savedStatus}>{statusMessage}</div> : null}
-        {errorMessage ? <div className={styles.invalid}>{errorMessage}</div> : null}
+        {statusMessage ? <div role="status" className={styles.savedStatus}>{statusMessage}</div> : null}
+        {errorMessage ? <div role="alert" className={styles.invalid}>{errorMessage}</div> : null}
       </div>
     </div>
   )

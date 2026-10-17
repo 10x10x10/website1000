@@ -7,9 +7,10 @@ type Props = {
   onCreateNewProject: () => void
   onSaveProject: () => void
   showSaveButton?: boolean
+  saving?: boolean
 }
 
-export default function ProjectPanel({ onOpenProject, onCreateNewProject, onSaveProject, showSaveButton = true }: Props) {
+export default function ProjectPanel({ onOpenProject, onCreateNewProject, onSaveProject, showSaveButton = true, saving = false }: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.titleBar}>
@@ -17,16 +18,16 @@ export default function ProjectPanel({ onOpenProject, onCreateNewProject, onSave
         <h2 className={styles.title}>Project</h2>
       </div>
       <div className={styles.panelActions}>
-        <button type="button" onClick={onOpenProject} className={`${styles.button} ${styles.fullWidthButton}`}>
+        <button type="button" disabled={saving} onClick={onOpenProject} className={`${styles.button} ${styles.fullWidthButton}`}>
           <FolderOpen size={16} className={styles.buttonIcon} />
           Open Project
         </button>
-        <button type="button" onClick={onCreateNewProject} className={`${styles.button} ${styles.fullWidthButton}`}>
+        <button type="button" disabled={saving} onClick={onCreateNewProject} className={`${styles.button} ${styles.fullWidthButton}`}>
           <Plus size={16} className={styles.buttonIcon} />
           Create New
         </button>
         {showSaveButton && (
-          <button type="button" onClick={onSaveProject} className={`${styles.button} ${styles.fullWidthButton}`}>
+          <button type="button" disabled={saving} onClick={onSaveProject} className={`${styles.button} ${styles.fullWidthButton}`}>
             <Save size={16} className={styles.buttonIcon} />
             Save Project
           </button>
