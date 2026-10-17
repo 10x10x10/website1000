@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsx ./scripts/ssg.ts",
     "preview": "vite preview",
-    "test:snapshot": "npm run build && tsx ./scripts/compareSnapshot.ts"
+    "test:snapshot": "npm run build && tsx ./scripts/compareSnapshot.ts",
+    "cloudinary": "op run --env-file=.env -- tsx ./scripts/cloudinary.ts"
   },
   "dependencies": {
     "@1000website/shared": "file:./shared",
