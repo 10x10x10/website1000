@@ -225,9 +225,9 @@ export const aboutData = {
     ],
     contacts: [
         {
-            text: "10x10x10w1000@gmail.com",
+            text: "hello@1000cheng.cc",
             icon: "/icons/social-mail.svg",
-            link: "mailto:10x10x10w1000@gmail.com",
+            link: "mailto:hello@1000cheng.cc",
         },
         // {
         //     text: "Instagram",
