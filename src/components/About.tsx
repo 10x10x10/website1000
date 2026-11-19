@@ -149,7 +149,7 @@ export default function About() {
     >
 
       <HeadIconContainer media={mediaMap}>
-        <HeadIcon media={mediaMap} src={'./logo/logo_l.png'} />
+        <HeadIcon media={mediaMap} src={'/logo/logo_l.png'} />
       </HeadIconContainer>
 
       <ContextContainer>
