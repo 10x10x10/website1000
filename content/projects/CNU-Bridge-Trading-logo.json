@@ -46,8 +46,8 @@
           "type": "Text",
           "props": {
             "content": [
-              "樂好實業 / 樂和實業是從一間面向歐美市場嬰兒設計家具起家的整合型貿易公司。CNU Bridge針對輸出貿易，NEXK2針對輸入貿易。",
-              "象徵貿易的「橋樑」則是這間公司重要的符號。rebranding的logo圖形概念則以橋樑以及鐵橋結構（Truss）延伸成的雙向箭頭符號組合而成。並以互補色的藍橘，連結貿易輸出與輸入的互補意象。"
+              "樂好實業 / 樂合實業是從一間面向歐美市場嬰兒設計家具起家的整合型貿易公司。CNU Bridge 專注國際貿易，NEXK2 專注國內市場。",
+              "象徵貿易的「橋樑」則是這間公司重要的符號。rebranding 的 logo 圖形概念則以橋樑以及鐵橋結構（Truss）延伸成的雙向箭頭符號組合而成，並以互補色的藍橘，連結國際與國內市場的互補意象。"
             ]
           }
         },
@@ -55,7 +55,7 @@
           "type": "Text",
           "props": {
             "content": [
-              "CNU Bridge Trading Company is a reputable and dynamic trading company that specializes in facilitating international trade and fostering business connections. With our extensive experience and expertise in the field, we strive to provide top-notch services to our clients, ensuring smooth and efficient transactions."
+              "CNU Bridge Co. (樂好實業) and NEXK2 Co. (樂合實業) are an integrated trading group that began by designing baby furniture for the European and American markets. CNU Bridge focuses on international trade, while NEXK2 serves the domestic market.", "The bridge, as a symbol of trade, is central to the company's identity. The rebranded logo combines a bridge with a two-way arrow extended from a truss structure, and uses complementary blue and orange to express the complementary connection between international and domestic markets."
             ]
           }
         },
@@ -92,8 +92,8 @@
       "props": {
         "content": [
           "Client: CNU Bridge Trading Co.",
-          "Ad / Deisgn: 葉忠宜 yehchungyi",
-          "Motion:  鄭詒謙 1000 Cheng"
+          "AD / Design: 葉忠宜 yehchungyi",
+          "Motion: 鄭詒謙 1000 Cheng"
         ]
       }
     }

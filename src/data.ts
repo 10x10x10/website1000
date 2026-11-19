@@ -126,7 +126,7 @@ export const aboutData = {
                     link: "https://vimeo.com/488057651",
                 },
                 {
-                    text: "PONY5IBE -【They Said】ft 陳嫻靜 MV",
+                    text: "PONY5IBE -【They Said】ft 陳嫺靜 MV",
                 },
                 {
                     text: "台北電影節 Taipei Film Festival 片頭",
